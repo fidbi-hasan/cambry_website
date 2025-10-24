@@ -98,34 +98,22 @@
         scrollbar-width: none;
       }
 
-      .slide-up {
-    animation: slideUp 0.5s ease-in-out forwards;
-  }
-  .slide-down {
-    animation: slideDown 0.5s ease-in-out forwards;
-  }
+      .carousel_page {
+        transition: all 0.6s ease-in-out;
+        opacity: 0;
+        transform: translateY(30px);
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+      }
 
-  @keyframes slideUp {
-    0% {
-      transform: translateY(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-
-  @keyframes slideDown {
-    0% {
-      transform: translateY(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
+      .carousel_page.active {
+        opacity: 1;
+        transform: translateY(0);
+        position: relative;
+      }
+  
     </style>
 
   </head>
@@ -146,7 +134,68 @@
 
       <!-- how it works -> jarif -->
 
+      <!-- how it works [2'nd part] -> jarif -->
+
+
+        <section class="py-16">
+              <div class="text-center my-8">
+              <h1 class="comment_heading font_1 text-[#4C3C93]">
+                How It Work’s
+              </h1>
+              <p class="paragraph font_2 text-[#000000B2]">
+                Your Global Journey Starts in 3 Easy Steps
+              </p>
+            </div>
+
+            <div class="max-w-6xl mx-auto text-center mt-24">
+              
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+
+                <!-- Step 1 -->
+                <div class="card bg-gradient-to-b from-primary/20 to-primary/5 shadow-lg hover:shadow-xl transition rounded-2xl hover:blue-500 hover:shadow-blue-300">
+                  <div class="card-body items-center text-center">
+                    <div class="text-4xl font_3 font-extrabold text-primary mb-4">1</div>
+                    <img src="./assets/consultation.png" alt="Consultation" class="w-20 h-20 mb-4" />
+                    <h3 class="text-xl font_1 font-bold mb-2 text-primary">Consultation</h3>
+                    <p class="text-base-content/80 font_2">
+                      Share your goals, and we’ll craft a personalized plan.
+                    </p>
+                  </div>
+                </div>
+
+
+                <!-- Step 2 -->
+                <div class="card bg-gradient-to-b from-secondary/20 to-secondary/5 shadow-lg hover:shadow-xl transition rounded-2xl hover:pink-500 hover:shadow-pink-300">
+                  <div class="card-body items-center text-center">
+                    <div class="text-4xl font_3 font-extrabold text-secondary mb-4">2</div>
+                    <img src="./assets/planning.png" alt="Planning" class="w-20 h-20 mb-4" />
+                    <h3 class="text-xl font_1 font-bold mb-2 text-secondary">Planning</h3>
+                    <p class="text-base-content/80 font_2">
+                      We handle everything from applications to travel logistics.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="card bg-gradient-to-b from-accent/20 to-accent/5 shadow-lg hover:shadow-xl transition rounded-2xl hover:green-500 hover:shadow-green-300">
+                  <div class="card-body items-center text-center">
+                    <div class="text-4xl font_3 font-extrabold text-accent mb-4">3</div>
+                    <img src="./assets/execution.png" alt="Execution" class="w-20 h-20 mb-4" />
+                    <h3 class="text-xl font_1 font-bold mb-2 text-accent">Execution</h3>
+                    <p class="text-base-content/80 font_2">
+                      Embark on your journey with confidence and ease.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+        </section>
+
+
       <!-- what our students say -> jarif -->
+
       <section id="comments">
       <div class="text-center my-8">
         <h1 class="comment_heading font_1 text-[#4C3C93]">
@@ -180,119 +229,107 @@
             </svg>
           </button>
 
-          <!-- carousel container -->
-          <div class="carousel_content_1">
-            <div
-              class=" grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-18 overflow-y-scroll max-h-[500px] py-12 scrollbar-hide"
-              style="scroll-snap-type: y mandatory"
-            >
-            <!-- card 1 -->
-              <div
-                class="scroll-snap-start p-6 bg-white rounded-lg shadow-sm border-l-4 border-gray-200"
-              >
-                <p class="user_comment font_2 text-gray-700 mb-8 text-center">
-                  I was overwhelmed by the visa process, but Cambry made it so
-                  simple. They provided the support I needed to confidently
-                  prepare for my journey.
-                </p>
-                <div class="flex items-center ml-6">
-                  <img
-                    src="./assets/user-2.png"
-                    alt="Sarah T."
-                    class="w-12 h-12 rounded-full mr-4"
-                  />
-                  <div>
-                    <h4 class="font-semibold text-gray-800">Sarah T.</h4>
-                    <span class="text-yellow-500 text-sm font-medium"
-                      >University of Manchester</span
-                    >
-                  </div>
+
+           <!-- Carousel Wrapper -->
+      <div class="carousel_wrapper relative h-[340px] overflow-hidden">
+
+        <!-- Page 1 -->
+        <div class="carousel_page carousel_content_1">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-18 py-12">
+            <!-- Card 1 -->
+            <div class="p-6 bg-white rounded-lg shadow-sm border-l-4 border-gray-200">
+              <p class="user_comment font_2 text-gray-700 mb-10 text-center">
+                My experience at Universiti Malaya was exceptional. Malaysia’s mix of cultural diversity and academic rigor gave me the perfect environment to grow both personally and professionally.
+                
+              </p>
+              <div class="flex items-center ml-6">
+                <img src="./assets/ayesha_rahman.webp" class="w-12 h-12 rounded-full mr-4" />
+                <div>
+                  <h4 class="font-semibold text-gray-800">Ayesha Rahman</h4>
+                  <span class="text-yellow-500 text-sm font-medium">Universities in Malaysia</span>
                 </div>
               </div>
-  
-              <!-- card 2 -->
-              <div
-                class="scroll-snap-start p-6 bg-white rounded-lg shadow-sm border-l-4 border-gray-200"
-              >
-                <p class="user_comment text-gray-700 mb-8 text-center">
-                  Thanks to Cambry, I’m now studying at my dream university in the
-                  UK. Their step-by-step guidance made the process seamless!
-                </p>
-                <div class="flex items-center ml-6">
-                  <img
-                    src="./assets/user-1.png"
-                    alt="Maria S."
-                    class="w-12 h-12 rounded-full mr-4"
-                  />
-                  <div>
-                    <h4 class="font-semibold text-gray-800">Maria S.</h4>
-                    <span class="text-yellow-500 text-sm font-medium"
-                      >Stockholm University</span
-                    >
-                  </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="p-6 bg-white rounded-lg shadow-sm border-l-4 border-gray-200">
+              <p class="user_comment font_2 text-gray-700 mb-8 text-center">
+                Studying at the University of California, Berkeley was a dream come true. The exposure to global opportunities and the academic excellence here prepared me for a dynamic career ahead.                                       
+              </p>
+              <div class="flex items-center ml-6">
+                <img src="./assets/arun_kumar.webp" class="w-12 h-12 rounded-full mr-4" />
+                <div>
+                  <h4 class="font-semibold text-gray-800">Shahid Ahmed</h4>
+                  <span class="text-yellow-500 text-sm font-medium">University of California</span>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-
-          <!-- carousel container -->
-
-          <div class="hidden carousel_content_2">
-
-            <div
-              class="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-18 overflow-y-scroll max-h-[500px] py-12 scrollbar-hide"
-              style="scroll-snap-type: y mandatory"
-            >
-           
-            <!-- card 1 -->
-              <div
-                class="scroll-snap-start p-6 bg-white rounded-lg shadow-sm border-l-4 border-gray-200"
-              >
-                <p class="user_comment font_2 text-gray-700 mb-8 text-center">
-                  I was overwhelmed by the visa process, but Cambry made it so
-                  simple. They provided the support I needed to confidently
-                  prepare for my journey.
-                </p>
-                <div class="flex items-center ml-6">
-                  <img
-                    src="./assets/user-2.png"
-                    alt="Sarah T."
-                    class="w-12 h-12 rounded-full mr-4"
-                  />
-                  <div>
-                    <h4 class="font-semibold text-gray-800">Sarah T.</h4>
-                    <span class="text-yellow-500 text-sm font-medium"
-                      >University of Manchester</span
-                    >
-                  </div>
+        <!-- Page 2 -->
+        <div class="carousel_page carousel_content_2 hidden">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-18 py-12">
+            <!-- Duplicate or new cards here -->
+            <div class="p-6 bg-white rounded-lg shadow-sm border-l-4 border-gray-200">
+              <p class="user_comment font_2 text-gray-700 mb-8 text-center">
+                 Sweden’s focus on innovation and sustainability at KTH Royal Institute of Technology helped me gain cutting-edge knowledge in engineering. It’s been a life-changing journey.                   
+              </p>
+              <div class="flex items-center ml-6">
+                <img src="./assets/arun_kumar.webp" class="w-12 h-12 rounded-full mr-4 object-cover" />
+                <div>
+                  <h4 class="font-semibold text-gray-800">Arun Kumar</h4>
+                  <span class="text-yellow-500 text-sm font-medium">KTH Royal Institute of Technology</span>
                 </div>
               </div>
-  
-              <!-- card 2 -->
-              <div
-                class="scroll-snap-start p-6 bg-white rounded-lg shadow-sm border-l-4 border-gray-200"
-              >
-                <p class="user_comment text-gray-700 mb-8 text-center">
-                  Thanks to Cambry, I’m now studying at my dream university in the
-                  UK. Their step-by-step guidance made the process seamless!
-                </p>
-                <div class="flex items-center ml-6">
-                  <img
-                    src="./assets/user-1.png"
-                    alt="Maria S."
-                    class="w-12 h-12 rounded-full mr-4"
-                  />
-                  <div>
-                    <h4 class="font-semibold text-gray-800">Maria S.</h4>
-                    <span class="text-yellow-500 text-sm font-medium"
-                      >Stockholm University</span
-                    >
-                  </div>
+            </div>
+            <div class="p-6 bg-white rounded-lg shadow-sm border-l-4 border-gray-200">
+              <p class="user_comment text-gray-700 mb-8 text-center">
+                The University of Auckland provided not only world-class education but also a supportive environment. The serene landscapes of New Zealand made the experience even more memorable.                    
+              </p>
+              <div class="flex items-center ml-6">
+                <img src="./assets/user-1.png" class="w-12 h-12 rounded-full mr-4" />
+                <div>
+                  <h4 class="font-semibold text-gray-800">Maria S.</h4>
+                  <span class="text-yellow-500 text-sm font-medium">University of Auckland</span>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <!-- Page 3 -->
+        <div class="carousel_page carousel_content_3 hidden">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-18 py-12">
+            <!-- Duplicate or new cards here -->
+            <div class="p-6 bg-white rounded-lg shadow-sm border-l-4 border-gray-200">
+              <p class="user_comment font_2 text-gray-700 mb-8 text-center">
+                At the University of Melbourne, I gained more than a degree—I gained confidence, lifelong friendships, and career prospects. Australia truly exceeded my expectations grow both personally and professionally.                    
+              </p>
+              <div class="flex items-center ml-6">
+                <img src="./assets/user-3.jpg" class="w-12 h-12 rounded-full mr-4 object-cover" />
+                <div>
+                  <h4 class="font-semibold text-gray-800">Jaquline N.</h4>
+                  <span class="text-yellow-500 text-sm font-medium">University of Melbourne</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 bg-white rounded-lg shadow-sm border-l-4 border-gray-200">
+              <p class="user_comment text-gray-700 mb-8 text-center">
+                The University of Toronto not only shaped my career but also gave me a second home. Canada’s welcoming atmosphere and top-notch education system made all the difference and made the experience even more memorable.                    
+              </p>
+              <div class="flex items-center ml-6">
+                <img src="./assets/user-4.jpg" class="w-12 h-12 rounded-full mr-4 object-cover" />
+                <div>
+                  <h4 class="font-semibold text-gray-800">James Bond</h4>
+                  <span class="text-yellow-500 text-sm font-medium">University of Toronto</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
 
 
           <!-- down button -->
@@ -317,6 +354,7 @@
         </div>
       </div>
     </section>
+
 
       <!-- we colaborate with -> jarif -->
     <section id="newsletter" class="mb-20">
