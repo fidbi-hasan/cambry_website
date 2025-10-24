@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
   const pages = document.querySelectorAll(".carousel_page");
   const upBtn = document.querySelector(".up_btn");
@@ -30,7 +29,6 @@
 
   // Initialize
   showPage(current);
-=======
 // document.getElementById('card-single').addEventListener('mouseover', () => {
 //   document.getElementById('card-single').classList.add('hidden');
 //   document.getElementById('card-single-hover').classList.remove('hidden');
@@ -65,5 +63,4 @@ cardWrappers.forEach((wrapper) => {
     hoverCard.classList.add('hidden');
   });
 });
->>>>>>> c13b050fb4142898ecdbf3fba0d0fe4cb1efade7
 
