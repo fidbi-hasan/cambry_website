@@ -1,359 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cambry-Website</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- daisy ui -->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <!-- daisy ui -->
-   <!-- font awesome -->
-  <script src="https://kit.fontawesome.com/37420c2a89.js" crossorigin="anonymous"></script>
-   <!-- font awesome -->
-  <!-- css font -->
-  <link rel="stylesheet" href="styles/fonts.css">
-  <!-- css font -->
-</head>
+    <!-- daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- daisy ui -->
 
-<body>
-  <header class="sm:bg-[#FFFFFF1A] backdrop-blur-lg fixed z-100 top-0 left-0 right-0 text-white">
-    <div class="flex items-center justify-between py-2 sm:mx-24 mx-4 my-auto">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
-          </div>
-          <ul tabindex="-1"
-            class="menu menu-sm dropdown-content rounded-none bg-[#FFFFFF1A] backdrop-blur-md rounded-box z-50 mt-3 w-52 p-2 shadow">
-            <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Home</a></li>
-            <li>
-              <a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Study Destinations</a>
-              <ul class="p-2 bg-[#FFFFFF1A]">
-                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Study in UK</a></li>
-                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Study in Malaysia</a>
-                </li>
-                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Study in Sweden</a></li>
-                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Study in New
-                    Zealand</a></li>
-                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Study in USA</a></li>
-                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Study in Australia</a>
-                </li>
-                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Study in Canada</a></li>
-              </ul>
-            </li>
-            <li>
-              <a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Student Services</a>
-              <ul class="p-2 bg-[#FFFFFF1A]">
-                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Application Process</a>
-                </li>
-                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Free Consultation</a>
-                </li>
-                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">University Guidence</a>
-                </li>
-                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Scholarship
-                    Guidence</a></li>
-              </ul>
-            </li>
-            <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">About Us</a></li>
-            <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Contact</a></li>
-          </ul>
-        </div>
-        <a class="text-xl">
-          <img src="assets/Cambry_Official_logo.webp" class="w-3/10 max-w-[150px] sm:max-w-[200px]">
-        </a>
-      </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu gap-7 font-semibold menu-horizontal px-1">
-          <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Home</a></li>
-          <li>
-            <details>
-              <summary class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Study Destinations
-              </summary>
-              <ul class="p-2 bg-[#FFFFFF1A] backdrop-blur-[20px] rounded-none z-50">
-                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Study in UK</a></li>
-                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Study in Malaysia</a>
-                </li>
-                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Study in Sweden</a></li>
-                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Study in New
-                    Zealand</a></li>
-                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Study in USA</a></li>
-                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Study in Australia</a>
-                </li>
-                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Study in Canada</a></li>
-              </ul>
-            </details>
-          </li>
-          <li>
-            <details>
-              <summary class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Student Services
-              </summary>
-              <ul class="p-2 bg-[#FFFFFF1A] backdrop-blur-[20px] rounded-none z-50">
-                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Application Process</a>
-                </li>
-                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Free Consultation</a>
-                </li>
-                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">University Guidence</a>
-                </li>
-                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Scholarship
-                    Guidence</a></li>
-              </ul>
-            </details>
-          </li>
-          <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">About Us</a></li>
-          <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  <main>
-    <div class="hero relative flex items-center justify-center min-h-screen pt-20 sm:pt-0">
-      <div class="absolute inset-0 z-0">
-        <img src="assets/hero bg.png" class="w-full h-full object-cover" alt="Hero background">
-      </div>
-      <div
-        class="relative z-10 text-white flex flex-col items-center justify-center gap-4 sm:gap-5 backdrop-blur-md bg-[#FFFFFF1A] border-[#FFFFFF1A] shadow-lg shadow-[#FFFFFF1A] border-[2px] w-[90%] sm:w-8/12 lg:w-3/5 text-center px-6 sm:px-10 py-10 rounded-3xl">
-        <h3 class="calistoga text-3xl sm:text-4xl md:text-5xl font-medium leading-tight">Your Trusted Partner for
-          Studying Abroad</h3>
-        <p class="text-sm sm:text-base md:text-lg max-w-xl">
-          Expert guidance and end-to-end support to help you achieve your global education dreams.
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Calistoga&family=Heebo:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      .font_1 {
+        font-family: "Heebo", sans-serif;
+      }
+      .font_2 {
+        font-family: "Nunito Sans", sans-serif;
+      }
+      .font_3 {
+        font-family: "Calistoga", serif;
+      }
+
+      .comment_heading {
+        font-size: 32px;
+        font-weight: 600;
+      }
+      .paragraph {
+        font-size: 16px;
+        font-weight: 400;
+        font-style: italic;
+      }
+
+      .user_comment {
+        font-size: 18px;
+        font-weight: 400;
+      }
+
+      .contact_form_heading {
+        font-style: italic;
+        font-size: 18px;
+        font-weight: 400;
+      }
+
+      .button_form {
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .footer_img {
+        background-image: url("./assets/footer_bg.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .text_group {
+        font-family: "Heebo", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+      }
+
+      .explore {
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      .explore_component {
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      .carousel_page {
+        transition: all 0.6s ease-in-out;
+        opacity: 0;
+        transform: translateY(30px);
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+      }
+
+      .carousel_page.active {
+        opacity: 1;
+        transform: translateY(0);
+        position: relative;
+      }
+  
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <!-- nav -> raj -->
+    </header>
+    <main>
+      <!-- hero -> raj -->
+
+      <!-- our mission -> raj -->
+
+      <!-- what we offer -> raj -->
+
+      <!-- find destination -> fidbi -->
+
+      <!-- why choose us -> jarif -->
+
+      <!-- how it works -> jarif -->
+
+      <!-- how it works [2'nd part] -> jarif -->
+
+
+        <section class="py-16">
+              <div class="text-center my-8">
+              <h1 class="comment_heading font_1 text-[#4C3C93]">
+                How It Work’s
+              </h1>
+              <p class="paragraph font_2 text-[#000000B2]">
+                Your Global Journey Starts in 3 Easy Steps
+              </p>
+            </div>
+
+            <div class="max-w-6xl mx-auto text-center mt-24">
+              
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+
+                <!-- Step 1 -->
+                <div class="card bg-gradient-to-b from-primary/20 to-primary/5 shadow-lg hover:shadow-xl transition rounded-2xl hover:blue-500 hover:shadow-blue-300">
+                  <div class="card-body items-center text-center">
+                    <div class="text-4xl font_3 font-extrabold text-primary mb-4">1</div>
+                    <img src="./assets/consultation.png" alt="Consultation" class="w-20 h-20 mb-4" />
+                    <h3 class="text-xl font_1 font-bold mb-2 text-primary">Consultation</h3>
+                    <p class="text-base-content/80 font_2">
+                      Share your goals, and we’ll craft a personalized plan.
+                    </p>
+                  </div>
+                </div>
+
+
+                <!-- Step 2 -->
+                <div class="card bg-gradient-to-b from-secondary/20 to-secondary/5 shadow-lg hover:shadow-xl transition rounded-2xl hover:pink-500 hover:shadow-pink-300">
+                  <div class="card-body items-center text-center">
+                    <div class="text-4xl font_3 font-extrabold text-secondary mb-4">2</div>
+                    <img src="./assets/planning.png" alt="Planning" class="w-20 h-20 mb-4" />
+                    <h3 class="text-xl font_1 font-bold mb-2 text-secondary">Planning</h3>
+                    <p class="text-base-content/80 font_2">
+                      We handle everything from applications to travel logistics.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="card bg-gradient-to-b from-accent/20 to-accent/5 shadow-lg hover:shadow-xl transition rounded-2xl hover:green-500 hover:shadow-green-300">
+                  <div class="card-body items-center text-center">
+                    <div class="text-4xl font_3 font-extrabold text-accent mb-4">3</div>
+                    <img src="./assets/execution.png" alt="Execution" class="w-20 h-20 mb-4" />
+                    <h3 class="text-xl font_1 font-bold mb-2 text-accent">Execution</h3>
+                    <p class="text-base-content/80 font_2">
+                      Embark on your journey with confidence and ease.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+        </section>
+
+
+      <!-- what our students say -> jarif -->
+
+      <section id="comments">
+      <div class="text-center my-8">
+        <h1 class="comment_heading font_1 text-[#4C3C93]">
+          What Our Students Say
+        </h1>
+        <p class="paragraph font_2 text-[#000000B2]">
+          Can’t decide? Listen to those who have already achieved their dream
+          with our help.
         </p>
-        <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 mt-2">
+      </div>
+
+      
+      <!-- up button -->
+      <div class="bg-[#f8f4f4] my-28 py-12 px-4 md:px-8">
+        <div class="relative max-w-6xl mx-auto">
           <button
-            class="bg-white flex items-center gap-2 px-4 py-3 active:scale-95 duration-200 rounded-lg shadow-md w-full sm:w-auto">
-            <h2 class="text-[#8A38F5] hover:text-[#F3D70D] duration-250 font-semibold text-base">Book an Appointment
-            </h2>
-            <img src="assets/appointment.svg" class="w-5 h-5" alt="Appointment icon">
+            class="up_btn absolute -top-4 left-1/2 transform -translate-x-1/2 z-10 p-2 bg-white rounded-full shadow-md hover:bg-gray-100 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 text-purple-600"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 15l7-7 7 7"
+              />
+            </svg>
           </button>
+
+
+           <!-- Carousel Wrapper -->
+      <div class="carousel_wrapper relative h-[340px] overflow-hidden">
+
+        <!-- Page 1 -->
+        <div class="carousel_page carousel_content_1">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-18 py-12">
+            <!-- Card 1 -->
+            <div class="p-6 bg-white rounded-lg shadow-sm border-l-4 border-gray-200">
+              <p class="user_comment font_2 text-gray-700 mb-10 text-center">
+                My experience at Universiti Malaya was exceptional. Malaysia’s mix of cultural diversity and academic rigor gave me the perfect environment to grow both personally and professionally.
+                
+              </p>
+              <div class="flex items-center ml-6">
+                <img src="./assets/ayesha_rahman.webp" class="w-12 h-12 rounded-full mr-4" />
+                <div>
+                  <h4 class="font-semibold text-gray-800">Ayesha Rahman</h4>
+                  <span class="text-yellow-500 text-sm font-medium">Universities in Malaysia</span>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="p-6 bg-white rounded-lg shadow-sm border-l-4 border-gray-200">
+              <p class="user_comment font_2 text-gray-700 mb-8 text-center">
+                Studying at the University of California, Berkeley was a dream come true. The exposure to global opportunities and the academic excellence here prepared me for a dynamic career ahead.                                       
+              </p>
+              <div class="flex items-center ml-6">
+                <img src="./assets/arun_kumar.webp" class="w-12 h-12 rounded-full mr-4" />
+                <div>
+                  <h4 class="font-semibold text-gray-800">Shahid Ahmed</h4>
+                  <span class="text-yellow-500 text-sm font-medium">University of California</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Page 2 -->
+        <div class="carousel_page carousel_content_2 hidden">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-18 py-12">
+            <!-- Duplicate or new cards here -->
+            <div class="p-6 bg-white rounded-lg shadow-sm border-l-4 border-gray-200">
+              <p class="user_comment font_2 text-gray-700 mb-8 text-center">
+                 Sweden’s focus on innovation and sustainability at KTH Royal Institute of Technology helped me gain cutting-edge knowledge in engineering. It’s been a life-changing journey.                   
+              </p>
+              <div class="flex items-center ml-6">
+                <img src="./assets/arun_kumar.webp" class="w-12 h-12 rounded-full mr-4 object-cover" />
+                <div>
+                  <h4 class="font-semibold text-gray-800">Arun Kumar</h4>
+                  <span class="text-yellow-500 text-sm font-medium">KTH Royal Institute of Technology</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 bg-white rounded-lg shadow-sm border-l-4 border-gray-200">
+              <p class="user_comment text-gray-700 mb-8 text-center">
+                The University of Auckland provided not only world-class education but also a supportive environment. The serene landscapes of New Zealand made the experience even more memorable.                    
+              </p>
+              <div class="flex items-center ml-6">
+                <img src="./assets/user-1.png" class="w-12 h-12 rounded-full mr-4" />
+                <div>
+                  <h4 class="font-semibold text-gray-800">Maria S.</h4>
+                  <span class="text-yellow-500 text-sm font-medium">University of Auckland</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Page 3 -->
+        <div class="carousel_page carousel_content_3 hidden">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-18 py-12">
+            <!-- Duplicate or new cards here -->
+            <div class="p-6 bg-white rounded-lg shadow-sm border-l-4 border-gray-200">
+              <p class="user_comment font_2 text-gray-700 mb-8 text-center">
+                At the University of Melbourne, I gained more than a degree—I gained confidence, lifelong friendships, and career prospects. Australia truly exceeded my expectations grow both personally and professionally.                    
+              </p>
+              <div class="flex items-center ml-6">
+                <img src="./assets/user-3.jpg" class="w-12 h-12 rounded-full mr-4 object-cover" />
+                <div>
+                  <h4 class="font-semibold text-gray-800">Jaquline N.</h4>
+                  <span class="text-yellow-500 text-sm font-medium">University of Melbourne</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 bg-white rounded-lg shadow-sm border-l-4 border-gray-200">
+              <p class="user_comment text-gray-700 mb-8 text-center">
+                The University of Toronto not only shaped my career but also gave me a second home. Canada’s welcoming atmosphere and top-notch education system made all the difference and made the experience even more memorable.                    
+              </p>
+              <div class="flex items-center ml-6">
+                <img src="./assets/user-4.jpg" class="w-12 h-12 rounded-full mr-4 object-cover" />
+                <div>
+                  <h4 class="font-semibold text-gray-800">James Bond</h4>
+                  <span class="text-yellow-500 text-sm font-medium">University of Toronto</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+          <!-- down button -->
           <button
-            class="bg-[#F3D70D] flex items-center gap-2 px-4 py-3 active:scale-95 duration-200 rounded-lg shadow-md w-full sm:w-auto">
-            <h2 class="text-[#8A38F5] hover:text-white duration-250 font-semibold text-base">Call Now</h2>
-            <img src="assets/phonee.svg" class="w-5 h-5" alt="Phone icon">
+            class="down_btn absolute -bottom-4 left-1/2 transform -translate-x-1/2 z-10 p-2 bg-white rounded-full shadow-md hover:bg-gray-100 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 text-purple-600"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
           </button>
         </div>
       </div>
-    </div>
 
-    <div
-      class="text-center mx-4 sm:mx-8 md:mx-16 lg:mx-28 my-16 sm:my-24 px-6 sm:px-14 py-8 sm:py-11 rounded-lg text-[#D9D9D9] bg-[#4C3C93]">
-      <h2 class="heebo text-2xl sm:text-[32px] font-semibold text-[#F3D70D] mb-2">Our Mission</h2>
-      <p class="nunito-sans text-base sm:text-lg font-medium mt-3">
-        At Cambry, we are passionate about empowering students to achieve their academic aspirations abroad. With a deep
-        understanding of global education systems, we provide tailored support, ensuring a smooth transition to your
-        dream university. From choosing the right course to securing your visa, we are with you every step of the way.
-      </p>
-    </div>
 
-    <div class="mx-4 sm:mx-8 md:mx-16 lg:mx-28 my-16 sm:my-24">
-      <h2 class="text-[#4C3C93] text-2xl sm:text-[32px] font-semibold heebo text-center">What We Offer</h2>
-      <p class="text-center text-[#00000080] text-base sm:text-lg italic font-normal mt-2">We handle the details so you
-        can focus on your dreams</p>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-8 sm:gap-11 my-10 sm:my-16">
-        <div
-          class="flex flex-col gap-3 p-6 rounded-lg items-center text-center justify-center border-[1px] border-[#4C3C934D] shadow-sm hover:shadow-lg transition duration-300">
-          <img src="assets/consultancy.png" class="w-16 h-16 sm:w-20 sm:h-20" alt="Consultancy icon">
-          <h2 class="text-xl font-semibold text-[#4C3C93] heebo">Study Abroad Consultancy</h2>
-          <p class="nunito-sans text-[#000000B2] text-sm">Expert guidance to find your perfect program and secure
-            admission.</p>
-        </div>
-
-        <div
-          class="flex flex-col gap-3 p-6 rounded-lg items-center text-center justify-center border-[1px] border-[#4C3C934D] shadow-sm hover:shadow-lg transition duration-300">
-          <img src="assets/universityt.png" class="w-16 h-16 sm:w-20 sm:h-20" alt="University icon">
-          <h2 class="text-xl font-semibold text-[#4C3C93] heebo">University Selection</h2>
-          <p class="nunito-sans text-[#000000B2] text-sm">Expert advice to help you choose the best-fit university and
-            course.</p>
-        </div>
-        <div
-          class="flex flex-col gap-3 p-6 rounded-lg items-center text-center justify-center border-[1px] border-[#4C3C934D] shadow-sm hover:shadow-lg transition duration-300">
-          <img src="assets/application.png" class="w-16 h-16 sm:w-20 sm:h-20" alt="Application icon">
-          <h2 class="text-xl font-semibold text-[#4C3C93] heebo">Application Assistance</h2>
-          <p class="nunito-sans text-[#000000B2] text-sm">Guidance on preparing and submitting strong applications.</p>
-        </div>
-        <div
-          class="flex flex-col gap-3 p-6 rounded-lg items-center text-center justify-center border-[1px] border-[#4C3C934D] shadow-sm hover:shadow-lg transition duration-300">
-          <img src="assets/visa.png" class="w-16 h-16 sm:w-20 sm:h-20" alt="Visa icon">
-          <h2 class="text-xl font-semibold text-[#4C3C93] heebo">Visa Processing</h2>
-          <p class="nunito-sans text-[#000000B2] text-sm">Hassle-free assistance with visa documentation and
-            application.</p>
-        </div>
-        <div
-          class="flex flex-col gap-3 p-6 rounded-lg items-center text-center justify-center border-[1px] border-[#4C3C934D] shadow-sm hover:shadow-lg transition duration-300">
-          <img src="assets/guidence.png" class="w-16 h-16 sm:w-20 sm:h-20" alt="Pre-Departure icon">
-          <h2 class="text-xl font-semibold text-[#4C3C93] heebo">Pre-Departure Guidance</h2>
-          <p class="nunito-sans text-[#000000B2] text-sm">Everything you need to prepare for life abroad, including
-            accommodation, travel, and more.</p>
-        </div>
-        <div
-          class="flex flex-col gap-3 p-6 rounded-lg items-center text-center justify-center border-[1px] border-[#4C3C934D] shadow-sm hover:shadow-lg transition duration-300">
-          <img src="assets/advice.png" class="w-16 h-16 sm:w-20 sm:h-20" alt="Scholarship icon">
-          <h2 class="text-xl font-semibold text-[#4C3C93] heebo">Scholarship Advice</h2>
-          <p class="nunito-sans text-[#000000B2] text-sm">Explore opportunities to fund your education. Stay up to date
-            with the scholarship requirements.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- find destination -> fidbi -->
-    <section id="destinations-section" class="w-10/12 mx-auto">
-      <h2 class="sm:text-3xl text-xl font-bold text-violet-700 text-center">
-        Find Your Destination
-      </h2>
-      <p class="text-center sm:text-base text-sm text-gray-500">
-        From world-class universities to stunning travel destinations, discover where we can take you.
-      </p>
-      <div id="destinations-cards-container" class="mt-10 grid sm:grid-cols-4 sm:gap-8 grid-cols-2 gap-2">
-        <div class="card-wrapper relative sm:w-60 sm:h-70 h-55">
-          <!-- Normal card -->
-          <div class="card-single absolute inset-0">
-            <img class="w-full h-full object-cover object-top rounded-sm" src="./assets/sweden.jpg" alt="sweden">
-            <div class="bg-black/60 backdrop-blur-md absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap px-6 py-2 rounded-sm flex items-center justify-center gap-2">
-              <h3 class="font-bold text-white sm:text-base text-xs">Sweden</h3>
-              <img class="w-6" src="https://cdn2.iconfinder.com/data/icons/national-flags/512/Sweden-512.png" alt="sweden-flag">
-            </div>
-          </div>
-
-          <!-- Hover card -->
-          <div class="card-single-hover hidden absolute inset-0 p-4 bg-white shadow-sm rounded-sm">
-            <div class="flex items-center gap-2 mb-5">
-              <h3 class="text-xl font-semibold">Sweden</h3>
-              <img class="w-6" src="https://cdn2.iconfinder.com/data/icons/national-flags/512/Sweden-512.png" alt="sweden-flag">
-            </div>
-            <p class="text-xs sm:text-justify mb-5">
-              Affordable education with top-notch facilities in a culturally diverse and welcoming environment.
-            </p>
-            <button class="btn btn-sm w-full flex items-center justify-between gap-5 bg-violet-700 text-white sm:mt-20">
-              Learn Details <i class="fa-solid fa-arrow-right-long"></i>
-            </button>
-          </div>
-        </div>        
-        <div class="card-wrapper relative sm:w-60 sm:h-70 h-55">
-          <!-- Normal card -->
-          <div class="card-single absolute inset-0">
-            <img class="w-full h-full object-cover object-top rounded-sm" src="./assets/australia.jpg" alt="sweden">
-            <div class="bg-black/60 backdrop-blur-md absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap px-6 py-2 rounded-sm flex items-center justify-center gap-2">
-              <h3 class="font-bold text-white sm:text-base text-xs">Australia</h3>
-              <img class="w-6" src="https://cdn1.iconfinder.com/data/icons/ensign-11/512/19_Ensign_Flag_Nation_Australia-512.png" alt="sweden-flag">
-            </div>
-          </div>
-
-          <!-- Hover card -->
-          <div class="card-single-hover hidden absolute inset-0 p-4 bg-white shadow-sm rounded-sm">
-            <div class="flex items-center gap-2 mb-5">
-              <h3 class="text-xl font-semibold">Australia</h3>
-              <img class="w-6" src="https://cdn1.iconfinder.com/data/icons/ensign-11/512/19_Ensign_Flag_Nation_Australia-512.png" alt="sweden-flag">
-            </div>
-            <p class="text-xs sm:text-justify mb-5">
-              Affordable education with top-notch facilities in a culturally diverse and welcoming environment.
-            </p>
-            <button class="btn btn-sm w-full flex items-center justify-between gap-5 bg-violet-700 text-white sm:mt-20">
-              Learn Details <i class="fa-solid fa-arrow-right-long"></i>
-            </button>
-          </div>
-        </div>        
-        <div class="card-wrapper relative sm:w-60 sm:h-70 h-55">
-          <!-- Normal card -->
-          <div class="card-single absolute inset-0">
-            <img class="w-full h-full object-cover object-top rounded-sm" src="./assets/newzealand.jpg" alt="sweden">
-            <div class="bg-black/60 backdrop-blur-md absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap px-6 py-2 rounded-sm flex items-center justify-center gap-2">
-              <h3 class="font-bold text-white sm:text-base text-xs">New Zealand</h3>
-              <img class="w-6" src="https://cdn0.iconfinder.com/data/icons/world-flags-13/130/flag-02-1024.png" alt="sweden-flag">
-            </div>
-          </div>
-
-          <!-- Hover card -->
-          <div class="card-single-hover hidden absolute inset-0 p-4 bg-white shadow-sm rounded-sm">
-            <div class="flex items-center gap-2 mb-5">
-              <h3 class="text-xl font-semibold">New Zealand</h3>
-              <img class="w-6" src="https://cdn0.iconfinder.com/data/icons/world-flags-13/130/flag-02-1024.png" alt="sweden-flag">
-            </div>
-            <p class="text-xs sm:text-justify mb-5">
-              Affordable education with top-notch facilities in a culturally diverse and welcoming environment.
-            </p>
-            <button class="btn btn-sm w-full flex items-center justify-between gap-5 bg-violet-700 text-white sm:mt-20">
-              Learn Details <i class="fa-solid fa-arrow-right-long"></i>
-            </button>
-          </div>
-        </div>        
-        <div class="card-wrapper relative sm:w-60 sm:h-70 h-55">
-          <!-- Normal card -->
-          <div class="card-single absolute inset-0">
-            <img class="w-full h-full object-cover object-top rounded-sm" src="./assets/uk.jpg" alt="sweden">
-            <div class="bg-black/60 backdrop-blur-md absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap px-6 py-2 rounded-sm flex items-center justify-center gap-2">
-              <h3 class="font-bold text-white sm:text-base text-xs">United Kingdom</h3>
-              <img class="w-6" src="https://cdn0.iconfinder.com/data/icons/flags-of-the-world-2/128/england-3-512.png" alt="uk-flag">
-            </div>
-          </div>
-
-          <!-- Hover card -->
-          <div class="card-single-hover hidden absolute inset-0 p-4 bg-white shadow-sm rounded-sm">
-            <div class="flex items-center gap-2 mb-5">
-              <h3 class="text-xl font-semibold">United Kingdom</h3>
-              <img class="w-6" src="https://cdn0.iconfinder.com/data/icons/flags-of-the-world-2/128/england-3-512.png" alt="sweden-flag">
-            </div>
-            <p class="text-xs sm:text-justify mb-5">
-              Affordable education with top-notch facilities in a culturally diverse and welcoming environment.
-            </p>
-            <button class="btn btn-sm w-full flex items-center justify-between gap-5 bg-violet-700 text-white sm:mt-20">
-              Learn Details <i class="fa-solid fa-arrow-right-long"></i>
-            </button>
-          </div>
-        </div>        
-        <div class="card-wrapper relative sm:w-60 sm:h-70 h-55">
-          <!-- Normal card -->
-          <div class="card-single absolute inset-0">
-            <img class="w-full h-full object-cover object-top rounded-sm" src="./assets/malaysia.jpg" alt="sweden">
-            <div class="bg-black/60 backdrop-blur-md absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap px-6 py-2 rounded-sm flex items-center justify-center gap-2">
-              <h3 class="font-bold text-white sm:text-base text-xs">Malaysia</h3>
-              <img class="w-6" src="https://cdn2.iconfinder.com/data/icons/flags-of-asia/900/malaysia_malaysian_national_flag_country-512.png" alt="sweden-flag">
-            </div>
-          </div>
-
-          <!-- Hover card -->
-          <div class="card-single-hover hidden absolute inset-0 p-4 bg-white shadow-sm rounded-sm">
-            <div class="flex items-center gap-2 mb-5">
-              <h3 class="text-xl font-semibold">Malaysia</h3>
-              <img class="w-6" src="https://cdn2.iconfinder.com/data/icons/flags-of-asia/900/malaysia_malaysian_national_flag_country-512.png" alt="sweden-flag">
-            </div>
-            <p class="text-xs sm:text-justify mb-5">
-              Affordable education with top-notch facilities in a culturally diverse and welcoming environment.
-            </p>
-            <button class="btn btn-sm w-full flex items-center justify-between gap-5 bg-violet-700 text-white sm:mt-20">
-              Learn Details <i class="fa-solid fa-arrow-right-long"></i>
-            </button>
-          </div>
-        </div>        
-        <div class="card-wrapper relative sm:w-60 sm:h-70 h-55">
-          <!-- Normal card -->
-          <div class="card-single absolute inset-0">
-            <img class="w-full h-full object-cover object-top rounded-sm" src="./assets/canada.jpg" alt="sweden">
-            <div class="bg-black/60 backdrop-blur-md absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap px-6 py-2 rounded-sm flex items-center justify-center gap-2">
-              <h3 class="font-bold text-white sm:text-base text-xs">Canada</h3>
-              <img class="w-6" src="https://cdn3.iconfinder.com/data/icons/all-national-flags-of-the-world-very-high-quality/283/canada-128.png" alt="sweden-flag">
-            </div>
-          </div>
-
-          <!-- Hover card -->
-          <div class="card-single-hover hidden absolute inset-0 p-4 bg-white shadow-sm rounded-sm">
-            <div class="flex items-center gap-2 mb-5">
-              <h3 class="text-xl font-semibold">Canada</h3>
-              <img class="w-6" src="https://cdn3.iconfinder.com/data/icons/all-national-flags-of-the-world-very-high-quality/283/canada-128.png" alt="sweden-flag">
-            </div>
-            <p class="text-xs sm:text-justify mb-5">
-              Affordable education with top-notch facilities in a culturally diverse and welcoming environment.
-            </p>
-            <button class="btn btn-sm w-full flex items-center justify-between gap-5 bg-violet-700 text-white sm:mt-20">
-              Learn Details <i class="fa-solid fa-arrow-right-long"></i>
-            </button>
-          </div>
-        </div>        
-      </div>
     </section>
 
+<<<<<<< HEAD
     <!-- why choose us -> fidbi -->
      <section id="why-choose-us" class="w-10/12 mx-auto py-10">
       <h2 class="sm:text-3xl text-xl font-bold text-violet-700 text-center">
@@ -403,22 +408,200 @@
         </div>
       </div>
      </section>
+=======
+>>>>>>> 2725921ffa99da92b947f38f67fa71d1b89ac6d4
 
-    <!-- how it works -> jarif -->
+      <!-- we colaborate with -> jarif -->
+       <section id="newsletter" class="mb-20 px-4 sm:px-6 lg:px-0">
+        <div
+          class="bg-gradient-to-r from-indigo-800 to-purple-800 rounded-xl p-6 sm:p-8 md:p-10 flex flex-col md:flex-row items-center justify-around gap-8 md:gap-16 max-w-6xl mx-auto"
+        >
+          <!-- Text Content -->
+          <div class="text-white space-y-4 max-w-full sm:max-w-md md:max-w-lg text-center md:text-left">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-300 leading-snug">
+              Your Study Abroad<br />Dream Awaits!
+            </h2>
+            <p class="text-base sm:text-lg md:text-lg opacity-90 text_group">
+              Let us guide you to your ideal university and make your journey
+              stress-free. Contact us today for a free consultation.
+            </p>
+            <button
+              class="btn btn-outline btn-primary text-blue-700 bg-white px-5 py-3 text-sm sm:text-base md:text-base transition-transform duration-200 transform hover:scale-105 hover:bg-blue-700 hover:text-white"
+            >
+              Book a Free Consultation 📅
+            </button>
+          </div>
 
-    <!-- what our students say -> jarif -->
+          <!-- Image Section -->
+          <div class="flex-shrink-0 w-full max-w-xs sm:max-w-sm md:max-w-md mt-6 md:mt-0">
+            <img
+              src="./assets/students-group.png"
+              alt="studying_abroad"
+              class="rounded-lg shadow-lg w-full object-cover"
+            />
+          </div>
+        </div>
+        </section>
 
-    <!-- we colaborate with -> jarif -->
 
-    <!-- CTA section -> jarif -->
-  </main>
-  <footer>
-    <!-- contact form section -> fidbi -->
 
-    <!-- footer section -> fidbi -->
+    </main>
 
-  </footer>
-  <script src="./scripts/script.js"></script>
-</body>
+    <!-- footer section -> Jarif -->
+     <section class="footer_img bg-base-200 bg-opacity-90 text-base-content">
+        <div class="min-h-screen flex flex-col justify-between bg-black/60 text-white">
+          <div class="container mx-auto px-6 md:px-12 lg:px-24 py-16">
+            <div class="flex flex-col bg-white/10 p-6 md:p-10 rounded-2xl shadow-xl backdrop-blur-md">
+              
+              <!-- Contact Section -->
+              <div class="grid lg:grid-cols-2 gap-10">
+                <!-- Left Side - Contact Info -->
+                <div class="text-center lg:text-left">
+                  <h2 class="font_3 text-4xl md:text-5xl font-bold mb-10 text-yellow-400">
+                    Contact Info
+                  </h2>
+                  <ul class="space-y-8 md:space-y-10">
+                    <li class="flex flex-col sm:flex-row items-center sm:items-start gap-3">
+                      <img src="./assets/telephone.png" alt="phone" class="w-6 h-6" />
+                      <p>+88 01730-589112</p>
+                    </li>
+                    <li class="flex flex-col sm:flex-row items-center sm:items-start gap-3">
+                      <img src="./assets/msg.png" alt="email" class="w-6 h-6" />
+                      <p>cambry.bd@gmail.com</p>
+                    </li>
+                    <li class="flex flex-col sm:flex-row items-center sm:items-start gap-3 text-center sm:text-left">
+                      <img src="./assets/location.png" alt="location" class="w-6 h-6" />
+                      <p>
+                        H# 398 (1st Floor), R# 29, Mohakhali DOHS, Dhaka-1212,
+                        Bangladesh
+                      </p>
+                    </li>
+                    <li class="flex flex-col sm:flex-row items-center sm:items-start gap-3">
+                      <img src="./assets/clock.png" alt="clock" class="w-6 h-6" />
+                      <p>Saturday - Thursday: 10:00 AM to 06:00 PM</p>
+                    </li>
+                  </ul>
+
+                  <div class="mt-10 flex justify-center lg:justify-start gap-6 text-3xl">
+                    <a class="hover:text-yellow-400" href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="hover:text-yellow-400" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="hover:text-yellow-400" href="#"><i class="fa-brands fa-youtube"></i></a>
+                  </div>
+                </div>
+
+                <!-- Right Side - Contact Form -->
+                <div>
+                  <p class="mb-6 font_2 contact_form_heading text-yellow-400 text-center lg:text-left">
+                    Have questions? We’re here to help! Fill out the form. We shall reach out to you as soon as possible.
+                  </p>
+                  <form class="space-y-6">
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      class="font_2 input input-bordered w-full text-[#00000099]"
+                    />
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <input
+                        type="text"
+                        placeholder="Phone"
+                        class="font_2 input input-bordered text-[#00000099]"
+                      />
+                      <input
+                        type="email"
+                        placeholder="Email"
+                        class="font_2 input input-bordered text-[#00000099]"
+                      />
+                    </div>
+                    <textarea
+                      placeholder="Message"
+                      class="font_2 textarea textarea-bordered w-full h-32 text-[#00000099]"
+                    ></textarea>
+                    <button
+                      type="submit"
+                      class="font_2 button_form btn bg-yellow-400 border-none text-[#4C3C93] hover:bg-yellow-500 w-full"
+                    >
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+
+              <!-- Footer -->
+              <footer class="mt-16 text-gray-200">
+                <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 text-center lg:text-left text-sm">
+                  
+                  <!-- About -->
+                  <div>
+                    <img src="./assets/Cambry_Official_logo.webp" alt="logo" class="mx-auto lg:mx-0" />
+                    <p class="font_2 text-[14px] mt-4 font-medium">
+                      Your trusted partner since 2009, offering study abroad consultancy, having 600+ partner institutes globally.
+                    </p>
+                  </div>
+
+                  <!-- Explore -->
+                  <div>
+                    <h3 class="explore font-bold mb-3 text-yellow-400">Explore</h3>
+                    <ul class="space-y-4 explore_component">
+                      <li><a href="#" class="hover:text-yellow-400">Home</a></li>
+                      <li><a href="#" class="hover:text-yellow-400">Study Destinations</a></li>
+                      <li><a href="#" class="hover:text-yellow-400">Student Services</a></li>
+                      <li><a href="#" class="hover:text-yellow-400">About Cambry</a></li>
+                      <li><a href="#" class="hover:text-yellow-400">Contact</a></li>
+                    </ul>
+                  </div>
+
+                  <!-- Visit -->
+                  <div>
+                    <h3 class="explore font-bold mb-3 text-yellow-400">Visit</h3>
+                    <p class="explore_component">
+                      H# 398 (1st Floor), R# 29, Mohakhali DOHS, Dhaka-1212, Bangladesh
+                    </p>
+                    <h3 class="explore font-bold my-6 text-yellow-400">Let's Talk</h3>
+                    <p class="explore_component"><i class="fa-solid fa-phone-volume pr-3"></i> +88 01730-589112</p>
+                    <p class="explore_component mt-3"><i class="fa-solid fa-envelope pr-3"></i> cambry.bd@gmail.com</p>
+                  </div>
+
+                  <!-- Opening Hours -->
+                  <div>
+                    <h3 class="explore font-bold mb-3 text-yellow-400">Opening Hours</h3>
+                    <ul class="explore_component py-2 space-y-3">
+                      <li>Saturday : 10:00 AM – 6:00 PM</li>
+                      <li>Sunday : 10:00 AM – 6:00 PM</li>
+                      <li>Monday : 10:00 AM – 6:00 PM</li>
+                      <li>Tuesday : 10:00 AM – 6:00 PM</li>
+                      <li>Wednesday : 10:00 AM – 6:00 PM</li>
+                      <li>Thursday : 10:00 AM – 6:00 PM</li>
+                      <li>Friday : Closed</li>
+                    </ul>
+                  </div>
+
+                  <!-- Legal & Social -->
+                  <div>
+                    <h3 class="explore font-bold mb-3 text-yellow-400">Legal</h3>
+                    <ul class="explore_component py-2 space-y-3">
+                      <li>Privacy Policy</li>
+                      <li>Terms & Conditions</li>
+                    </ul>
+                    <h3 class="explore font-bold my-6 text-yellow-400">Social</h3>
+                    <div class="flex justify-center lg:justify-start gap-4 text-[25px] text-[#4C3C93]">
+                      <i class="fa-brands fa-facebook"></i>
+                      <i class="fa-brands fa-square-linkedin"></i>
+                      <i class="fa-brands fa-square-whatsapp"></i>
+                      <i class="fa-brands fa-square-youtube"></i>
+                    </div>
+                    <p class="explore_component mt-4">
+                      Copyright © Cambry 2025. All rights reserved.
+                    </p>
+                  </div>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+     </section>
+
+
+
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>
-
