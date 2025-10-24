@@ -1,3 +1,36 @@
+<<<<<<< HEAD
+
+  const pages = document.querySelectorAll(".carousel_page");
+  const upBtn = document.querySelector(".up_btn");
+  const downBtn = document.querySelector(".down_btn");
+  let current = 0;
+
+  function showPage(index) {
+    pages.forEach((page, i) => {
+      page.classList.add("hidden");
+      page.classList.remove("active");
+      if (i === index) {
+        page.classList.remove("hidden");
+        // Force reflow for smooth animation restart
+        void page.offsetWidth;
+        page.classList.add("active");
+      }
+    });
+  }
+
+  upBtn.addEventListener("click", () => {
+    current = (current - 1 + pages.length) % pages.length;
+    showPage(current);
+  });
+
+  downBtn.addEventListener("click", () => {
+    current = (current + 1) % pages.length;
+    showPage(current);
+  });
+
+  // Initialize
+  showPage(current);
+=======
 // document.getElementById('card-single').addEventListener('mouseover', () => {
 //   document.getElementById('card-single').classList.add('hidden');
 //   document.getElementById('card-single-hover').classList.remove('hidden');
@@ -32,4 +65,5 @@ cardWrappers.forEach((wrapper) => {
     hoverCard.classList.add('hidden');
   });
 });
+>>>>>>> c13b050fb4142898ecdbf3fba0d0fe4cb1efade7
 
