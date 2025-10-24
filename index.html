@@ -8,8 +8,11 @@
    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <!-- daisy ui -->
+   <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/37420c2a89.js" crossorigin="anonymous"></script>
+   <!-- font awesome -->
 </head>
-<body>
+<body class="py-40">
   <header>
     <!-- nav -> raj -->
 
@@ -22,6 +25,156 @@
     <!-- what we offer -> raj -->
 
     <!-- find destination -> fidbi -->
+    <section id="destinations-section" class="w-10/12 mx-auto">
+      <h2 class="text-3xl font-bold text-violet-700 text-center">Find Your Destination</h2>
+      <p class="text-center">From world-class universities to stunning travel destinations, discover where we can take you.</p>
+      <div id="destinations-cards-container" class="mt-10 grid grid-cols-4 gap-8">
+        <div class="card-wrapper relative w-60 h-70">
+          <!-- Normal card -->
+          <div class="card-single absolute inset-0">
+            <img class="w-full h-full object-cover object-top rounded-sm" src="./assets/sweden.jpg" alt="sweden">
+            <div class="bg-black/60 backdrop-blur-md absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap px-6 py-2 rounded-sm flex items-center justify-center gap-2">
+              <h3 class="font-bold text-white">Sweden</h3>
+              <img class="w-6" src="https://cdn2.iconfinder.com/data/icons/national-flags/512/Sweden-512.png" alt="sweden-flag">
+            </div>
+          </div>
+
+          <!-- Hover card -->
+          <div class="card-single-hover hidden absolute inset-0 p-4 bg-white shadow-sm rounded-sm">
+            <div class="flex items-center gap-2 mb-5">
+              <h3 class="text-xl font-semibold">Sweden</h3>
+              <img class="w-6" src="https://cdn2.iconfinder.com/data/icons/national-flags/512/Sweden-512.png" alt="sweden-flag">
+            </div>
+            <p class="text-xs text-justify mb-5">
+              Affordable education with top-notch facilities in a culturally diverse and welcoming environment.
+            </p>
+            <button class="btn btn-sm w-full flex items-center justify-between gap-5 bg-violet-700 text-white mt-20">
+              Learn Details <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>        
+        <div class="card-wrapper relative w-60 h-70">
+          <!-- Normal card -->
+          <div class="card-single absolute inset-0">
+            <img class="w-full h-full object-cover object-top rounded-sm" src="./assets/australia.jpg" alt="sweden">
+            <div class="bg-black/60 backdrop-blur-md absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap px-6 py-2 rounded-sm flex items-center justify-center gap-2">
+              <h3 class="font-bold text-white">Australia</h3>
+              <img class="w-6" src="https://cdn1.iconfinder.com/data/icons/ensign-11/512/19_Ensign_Flag_Nation_Australia-512.png" alt="sweden-flag">
+            </div>
+          </div>
+
+          <!-- Hover card -->
+          <div class="card-single-hover hidden absolute inset-0 p-4 bg-white shadow-sm rounded-sm">
+            <div class="flex items-center gap-2 mb-5">
+              <h3 class="text-xl font-semibold">Australia</h3>
+              <img class="w-6" src="https://cdn1.iconfinder.com/data/icons/ensign-11/512/19_Ensign_Flag_Nation_Australia-512.png" alt="sweden-flag">
+            </div>
+            <p class="text-xs text-justify mb-5">
+              Affordable education with top-notch facilities in a culturally diverse and welcoming environment.
+            </p>
+            <button class="btn btn-sm w-full flex items-center justify-between gap-5 bg-violet-700 text-white mt-20">
+              Learn Details <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>        
+        <div class="card-wrapper relative w-60 h-70">
+          <!-- Normal card -->
+          <div class="card-single absolute inset-0">
+            <img class="w-full h-full object-cover object-top rounded-sm" src="./assets/newzealand.jpg" alt="sweden">
+            <div class="bg-black/60 backdrop-blur-md absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap px-6 py-2 rounded-sm flex items-center justify-center gap-2">
+              <h3 class="font-bold text-white">New Zealand</h3>
+              <img class="w-6" src="https://cdn0.iconfinder.com/data/icons/world-flags-13/130/flag-02-1024.png" alt="sweden-flag">
+            </div>
+          </div>
+
+          <!-- Hover card -->
+          <div class="card-single-hover hidden absolute inset-0 p-4 bg-white shadow-sm rounded-sm">
+            <div class="flex items-center gap-2 mb-5">
+              <h3 class="text-xl font-semibold">New Zealand</h3>
+              <img class="w-6" src="https://cdn0.iconfinder.com/data/icons/world-flags-13/130/flag-02-1024.png" alt="sweden-flag">
+            </div>
+            <p class="text-xs text-justify mb-5">
+              Affordable education with top-notch facilities in a culturally diverse and welcoming environment.
+            </p>
+            <button class="btn btn-sm w-full flex items-center justify-between gap-5 bg-violet-700 text-white mt-20">
+              Learn Details <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>        
+        <div class="card-wrapper relative w-60 h-70">
+          <!-- Normal card -->
+          <div class="card-single absolute inset-0">
+            <img class="w-full h-full object-cover object-top rounded-sm" src="./assets/uk.jpg" alt="sweden">
+            <div class="bg-black/60 backdrop-blur-md absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap px-6 py-2 rounded-sm flex items-center justify-center gap-2">
+              <h3 class="font-bold text-white">United Kingdom</h3>
+              <img class="w-6" src="https://cdn0.iconfinder.com/data/icons/flags-of-the-world-2/128/england-3-512.png" alt="uk-flag">
+            </div>
+          </div>
+
+          <!-- Hover card -->
+          <div class="card-single-hover hidden absolute inset-0 p-4 bg-white shadow-sm rounded-sm">
+            <div class="flex items-center gap-2 mb-5">
+              <h3 class="text-xl font-semibold">United Kingdom</h3>
+              <img class="w-6" src="https://cdn0.iconfinder.com/data/icons/flags-of-the-world-2/128/england-3-512.png" alt="sweden-flag">
+            </div>
+            <p class="text-xs text-justify mb-5">
+              Affordable education with top-notch facilities in a culturally diverse and welcoming environment.
+            </p>
+            <button class="btn btn-sm w-full flex items-center justify-between gap-5 bg-violet-700 text-white mt-20">
+              Learn Details <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>        
+        <div class="card-wrapper relative w-60 h-70">
+          <!-- Normal card -->
+          <div class="card-single absolute inset-0">
+            <img class="w-full h-full object-cover object-top rounded-sm" src="./assets/malaysia.jpg" alt="sweden">
+            <div class="bg-black/60 backdrop-blur-md absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap px-6 py-2 rounded-sm flex items-center justify-center gap-2">
+              <h3 class="font-bold text-white">Malaysia</h3>
+              <img class="w-6" src="https://cdn2.iconfinder.com/data/icons/flags-of-asia/900/malaysia_malaysian_national_flag_country-512.png" alt="sweden-flag">
+            </div>
+          </div>
+
+          <!-- Hover card -->
+          <div class="card-single-hover hidden absolute inset-0 p-4 bg-white shadow-sm rounded-sm">
+            <div class="flex items-center gap-2 mb-5">
+              <h3 class="text-xl font-semibold">Malaysia</h3>
+              <img class="w-6" src="https://cdn2.iconfinder.com/data/icons/flags-of-asia/900/malaysia_malaysian_national_flag_country-512.png" alt="sweden-flag">
+            </div>
+            <p class="text-xs text-justify mb-5">
+              Affordable education with top-notch facilities in a culturally diverse and welcoming environment.
+            </p>
+            <button class="btn btn-sm w-full flex items-center justify-between gap-5 bg-violet-700 text-white mt-20">
+              Learn Details <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>        
+        <div class="card-wrapper relative w-60 h-70">
+          <!-- Normal card -->
+          <div class="card-single absolute inset-0">
+            <img class="w-full h-full object-cover object-top rounded-sm" src="./assets/canada.jpg" alt="sweden">
+            <div class="bg-black/60 backdrop-blur-md absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap px-6 py-2 rounded-sm flex items-center justify-center gap-2">
+              <h3 class="font-bold text-white">Canada</h3>
+              <img class="w-6" src="https://cdn3.iconfinder.com/data/icons/all-national-flags-of-the-world-very-high-quality/283/canada-128.png" alt="sweden-flag">
+            </div>
+          </div>
+
+          <!-- Hover card -->
+          <div class="card-single-hover hidden absolute inset-0 p-4 bg-white shadow-sm rounded-sm">
+            <div class="flex items-center gap-2 mb-5">
+              <h3 class="text-xl font-semibold">Canada</h3>
+              <img class="w-6" src="https://cdn3.iconfinder.com/data/icons/all-national-flags-of-the-world-very-high-quality/283/canada-128.png" alt="sweden-flag">
+            </div>
+            <p class="text-xs text-justify mb-5">
+              Affordable education with top-notch facilities in a culturally diverse and welcoming environment.
+            </p>
+            <button class="btn btn-sm w-full flex items-center justify-between gap-5 bg-violet-700 text-white mt-20">
+              Learn Details <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>        
+      </div>
+    </section>
 
     <!-- why choose us -> jarif -->
 
@@ -42,3 +195,4 @@
   <script src="./scripts/script.js"></script>
 </body>
 </html>
+
