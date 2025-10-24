@@ -1,22 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <!-- daisy ui -->
-   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <!-- daisy ui -->
 </head>
+
 <body>
-  <header>
+  <header class="bg-[#FFFFFF1A] absolute z-100 top-0 left-0 right-0 text-white">
     <!-- nav -> raj -->
+    <div class=" flex items-center justify-between py-2 sm:mx-24 my-auto ">
+      <div class="navbar-start">
+        <div class="dropdown ">
+          <div tabindex="0" role="button" class=" lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5  w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="-1"
+            class="menu menu-sm dropdown-content rounded-none bg-[#FFFFFF1A] rounded-box z-1 mt-3 w-52 p-2 shadow">
+            <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Home</a></li>
+            <li>
+              <a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Study Destinations</a>
+              <ul class="p-2">
+                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Study in UK</a></li>
+                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Study in Malaysia</a></li>
+                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Study in Sweden</a></li>
+                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Study in New Zealand</a></li>
+                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Study in USA</a></li>
+                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Study in Australia</a></li>
+                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Study in Canada</a></li>
+               
+              </ul>
+            </li>
+            <li>
+              <a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Student Services</a>
+              <ul class="p-2 bg-[#FFFFFF1A]">
+                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Application Process</a></li>
+                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Free Consultation</a></li>
+                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">University Guidence</a></li>
+                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Scholarship Guidence</a></li>
+              </ul>
+            </li>
+            <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">About Us</a></li>
+            <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Contact</a></li>
+          </ul>
+        </div>
+        <a class=" text-xl"><img src="assets/Cambry_Official_logo.webp" class="lg:w-3/15 w-3/10"></a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu gap-7  font-semibold menu-horizontal px-1">
+          <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Home</a></li>
+          <li>
+            <details>
+              <summary class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Study Destinations
+              </summary>
+              <ul class="p-2 rounded-none bg-[#FFFFFF1A]">
+                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Study in UK</a></li>
+                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Study in Malaysia</a></li>
+                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Study in Sweden</a></li>
+                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Study in New Zealand</a></li>
+                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Study in USA</a></li>
+                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Study in Australia</a></li>
+                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Study in Canada</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Student Services
+              </summary>
+              <ul class="p-2 rounded-none
+               bg-[#FFFFFF1A]">
+                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Application Process</a></li>
+                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Free Consultation</a></li>
+                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">University Guidence</a></li>
+                <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Scholarship Guidence</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">About Us</a></li>
+          <li><a class="hover:bg-transparent hover:text-[#F3D70D] active:text-orange-400 ">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
 
   </header>
   <main>
     <!-- hero -> raj -->
-
+    <div class="hero">
+      <div class="absolute top-0">
+        <img src="assets/download (11) 1.png" alt="">
+      </div>
+      <div>
+        <h3>Your Trusted Partner for
+          Studying Abroad</h3>
+        <p>
+          Expert guidance and end-to-end support to help you achieve your global education dreams.
+        </p>
+        <div>
+          <button></button>
+          <button></button>
+        </div>
+      </div>
+    </div>
     <!-- our mission -> raj -->
 
     <!-- what we offer -> raj -->
@@ -41,4 +135,5 @@
   </footer>
   <script src="./scripts/script.js"></script>
 </body>
+
 </html>
