@@ -1,4 +1,4 @@
-
+// destination card hover functionality (dev_fidbi)
 const cardWrappers = document.querySelectorAll('.card-wrapper');
 
 cardWrappers.forEach((wrapper) => {

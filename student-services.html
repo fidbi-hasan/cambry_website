@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Services</title>
+  <!-- daisy ui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- daisy ui -->
+   <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/37420c2a89.js" crossorigin="anonymous"></script>
+   <!-- font awesome -->
+</head>
+<body>
+  <header>
+    <nav class="fixed left-0 right-0 bg-white/30 backdrop-blur-md z-50">
+      <div class="navbar shadow-sm">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-60 p-2 shadow">
+              <li><a>Home</a></li>
+            <li>
+              <details>
+                <summary>Study Destinations</summary>
+                <ul class="p-2">
+                  <li><a>
+                    <img class="w-5" src="https://cdn1.iconfinder.com/data/icons/ensign-11/512/19_Ensign_Flag_Nation_Australia-1024.png">
+                    Study in Australia
+                  </a></li>
+                  <li><a>
+                    <img class="w-5" src="https://cdn4.iconfinder.com/data/icons/world-flags-6/900/malaysia_malaysian_national_flag_country-128.png">
+                    Study in Malaysia
+                  </a></li>
+                  <li><a>
+                    <img class="w-5" src="https://cdn3.iconfinder.com/data/icons/all-national-flags-of-the-world-very-high-quality/283/sweden-128.png">
+                    Study in Sweden
+                  </a></li>
+                  <li><a>
+                    <img class="w-5" src="https://cdn0.iconfinder.com/data/icons/world-flags-13/130/flag-02-128.png">
+                    Study in New Zealand
+                  </a></li>
+                  <li><a>
+                    <img class="w-5" src="https://cdn1.iconfinder.com/data/icons/world-flags-13/135/flag_flags_country-03-128.png">
+                    Study in United States
+                  </a></li>
+                  <li><a>
+                    <img class="w-5" src="https://cdn3.iconfinder.com/data/icons/all-national-flags-of-the-world-very-high-quality/283/canada-512.png">
+                    Study in Canada
+                  </a></li>
+                  <li><a>
+                    <img class="w-5" src="https://cdn0.iconfinder.com/data/icons/flags-of-the-world-2/128/england-3-128.png">
+                    Study in United Kingdom
+                  </a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a>Student Services</a></li>
+            <li><a>About Us</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">daisyUI</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li>
+              <details>
+                <summary>Study Destinations</summary>
+                <ul class="p-2 w-65">
+                  <li><a>
+                    <img class="w-5" src="https://cdn1.iconfinder.com/data/icons/ensign-11/512/19_Ensign_Flag_Nation_Australia-1024.png">
+                    Study in Australia
+                  </a></li>
+                  <li><a>
+                    <img class="w-5" src="https://cdn4.iconfinder.com/data/icons/world-flags-6/900/malaysia_malaysian_national_flag_country-128.png">
+                    Study in Malaysia
+                  </a></li>
+                  <li><a>
+                    <img class="w-5" src="https://cdn3.iconfinder.com/data/icons/all-national-flags-of-the-world-very-high-quality/283/sweden-128.png">
+                    Study in Sweden
+                  </a></li>
+                  <li><a>
+                    <img class="w-5" src="https://cdn0.iconfinder.com/data/icons/world-flags-13/130/flag-02-128.png">
+                    Study in New Zealand
+                  </a></li>
+                  <li><a>
+                    <img class="w-5" src="https://cdn1.iconfinder.com/data/icons/world-flags-13/135/flag_flags_country-03-128.png">
+                    Study in United States
+                  </a></li>
+                  <li><a>
+                    <img class="w-5" src="https://cdn3.iconfinder.com/data/icons/all-national-flags-of-the-world-very-high-quality/283/canada-512.png">
+                    Study in Canada
+                  </a></li>
+                  <li><a>
+                    <img class="w-5" src="https://cdn0.iconfinder.com/data/icons/flags-of-the-world-2/128/england-3-128.png">
+                    Study in United Kingdom
+                  </a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a>Student Services</a></li>
+            <li><a>About Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn bg-violet-700/50 hover:bg-white hover:text-violet-700 backdrop-blur-sm border-none shadow-none text-white flex items-center">
+            <i class="fa-regular fa-message mt-1"></i> Contact
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="hero-section" class="h-svh bg-[url(./assets/hero-image-cambry-2.png)] bg-cover bg-no-repeat bg-center flex justify-center items-center">
+      <div id="hero-contents" class="bg-white/30 backdrop-blur-md sm:w-[50%] py-10 px-5 rounded-sm w-11/12 mx-auto">
+        <h1 class="sm:text-5xl text-3xl font-bold text-center text-white">
+          Guidance to Go to Top Universities worldwide
+        </h1>
+        <p class="text-center sm:text-md text-sm text-black my-4">Find the best countries to pursue your higher education and build your future.</p>
+        <div id="hero-buttons-container" class="flex sm:flex-row flex-col-reverse justify-center gap-4">
+          <button class="btn sm:btn-md btn-sm bg-violet-700/50 hover:bg-yellow-400/60 backdrop-blur-sm border-none shadow-none text-white">
+            <i class="fa-solid fa-calendar-check"></i> Book an appointment
+          </button>
+          <button class="btn sm:btn-md btn-sm bg-violet-700/50 hover:bg-yellow-400/60 backdrop-blur-sm border-none shadow-none text-white">
+            <i class="fa-solid fa-earth-americas"></i> Explore destinations
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="our-services" class="w-11/12 mx-auto my-20">
+      <h1 class="text-3xl font-bold uppercase text-center mb-10 text-violet-700">
+        Our Services
+      </h1>
+      <div id="single-service-container" class="grid grid-cols-2">
+        <div id="servicr-single" class="flex flex-col items-center border-r-1 border-b-1 p-10 relative">
+          <img class="w-30" src="./assets/service1.jpg">
+          <h2 class="text-xl font-bold w-70 text-center text-violet-700 mt-4">
+            Application Process to Study Abroad - Apply now !
+          </h2>
+          <p class="text-center">
+            Students branching out allows personal development, expands their perspective largely. You are offered various courses with alternative teaching methods and a different education system which helps you develop as an individual. Universities have three intakes which are advantageous. It has three intakes such as fall, summer and winter which will determine the application process for best abroad universities.
+          </p>
+          <p class="text-2xl font-black absolute top-0 left-0">1.</p>
+        </div>
+        <div id="servicr-single" class="flex flex-col items-center border-b-1 p-10 relative">
+          <img class="w-30" src="./assets/service2.jpg">
+          <h2 class="text-xl font-bold w-70 text-center text-violet-700 mt-4">
+            Choose Your Dream Institution
+          </h2>
+          <p class="text-2xl font-black absolute top-0 left-2">2.</p>
+        </div>
+        <div id="servicr-single" class="flex flex-col items-center border-r-1 border-b-1 p-10 relative">
+          <img class="w-30" src="./assets/service3.jpg">
+          <h2 class="text-xl font-bold w-70 text-center text-violet-700 mt-4">
+            Acceptance Letters
+          </h2>
+          <p class="text-2xl font-black absolute top-2 left-0">3.</p>
+        </div>
+        <div id="servicr-single" class="flex flex-col items-center border-b-1 p-10 relative">
+          <img class="w-30" src="./assets/service4.jpg">
+          <h2 class="text-xl font-bold w-70 text-center text-violet-700 mt-4">
+            Fill The Application Form
+          </h2>
+          <p class="text-2xl font-black absolute top-0 left-2">4.</p>
+        </div>
+        <div id="servicr-single" class="flex flex-col items-center border-r-1 border-b-1 p-10 relative">
+          <img class="w-30" src="./assets/service5.jpg">
+          <h2 class="text-xl font-bold w-70 text-center text-violet-700 mt-4">
+            Standardized Tests
+          </h2>
+          <p class="text-2xl font-black absolute top-2 left-0">5.</p>
+        </div>
+        <div id="servicr-single" class="flex flex-col items-center border-b-1 p-10 relative">
+          <img class="w-30" src="./assets/service6.jpg">
+          <h2 class="text-xl font-bold w-70 text-center text-violet-700 mt-4">
+            Receive admission offer from the overseas university
+          </h2>
+          <p class="text-2xl font-black absolute top-0 left-2">6.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>
