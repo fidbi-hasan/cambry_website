@@ -1,10 +1,10 @@
 const destinations = [
-    { flag: "🇦🇺", image: "assets/slider-1.png" },
-    { flag: "🇳🇿", image: "assets/slider-2.png" },
-    { flag: "🇬🇧", image: "assets/slider-3.png" },
-    { flag: "🇨🇦", image: "assets/slider-4.png" },
-    { flag: "🇳🇱", image: "assets/slider-5.png" },
-    { flag: "🇩🇪", image: "assets/slider-6.png" },
+    { flag: "Australia", image: "assets/flags/aus.jpg" },
+    { flag: "Canada", image: "assets/flags/canada.jpeg" },
+    { flag: "Malaysia", image: "assets/flags/mal.jpg" },
+    { flag: "New Zealand", image: "assets/flags/nz.webp" },
+    { flag: "Sweden", image: "assets/flags/sweden.webp" },
+    { flag: "UK", image: "assets/flags/uk.png" },
 ];
 
 let currentIndex = 0;
@@ -46,13 +46,13 @@ function renderCarousel() {
         // Set content
         cardDiv.innerHTML = `
                     <!-- Background Image with Fallback -->
-                    <img src="${dest.image}" alt="${dest.name}" 
+                    <img src="${dest.image}" class="object-cover" alt="${dest.name}" 
                          class="absolute inset-0 w-full h-full object-cover">
                     
                     <!-- Content Overlay -->
                     <div class="absolute inset-0 flex flex-col  justify-end p-6">
                         <div class="flag-overlay py-2 px-4 rounded-lg flex hover:bg-blue-500 bg-white/80 backdrop-blur-xl flex-col items-center justify-center">
-                            <a href="${dest.link}"><h3 class="text-white">Learn more...</h3></a>
+                            <a href="${dest.link}"><h3 class="text-white">Learn more about ${dest.flag}</h3></a>
                         </div>
                     </div>
                 `;
