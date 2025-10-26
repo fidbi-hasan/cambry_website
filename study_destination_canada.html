@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Destination Australia</title>
+
+    <!-- daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- daisy ui -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Calistoga&family=Heebo:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./styles/study_destination_canada.css" />
+    <!-- AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <style>
+      .footer_img {
+        background-image: url("./assets/footer_bg.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+
+  <body>
+   <!-- header section -->
+    <section
+      class="relative bg-cover bg-center bg-no-repeat min-h-[100vh] flex flex-col overflow-visible object-cover"
+      style="background-image: url('assets/University/university-of-toronto.jpg')"
+    >
+      <!-- Gradient Overlay -->
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-[#4B2E83]/30 z-[1]"
+      ></div>
+
+      <!-- ====== FIXED NAVBAR ====== -->
+      <header
+        id="main-header"
+        class="fixed top-0 left-0 w-full z-[100] transition-all duration-500"
+      >
+        <nav
+          class="navbar text-white px-4 md:px-12 lg:px-20 flex items-center justify-between backdrop-blur-md border-b border-transparent transition-all duration-500"
+          id="navbar"
+        >
+          <!-- LEFT SIDE -->
+          <div class="flex items-center space-x-2">
+            <a href="#" class="flex items-center space-x-2">
+              <img
+                src="./assets/Cambry_Official_logo.webp"
+                alt="Cambry Logo"
+                class="w-32 h-auto hover:scale-105 transition-transform duration-300"
+              />
+            </a>
+          </div>
+
+          <!-- RIGHT SIDE (Desktop Menu) -->
+          <div class="hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 font-medium font_1">
+              <li><a class="hover:text-[#FACC15] transition">Home</a></li>
+              <li><a class="hover:text-[#FACC15] transition">About Us</a></li>
+
+              <li tabindex="0" class="relative">
+                <details>
+                  <summary class="hover:text-[#FACC15] transition">
+                    Study Destinations
+                  </summary>
+                  <ul
+                    class="absolute top-full left-0 mt-1 p-2 bg-[#5B4FB3]/90 backdrop-blur-md text-white rounded-lg border border-white/10 shadow-lg z-[100] font_2"
+                  >
+                    <li><a>Study in Malaysia</a></li>
+                    <li><a>Study in UK</a></li>
+                    <li><a>Study in Sweden</a></li>
+                    <li><a>Study in New Zealand</a></li>
+                    <li><a>Study in USA</a></li>
+                    <li><a>Study in Australia</a></li>
+                  </ul>
+                </details>
+              </li>
+
+              <li tabindex="0" class="relative">
+                <details>
+                  <summary class="hover:text-[#FACC15] transition">
+                    Student Services
+                  </summary>
+                  <ul
+                    class="absolute top-full left-0 mt-1 p-2 bg-[#5B4FB3]/90 backdrop-blur-md text-white rounded-lg border border-white/10 shadow-lg z-[100] font_2"
+                  >
+                    <li><a>Application Process</a></li>
+                    <li><a>Free Consultation</a></li>
+                    <li><a>University Guidance</a></li>
+                    <li><a>Scholarship Guidance</a></li>
+                  </ul>
+                </details>
+              </li>
+
+              <li><a class="hover:text-[#FACC15] transition">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- MOBILE MENU -->
+          <div class="dropdown dropdown-end font_1 lg:hidden">
+            <label tabindex="0" role="button" class="btn btn-ghost text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 p-2 shadow-lg bg-[#5B4FB3]/95 backdrop-blur-md rounded-xl w-52 right-0 border border-white/10 z-[90]"
+            >
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li>
+                <details>
+                  <summary>Study Destinations</summary>
+                  <ul
+                    class="p-2 bg-[#5B4FB3]/90 text-white rounded-lg border border-white/10 z-[100]"
+                  >
+                    <li><a>Study in Malaysia</a></li>
+                    <li><a>Study in UK</a></li>
+                    <li><a>Study in Sweden</a></li>
+                    <li><a>Study in New Zealand</a></li>
+                    <li><a>Study in USA</a></li>
+                    <li><a>Study in Australia</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>Student Services</summary>
+                  <ul
+                    class="p-2 bg-[#5B4FB3]/90 text-white rounded-lg border border-white/10 z-[100]"
+                  >
+                    <li><a>Application Process</a></li>
+                    <li><a>Free Consultation</a></li>
+                    <li><a>University Guidance</a></li>
+                    <li><a>Scholarship Guidance</a></li>
+                  </ul>
+                </details>
+              </li>
+
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+
+
+      <!-- ====== HERO SECTION ====== -->
+      <div
+        class="relative z-[20] flex flex-col items-center justify-center flex-grow px-4 py-10 sm:py-16 text-center"
+      >
+        <div
+          class="bg-white/10 backdrop-blur-md text-white p-6 sm:p-10 md:p-14 rounded-2xl shadow-2xl max-w-3xl mx-auto animate-fadeInUp"
+        >
+          <h1
+            class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#FFF] mb-4 leading-tight font_3 drop-shadow-lg"
+          >
+            Shape Your Future with a World-Class Education: Study in <span class="text-[#F3D70D]">Canada</span>
+          </h1>
+
+          <p
+            class="text-[#F3D70D] font-bold font_2 text-sm sm:text-base md:text-lg my-10 max-w-xl mx-auto"
+          >
+           Join one of the world’s top-ranked education systems and unlock global opportunities in a welcoming, multicultural environment.
+          </p>
+
+          <button
+              class="btn bg-[#FACC15] text-[#4B2E83] font-semibold border-none hover:bg-[#EAB308] hover:scale-105 active:scale-95 transition-all duration-300 font_1 shadow-md rounded-lg"
+            >
+              Get Started For Free
+            </button>
+
+          
+
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+
+      <!-- ===== STUDY DESTINATION SECTION ===== -->
+    <section class="bg-gradient-to-b from-white to-[#F8F7FF] py-16 px-6 md:px-12 lg:px-24 mt-20">
+      <div class="text-center mb-12">
+        <h2
+          class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#4B2E83] leading-snug dream_destination_heading"
+        >
+          Study in <span class="text-[#FACC15]">Canada</span> as a Bangladeshi Student
+        </h2>
+        
+      </div>
+
+      <!-- ===== CONTENT WRAPPER ===== -->
+      <div
+        class="container mx-auto max-w-6xl flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-20 bg-white shadow-xl rounded-2xl overflow-hidden hover:shadow-2xl transition-shadow duration-500"
+      >
+        <!-- ===== LEFT CONTENT ===== -->
+        <div
+          class="w-full lg:w-1/2 px-6 md:px-10 py-10 animate__animated animate__fadeInLeft"
+        >
+          <p
+            class="text-gray-700 mb-6 font_1 leading-relaxed text-justify md:text-justify hero_counter_para dest_para"
+          >
+            Canada is a top-tier destination for international students, with 31 universities featured in the latest QS World University Rankings. Its status as one of the safest and most welcoming countries, alongside its multicultural society, helps students adjust easily. Toronto, Montreal, Vancouver, Ottawa, and Quebec City are among the most popular cities. 
+          </p>
+          <p
+            class="text-gray-700 font_1 leading-relaxed text-justify md:text-justify hero_counter_para dest_para"
+          >
+            Canada offers a diverse range of study choices for international students—from popular fields like Computer Science (including AI and Data Science), Engineering, and Business Management (including MBA), to unique and growing disciplines like Environmental Science, Animation and Gaming, and International Relations. Programs emphasize both cutting-edge research and practical, hands-on learning experiences, often through co-op and Post-Graduation Work Permit (PGWP) opportunities.
+          </p>
+        </div>
+
+        <!-- ===== RIGHT IMAGE ===== -->
+        <div
+          class="w-full lg:w-1/2 flex justify-center items-center p-6 md:p-10 animate__animated animate__fadeInRight"
+        >
+          <div
+            class="card shadow-xl rounded-2xl overflow-hidden transform hover:scale-105 transition-transform duration-500"
+          >
+            <figure>
+              <img
+                src="./assets/emote-1.png"
+                alt="Study in Australia illustration"
+                class="w-full h-full object-cover backdrop-blur-sm"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  
+      <!-- why choose australia -->
+      <section class="bg-[#F9F8FF] py-16 px-6 md:px-12 lg:px-20 mt-20">
+        <div class="container mx-auto max-w-6xl text-center">
+          <!-- ===== HEADING ===== -->
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#4B2E83] mb-6">
+            Why Choose <span class="text-[#FACC15]">Canada</span> as Your Dream Destination
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto mb-16">
+            All students are choosy when it comes to selecting their study destination.
+            Many students have preferred Australia.
+          </p>
+  
+          <!-- ===== FEATURES GRID ===== -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Card 1 -->
+            <div class="card bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div class="card-body items-center text-center">
+                <img src="./assets/global-recognization.png" alt="Career Opportunities" class="w-25 h-25 mb-2" />
+                <h3 class="font-semibold text-[#4B2E83] text-lg">Globally Recognized Degrees</h3>
+              </div>
+            </div>
+  
+            <!-- Card 2 -->
+            <div class="card bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div class="card-body items-center text-center">
+                <img src="./assets/living-cost.png" alt="Career Oriented Education" class="w-25 h-25 mb-2" />
+                <h3 class="font-semibold text-[#4B2E83] text-lg">Affordable Tuition & Living Costs</h3>
+              </div>
+            </div>
+  
+            <!-- Card 3 -->
+            <div class="card bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div class="card-body items-center text-center">
+                <img src="./assets/resident.png" alt="Research Program" class="w-25 h-25 mb-2" />
+                <h3 class="font-semibold text-[#4B2E83] text-lg">Pathways to Permanent Residency (via PGWP)</h3>
+              </div>
+            </div>
+  
+            <!-- Card 4 -->
+            <div class="card bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div class="card-body items-center text-center">
+                <img src="./assets/society.png" alt="Qualification" class="w-25 h-25 mb-2" />
+                <h3 class="font-semibold text-[#4B2E83] text-lg">Welcoming Multicultural Society</h3>
+              </div>
+            </div>
+  
+            <!-- Card 5 -->
+            <div class="card bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div class="card-body items-center text-center">
+                <img src="./assets/work.png" alt="Student Rights" class="w-25 h-25 mb-2" />
+                <h3 class="font-semibold text-[#4B2E83] text-lg">Part-Time Work Eligibility</h3>
+              </div>
+            </div>
+  
+            <!-- Card 6 -->
+            <div class="card bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div class="card-body items-center text-center">
+                <img src="./assets/safety.png" alt="Diverse Country" class="w-25 h-25 mb-2" />
+                <h3 class="font-semibold text-[#4B2E83] text-lg">High Standard of Living and Safety</h3>
+              </div>
+            </div>
+  
+            <!-- Card 7 -->
+            <div class="card bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div class="card-body items-center text-center">
+                <img src="./assets/research.png" alt="Lessen Expense" class="w-25 h-25 mb-2" />
+                <h3 class="font-semibold text-[#4B2E83] text-lg">Leading Research and Innovation Focus</h3>
+              </div>
+            </div>
+  
+            <!-- Card 8 -->
+            <div class="card bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div class="card-body items-center text-center">
+                <img src="./assets/natural.png" alt="Landscape" class="w-25 h-25 mb-2" />
+                <h3 class="font-semibold text-[#4B2E83] text-lg">Stunning Natural Landscapes and Outdoor Life</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- top university section -->
+      <section class="bg-[#F9F8FF] py-16 px-6 md:px-12 lg:px-20">
+        <div class="container mx-auto max-w-6xl text-center">
+  
+          <!-- ====== SECTION TITLE ====== -->
+          <h2 class="text-2xl sm:text-3xl font_1 md:text-4xl font-bold text-[#4B2E83] mb-4">
+            Top University of Canada
+          </h2>
+          <p class="text-gray-500 font_2 max-w-5xl mx-auto leading-relaxed mb-12 message_text_paragraph">
+            Canada is renowned for its world-class higher education institutions, offering a wide range of programs and cutting-edge research opportunities. For students from Bangladesh who aspire to study in Canada, it is essential to choose the right university.
+            <br />
+            Here are some of the top universities in Canada known for their academic excellence and global reputation:
+          </p>
+  
+          <!-- ====== UNIVERSITY GRID ====== -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            
+            <!-- CARD 1 -->
+            <div class="card bg-white shadow-md hover:shadow-xl border border-gray-100 transition-all duration-300">
+              <figure>
+                <img src="./assets/University/waterloo.webp" alt="University of Melbourne" class="w-full h-48 object-cover" />
+              </figure>
+              <div class="card-body text-center">
+                <h3 class="font-bold text-[#4B2E83] text-lg uppercase">University of Waterloo</h3>
+                <p class="text-gray-500"><i class="fa-solid fa-location-dot mr-1 text-[#4B2E83]"></i>Waterloo</p>
+                <div class="mt-4">
+                  <button class="btn gap-4 btn-sm uni_view_details p-4 bg-[#FACC15] text-[#4B2E83] hover:bg-[#EAB308] border-none rounded-full">
+                    View Details
+                    <img src="./assets/select_uni_icon.png" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+  
+            <!-- CARD 2 -->
+            <div class="card bg-white shadow-md hover:shadow-xl border border-gray-100 transition-all duration-300">
+              <figure>
+                <img src="./assets/University/Saskatchewan.webp" alt="University of New South Wales" class="w-full h-48 object-cover" />
+              </figure>
+              <div class="card-body text-center">
+                <h3 class="font-bold text-[#4B2E83] text-lg uppercase">University of Saskatchewan</h3>
+                <p class="text-gray-500"><i class="fa-solid fa-location-dot mr-1 text-[#4B2E83]"></i>Saskatoon</p>
+                <div class="mt-4">
+                  <button class="btn gap-4 btn-sm uni_view_details p-4 bg-[#FACC15] text-[#4B2E83] hover:bg-[#EAB308] border-none rounded-full">
+                    View Details
+                    <img src="./assets/select_uni_icon.png" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+  
+            <!-- CARD 3 -->
+            <div class="card bg-white shadow-md hover:shadow-xl border border-gray-100 transition-all duration-300">
+              <figure>
+                <img src="./assets/University/windsor.webp" alt="Australian National University" class="w-full h-48 object-cover" />
+              </figure>
+              <div class="card-body text-center">
+                <h3 class="font-bold text-[#4B2E83] text-lg uppercase">University of Windsor</h3>
+                <p class="text-gray-500"><i class="fa-solid fa-location-dot mr-1 text-[#4B2E83]"></i>Windsor</p>
+                <div class="mt-4">
+                  <button class="btn gap-4 btn-sm uni_view_details p-4 bg-[#FACC15] text-[#4B2E83] hover:bg-[#EAB308] border-none rounded-full">
+                    View Details
+                    <img src="./assets/select_uni_icon.png" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+  
+            <!-- CARD 4 -->
+            <div class="card bg-white shadow-md hover:shadow-xl border border-gray-100 transition-all duration-300">
+              <figure>
+                <img src="./assets/University/york.webp" alt="University of Queensland" class="w-full h-48 object-cover" />
+              </figure>
+              <div class="card-body text-center">
+                <h3 class="font-bold text-[#4B2E83] text-lg uppercase">University of York</h3>
+                <p class="text-gray-500"><i class="fa-solid fa-location-dot mr-1 text-[#4B2E83]"></i>Toronto</p>
+                <div class="mt-4">
+                  <button class="btn gap-4 btn-sm uni_view_details p-4 bg-[#FACC15] text-[#4B2E83] hover:bg-[#EAB308] border-none rounded-full">
+                    View Details
+                    <img src="./assets/select_uni_icon.png" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+  
+            <!-- CARD 5 -->
+            <div class="card bg-white shadow-md hover:shadow-xl border border-gray-100 transition-all duration-300">
+              <figure>
+                <img src="./assets/University/manitoba.webp" alt="Deakin University" class="w-full h-48 object-cover" />
+              </figure>
+              <div class="card-body text-center">
+                <h3 class="font-bold text-[#4B2E83] text-lg uppercase">University of Manitoba</h3>
+                <p class="text-gray-500"><i class="fa-solid fa-location-dot mr-1 text-[#4B2E83]"></i>Manitoba</p>
+                <div class="mt-4">
+                  <button class="btn gap-4 btn-sm uni_view_details p-4 bg-[#FACC15] text-[#4B2E83] hover:bg-[#EAB308] border-none rounded-full">
+                    View Details
+                    <img src="./assets/select_uni_icon.png" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+  
+            <!-- CARD 6 -->
+            <div class="card bg-white shadow-md hover:shadow-xl border border-gray-100 transition-all duration-300">
+              <figure>
+                <img src="./assets/University/brunswick.jpeg" alt="University of Technology Sydney" class="w-full h-48 object-cover" />
+              </figure>
+              <div class="card-body text-center">
+                <h3 class="font-bold text-[#4B2E83] text-lg uppercase">University of New Brunswick</h3>
+                <p class="text-gray-500"><i class="fa-solid fa-location-dot mr-1 text-[#4B2E83]"></i>New Brunswick</p>
+                <div class="mt-4">
+                  <button class="btn gap-4 btn-sm uni_view_details p-4 bg-[#FACC15] text-[#4B2E83] hover:bg-[#EAB308] border-none rounded-full">
+                    View Details
+                    <img src="./assets/select_uni_icon.png" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+  
+            <!-- CARD 7 -->
+            <div class="card bg-white shadow-md hover:shadow-xl border border-gray-100 transition-all duration-300">
+              <figure>
+                <img src="./assets/University/seneca.webp" alt="University of Sydney" class="w-full h-48 object-cover" />
+              </figure>
+              <div class="card-body text-center">
+                <h3 class="font-bold text-[#4B2E83] text-lg uppercase">Seneca College</h3>
+                <p class="text-gray-500"><i class="fa-solid fa-location-dot mr-1 text-[#4B2E83]"></i>Toronto</p>
+                <div class="mt-4">
+                  <button class="btn gap-4 btn-sm uni_view_details p-4 bg-[#FACC15] text-[#4B2E83] hover:bg-[#EAB308] border-none rounded-full">
+                    View Details
+                    <img src="./assets/select_uni_icon.png" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+  
+            <!-- CARD 8 -->
+            <div class="card bg-white shadow-md hover:shadow-xl border border-gray-100 transition-all duration-300">
+              <figure>
+                <img src="./assets/University/centinial.jpg" alt="University of Western Australia" class="w-full h-48 object-cover" />
+              </figure>
+              <div class="card-body text-center">
+                <h3 class="font-bold text-[#4B2E83] text-lg uppercase">Centennial College</h3>
+                <p class="text-gray-500"><i class="fa-solid fa-location-dot mr-1 text-[#4B2E83]"></i>Toronto</p>
+                <div class="mt-4">
+                  <button class="btn font_2 uni_view_details p-4 gap-4 btn-sm bg-[#FACC15] text-[#4B2E83] hover:bg-[#EAB308] border-none rounded-full">
+                    View Details
+                    <img src="./assets/select_uni_icon.png" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- ====== CTA (Bottom) ====== -->
+          <div class="text-center mt-10">
+            <p class="mb-12 message_text_paragraph text-[#4B2E83]">
+              Why spend your time when you can seek an expert’s help all for free?<br />
+              Contact Cambry and get free assistance to study in Canada today!
+            </p>
+            <button class="btn bg-[#FACC15] text-[#4B2E83] text-[18px] font_2 font-bold hover:bg-[#EAB308] border-none rounded-full px-8 py-2">
+              Get Free Assistant From Cambry
+            </button>
+          </div>
+        </div>
+      </section>
+  
+  
+      <!-- top courses section -->
+      <section class="bg-[#F9F8FF] py-16 px-6 md:px-12 lg:px-20">
+        <div
+          class="container mx-auto max-w-6xl flex flex-col-reverse lg:flex-row items-center gap-10 shadow-xl rounded-2xl bg-white/70 backdrop-blur-sm"
+        >
+          <!-- ===== LEFT CONTENT ===== -->
+          <div class="text-center lg:text-justify p-6 md:p-10">
+            <h2 class="message_form_heading text-2xl font_1 sm:text-3xl md:text-4xl font-bold text-[#4B2E83] mb-6">
+              Top Courses in Canada
+            </h2>
+            <p class="text-gray-500 mb-8 font_1 leading-relaxed message_text_paragraph">
+              Canada is known for its high-quality education and wide range of courses available for international students. Some of the popular and in-demand fields of study that attract international students to Canada include:
+            </p>
+  
+            <!-- ===== COURSES GRID ===== -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 mb-8">
+  
+              <button class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-[#4B2E83] hover:text-white text-[#4B2E83] text-sm rounded-full">
+                Computer Science and IT
+              </button>
+              <button class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-[#4B2E83] hover:text-white text-[#4B2E83] text-sm font-2 rounded-full">
+                Engineering
+              </button>
+              <button class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-[#4B2E83] hover:text-white text-[#4B2E83] text-sm rounded-full">
+                Business and Management
+              </button>
+              <button class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-[#4B2E83] hover:text-white text-[#4B2E83] text-sm rounded-full">
+                Health Sciences and Nursing
+              </button>
+              <button class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-[#4B2E83] hover:text-white text-[#4B2E83] text-sm rounded-full">
+                Environmental Science and Sustainability
+              </button>
+              <button class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-[#4B2E83] hover:text-white text-[#4B2E83] text-sm rounded-full">
+               Hospitality and Tourism
+              </button>
+              <button class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-[#4B2E83] hover:text-white text-[#4B2E83] text-sm rounded-full">
+                Business Management
+              </button>
+              <button class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-[#4B2E83] hover:text-white text-[#4B2E83] text-sm rounded-full">
+                Engineering
+              </button>
+              <button class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-[#4B2E83] hover:text-white text-[#4B2E83] text-sm rounded-full">
+                Mass & Media
+              </button>
+  
+            </div>
+  
+            <!-- ===== BUTTON ===== -->
+            <button class="font_2 font-bold btn bg-[#FACC15] hover:bg-[#EAB308] text-[#4B2E83] border-none rounded-full px-8">
+              View Details
+            </button>
+          </div>
+  
+          <!-- ===== RIGHT IMAGE ===== -->
+          <div class="w-full lg:w-1/2 flex justify-center p-6 md:p-10">
+            <img src="./assets/top-courses-image.png" alt="Top Courses Illustration" class="max-w-xs sm:max-w-sm lg:max-w-md h-auto"
+            />
+          </div>
+          
+        </div>
+      </section>
+  
+      <!-- application process -->
+      <section class="bg-[#F9F8FF] py-16 px-4 sm:px-8 md:px-12 lg:px-20">
+        <div class="container mx-auto max-w-6xl shadow-xl rounded-3xl bg-white/70 backdrop-blur-md p-6 md:p-10 transition-all duration-500 hover:shadow-[#4B2E83]/30">
+          <div>
+            <h2
+              class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#4B2E83] text-center lg:text-center mb-6 font_1 requirement_heading"
+            >
+              Visa Requirement and Application Process
+            </h2>
+            <p
+              class="text-gray-600 text-center lg:text-center mb-8 leading-relaxed text-sm sm:text-base font_2 message_text_paragraph"
+            >
+              All students are choosy when it comes to selecting their study
+              destination. Many students have preferred Canada.
+            </p>
+          </div>
+  
+          <div
+          class="flex flex-col-reverse lg:flex-row items-center gap-10 py-10"
+          >
+          <!-- ===== LEFT CONTENT ===== -->
+          <div class="w-full lg:w-3/4">
+  
+  
+            <!-- ====== PROCESS STEPS ====== -->
+            <div class="space-y-6">
+              <!-- Step 1 -->
+              <div
+                class="flex items-start gap-4 bg-white p-4 rounded-2xl shadow-md hover:shadow-lg hover:shadow-yellow-400/60 transition-all duration-300"
+              >
+                <div
+                  class="w-10 h-10 flex items-center justify-center bg-[#FACC15] text-[#4B2E83] font-bold rounded-full text-lg"
+                >
+                  1
+                </div>
+                <div>
+                  <h3 class="text-[#F3D70D] font_1 explore font-semibold text-lg">
+                    Obtain LOA (Letter of Acceptance)
+                  </h3>
+                  <p class="text-gray-600 text-sm process_element">
+                    Obtain LOA (Letter of Acceptance) from a Canadian Designated Learning Institution (DLI)
+                  </p>
+                </div>
+              </div>
+  
+              <!-- Arrow -->
+              <div class="flex justify-center">
+                <span class="text-[#4B2E83] text-2xl font-bold">↓</span>
+              </div>
+  
+              <!-- Step 2 -->
+              <div
+                class="flex items-start gap-4 bg-white p-4 rounded-2xl shadow-md hover:shadow-lg hover:shadow-yellow-400/60 transition-all duration-300"
+              >
+                <div
+                  class="w-10 h-10 flex items-center justify-center bg-[#FACC15] text-[#4B2E83] font-bold rounded-full text-lg"
+                >
+                  2
+                </div>
+                <div>
+                  <h3 class="text-[#F3D70D] font_1 font-semibold text-lg explore">Gather Documents</h3>
+                  <p class="text-gray-600 text-sm process_element">
+                    Passport, Proof of Funds, LOA, Language Test Scores, etc.
+                  </p>
+                </div>
+              </div>
+  
+              <!-- Arrow -->
+              <div class="flex justify-center">
+                <span class="text-[#4B2E83] text-2xl font-bold">↓</span>
+              </div>
+  
+              <!-- Step 3 -->
+              <div
+                class="flex items-start gap-4 bg-white p-4 rounded-2xl shadow-md hover:shadow-lg hover:shadow-yellow-400/60 transition-all duration-300"
+              >
+                <div
+                  class="w-10 h-10 flex items-center justify-center bg-[#FACC15] text-[#4B2E83] font-bold rounded-full text-lg"
+                >
+                  3
+                </div>
+                <div>
+                  <h3 class="text-[#F3D70D] font_1 font-semibold text-lg explore">
+                    Submit Application
+                  </h3>
+                  <p class="text-gray-600 text-sm process_element">
+                    Submit your online application through the Canadian Immigration
+                    Website.
+                  </p>
+                </div>
+              </div>
+  
+              <!-- Arrow -->
+              <div class="flex justify-center">
+                <span class="text-[#4B2E83] text-2xl font-bold">↓</span>
+              </div>
+  
+              <!-- Step 4 -->
+              <div
+                class="flex items-start gap-4 bg-white p-4 rounded-2xl shadow-md hover:shadow-lg hover:shadow-yellow-400/60 transition-all duration-300"
+              >
+                <div
+                  class="w-10 h-10 flex items-center justify-center bg-[#FACC15] text-[#4B2E83] font-bold rounded-full text-lg"
+                >
+                  4
+                </div>
+                <div>
+                  <h3 class="text-[#F3D70D] font_1 font-semibold text-lg explore">
+                    Complete Requirements
+                  </h3>
+                  <p class="text-gray-600 text-sm process_element">
+                    Like passport, confirmation of enrollment, proof of financial
+                    capacity, and English test scores.
+                  </p>
+                </div>
+              </div>
+  
+              <!-- Arrow -->
+              <div class="flex justify-center">
+                <span class="text-[#4B2E83] text-2xl font-bold">↓</span>
+              </div>
+  
+              <!-- Step 5 -->
+              <div
+                class="flex items-start gap-4 bg-white p-4 rounded-2xl shadow-md hover:shadow-lg hover:shadow-yellow-400/60 transition-all duration-300"
+              >
+                <div
+                  class="w-10 h-10 flex items-center justify-center bg-[#FACC15] text-[#4B2E83] font-bold rounded-full text-lg"
+                >
+                  5
+                </div>
+                <div>
+                  <h3 class="text-[#F3D70D] font_1 explore font-semibold text-lg">
+                    Attend Visa Interview
+                  </h3>
+                  <p class="text-gray-600 text-sm process_element">
+                    Attend a visa interview (if required) and await the decision.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- ===== RIGHT IMAGE ===== -->
+          <div
+            class="w-full lg:w-1/2 flex justify-center items-center animate-float"
+          >
+            <img
+              src="./assets/student-with-laugage.png"
+              alt="Student with luggage"
+              class="max-w-[230px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[420px] h-auto drop-shadow-2xl transition-transform duration-500 hover:scale-105"
+            />
+          </div>
+        </div>
+  
+        </div>
+                  
+  
+      </section>
+
+
+
+
+<!-- Cost of Education Section -->
+<section class="bg-[#F9F8FF] py-16 px-4 sm:px-8 md:px-12 lg:px-20">
+  <div
+    class="container mx-auto max-w-6xl flex flex-col-reverse lg:flex-row items-center gap-16 bg-white/70 backdrop-blur-md rounded-3xl shadow-xl p-6 md:p-10 transition-all duration-500"
+    data-aos="fade-up"
+    data-aos-duration="1200"
+  >
+    <!-- LEFT CONTENT -->
+    <div class="lg:w-3/4 space-y-6 text-center lg:text-left">
+      <div data-aos="fade-up" data-aos-delay="100">
+        <h2
+          class="requirement_heading font_1 font-bold text-[#4B2E83] mb-3"
+        >
+          Cost of Education and Living in Canada
+        </h2>
+        <p class="text-gray-600 italic text-sm sm:text-base dream_destination_textpara">
+          Plan Your Budget
+        </p>
+      </div>
+
+      <!-- COST BUTTONS -->
+      <div
+        class="flex flex-col sm:flex-row lg:flex-col gap-4 mt-6"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <!-- Tuition Fees -->
+        <div
+          class="flex flex-col items-center justify-center bg-white/60 border border-[#4B2E83]/50 rounded-xl py-4 px-4 text-center cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_18px_rgba(80,80,200,0.45)]"
+        >
+          <img src="./assets/tuition fee.png" class="w-10 h-10 mb-2" />
+          <h3 class="text-[#4B2E83] font-semibold text-base sm:text-lg">
+            Tuition Fees
+          </h3>
+        </div>
+
+        <!-- Living Expense -->
+        <div
+          class="flex flex-col items-center justify-center bg-white/60 border border-[#4B2E83]/50 rounded-xl py-4 px-4 text-center cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_18px_rgba(80,80,200,0.45)]"
+        >
+          <img src="./assets/living expense.png" class="w-10 h-10 mb-2" />
+          <h3 class="text-[#4B2E83] font-semibold text-base sm:text-lg">
+            Living Expense
+          </h3>
+        </div>
+      </div>
+
+      <!-- FOOTNOTE -->
+      <p
+        class="text-gray-500 text-xs sm:text-sm italic mt-8 leading-relaxed font_2 message_text_paragraph"
+        data-aos="fade-up"
+        data-aos-delay="350"
+      >
+        *The amounts mentioned above are approximate. It may vary depending on
+        various factors. Consult with us for further information.
+      </p>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div
+      class="w-full lg:w-1/2 flex justify-center items-center animate-float"
+      data-aos="fade-up"
+      data-aos-delay="250"
+    >
+      <img
+        src="./assets/holding money.png"
+        class="max-w-[220px] sm:max-w-[300px] md:max-w-[360px] lg:max-w-[420px] drop-shadow-2xl transition-transform duration-500 hover:scale-105"
+      />
+    </div>
+  </div>
+</section>
+
+
+
+<!-- scholarship and financial adds -->
+  <section class="py-16 bg-white" 
+    data-aos="fade-up"
+    data-aos-duration="1200"
+  >
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font_1 message_heading font-bold text-[#4B2E83] mb-2">
+        Scholarship and Financial Aids
+      </h2>
+      <p class="text-gray-600 mb-12 dream_destination_textpara">
+        Fund Your Education in Australia
+      </p>
+
+      <!-- Responsive Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Card 1 -->
+        <div class="border rounded-xl p-8 shadow-md hover:shadow-xl hover:shadow-[#4C3C93] transition-all bg-white">
+          <div class="flex justify-center mb-4">
+            <img src="./assets/cap.png" class="w-10" />
+          </div>
+          <h3 class="text-[#4B2E83] font_2 font-semibold text-lg mb-2 financial_cards_heading">
+            Vanier Canada Graduate Scholarships
+          </h3>
+          <p class="text-gray-600 font_2 text-sm requirements_cards">
+            For doctoral students with exceptional academic performance.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="border rounded-xl p-8 shadow-md hover:shadow-xl hover:shadow-[#4C3C93] transition-all bg-white">
+          <div class="flex justify-center mb-4">
+            <img src="./assets/cap2.png" class="w-10" />
+          </div>
+          <h3 class="text-[#4B2E83] font_2 font-semibold text-lg mb-2 financial_cards_heading">
+            Canada-ASEAN Scholarships
+          </h3>
+          <p class="text-gray-600 text-sm font_2 requirements_cards">
+            Designed for students from ASEAN member states.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="border rounded-xl p-8 shadow-md hover:shadow-xl hover:shadow-[#4C3C93] transition-all bg-white">
+          <div class="flex justify-center mb-4">
+            <img src="./assets/cap3.png" class="w-10" />
+          </div>
+          <h3 class="text-[#4B2E83] font_2 font-semibold text-lg mb-2 financial_cards_heading">
+            University-Specific Scholarships
+          </h3>
+          <p class="text-gray-600 font_2 text-sm requirements_cards">
+            Many institutions provide merit-based and program-specific scholarships.
+          </p>
+        </div>
+
+                <div class="border rounded-xl p-8 shadow-md hover:shadow-xl hover:shadow-[#4C3C93] transition-all bg-white">
+          <div class="flex justify-center mb-4">
+            <img src="./assets/cap4.png" class="w-10" />
+          </div>
+          <h3 class="text-[#4B2E83] font_2 font-semibold text-lg mb-2 financial_cards_heading">
+            Government of Canada International Scholarships
+          </h3>
+          <p class="text-gray-600 font_2 text-sm requirements_cards">
+            Supporting students from developing countries.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- post study -->
+   <section class="bg-white py-16 px-4 sm:px-8 md:px-12 lg:px-20"
+    data-aos="fade-up"
+    data-aos-duration="1200"
+   >
+    <div class="max-w-6xl mx-auto text-center">
+      <!-- Heading -->
+      <h2 class="text-3xl md:text-4xl font-bold text-[#4B2E83] mb-2 message_heading">
+        Post Study Opportunities
+      </h2>
+      <p class="text-gray-600 mb-12 dream_destination_textpara">
+        Canada offers excellent opportunities for international graduates
+      </p>
+
+      <!-- Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Card 1 -->
+        <div class="border rounded-xl p-8 shadow-md hover:shadow-xl hover:shadow-[#4C3C93] transition-all duration-300 bg-white">
+          <div class="flex justify-center mb-4">
+            <img src="./assets/work-visa.png" class="w-10" />
+          </div>
+          <h3 class="text-[#4B2E83] font-semibold text-lg mb-2 financial_cards_heading">
+            Post-Study Work Visa
+          </h3>
+          <p class="text-gray-600 requirements_cards">
+            Apply for a Post-Graduate Work Permit (PGWP) to stay and work for up to 3 years.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="border rounded-xl p-8 shadow-md hover:shadow-xl hover:shadow-[#4C3C93] transition-all duration-300 bg-white">
+          <div class="flex justify-center mb-4">
+            <img src="./assets/demanding-career.jpg" class="w-10" />
+          </div>
+          <h3 class="text-[#4B2E83] font-semibold text-lg mb-2 financial_cards_heading">
+            Buildup Demanding Career
+          </h3>
+          <p class="text-gray-600 requirements_cards">
+            Explore career paths in high-demand sectors like technology, healthcare, and business.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="border rounded-xl p-8 shadow-md hover:shadow-xl hover:shadow-[#4C3C93] transition-all duration-300 bg-white">
+          <div class="flex justify-center mb-4">
+            <img src="./assets/parmanent resident.webp" class="w-10" />
+          </div>
+          <h3 class="text-[#4B2E83] font-semibold text-lg mb-2 financial_cards_heading">
+            Permanent Residency
+          </h3>
+          <p class="text-gray-600 requirements_cards">
+            Utilize Canada’s immigration pathways to transition to permanent residency, such as the Express Entry system.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- student life and culture in Australia -->
+  <section class="bg-[#F9F8FF] py-16 px-6 sm:px-10 lg:px-20" 
+  data-aos="fade-up"
+  data-aos-duration="1200"
+  >
+  <div
+    class="container mx-auto max-w-6xl flex flex-col-reverse lg:flex-row items-center gap-16"
+  >
+    <!-- ========= LEFT CONTENT ========= -->
+    <div class="w-full lg:w-1/2 space-y-4 ml-4">
+      <h2
+        class="text-xl sm:text-2xl font_1 md:text-3xl font_1 font-bold text-[#4B2E83] text-center lg:text-left"
+      >
+        Student Life and Culture in Canada
+      </h2>
+      <p
+        class="text-gray-500 italic text-center lg:text-left text-sm sm:text-base message_text_paragraph"
+      >
+        Experience the Canadian Way of Life
+      </p>
+
+      <!-- ======= LIST OF FEATURES ======= -->
+      <ul class="space-y-4 mt-6">
+        <li class="flex items-start gap-3">
+          <span
+            class="w-8 h-8 flex items-center justify-center text-[#4B2E83] rounded-full text-lg font-semibold"
+            ><img src="./assets/finger_icon.jpg" alt=""></span
+          >
+          <p class="text-gray-700 text-sm sm:text-base font_2">
+            Explore vibrant cities like Toronto, Vancouver, and Montreal.
+          </p>
+        </li>
+        <li class="flex items-start gap-3">
+          <span
+            class="w-7 h-7 flex items-center justify-center text-[#4B2E83] rounded-full text-lg font-semibold"
+            ><img src="./assets/finger_icon.jpg" alt=""></span
+          >
+          <p class="text-gray-700 text-sm sm:text-base font_2">
+           Immerse yourself in Canada’s cultural diversity with festivals, cuisines, and traditions.
+          </p>
+        </li>
+        <li class="flex items-start gap-3">
+          <span
+            class="w-8 h-8 flex items-center justify-center text-[#4B2E83] rounded-full text-lg font-semibold"
+            ><img src="./assets/finger_icon.jpg" alt=""></span
+          >
+          <p class="text-gray-700 text-sm sm:text-base font_2">
+            Enjoy outdoor adventures, from skiing in Whistler to hiking in Banff National Park.
+          </p>
+        </li>
+        <li class="flex items-start gap-3">
+          <span
+            class="w-8 h-8 flex items-center justify-center rounded-full text-lg font-semibold font_2"
+            >
+            <img src="./assets/finger_icon.jpg" alt="">
+            </span
+          >
+          <p class="text-gray-700 text-sm sm:text-base">
+            Benefit from Canada’s reputation as one of the safest countries in the world.   
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ========= RIGHT IMAGE COLLAGE ========= -->
+    <div class="w-full lg:w-1/2 flex justify-center items-center relative">
+      <div class="relative w-full max-w-sm sm:max-w-md md:max-w-lg">
+        <!-- Top Left Image -->
+        <div
+          class="absolute top-0 left-0 w-40 sm:w-48 md:w-56 lg:w-64 rounded-xl overflow-hidden shadow-lg z-20 hover:scale-105 transition-transform duration-300"
+        >
+          <img
+            src="./assets/Graduation - Cap throw.webp"
+            alt="Graduation"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <!-- Top Right Image -->
+        <div
+          class="absolute top-6 right-0 w-44 sm:w-52 md:w-60 lg:w-72 rounded-xl overflow-hidden shadow-lg z-10 hover:scale-105 transition-transform duration-300"
+        >
+          <img
+            src="./assets/student-walking.webp"
+            alt="Students Walking"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <!-- Bottom Left Image -->
+        <div
+          class="absolute bottom-0 left-10 sm:left-16 md:left-20 w-40 sm:w-48 md:w-56 lg:w-64 rounded-xl overflow-hidden shadow-lg z-0 hover:scale-105 transition-transform duration-300"
+        >
+          <img
+            src="./assets/libraries.webp"
+            alt="Library"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <!-- Spacer for height -->
+        <div class="w-full h-[280px] sm:h-[340px] md:h-[400px] lg:h-[440px]"></div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- FAQ's -->
+  <section class="bg-[#F9F8FF] py-16 px-6 sm:px-10 lg:px-20">
+    <div class="container mx-auto max-w-4xl text-center">
+      <!-- ===== HEADING ===== -->
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#4B2E83] mb-4">
+        FAQs
+      </h2>
+      <p class="text-gray-500 mt-2 italic text-sm sm:text-base">
+        Got Questions? We’ve Got Answers
+      </p>
+
+      <!-- ===== ACCORDION SECTION ===== -->
+      <div class="mt-10 space-y-4">
+        <!-- Accordion 1 -->
+        <div
+          tabindex="0"
+          class="collapse collapse-arrow border border-[#4B2E83]/20 bg-[#4B2E83] text-[#F3D70D] rounded-xl"
+        >
+          <div class="collapse-title text-base sm:text-lg font-semibold">
+            How much does it cost to study in Canada?
+          </div>
+          <div class="collapse-content text-sm sm:text-base text-gray-100">
+            <p>
+              Costs vary depending on the program, but scholarships are available to reduce financial burdens.
+            </p>
+          </div>
+        </div>
+
+        <!-- Accordion 2 -->
+        <div
+          tabindex="0"
+          class="collapse collapse-arrow border border-[#4B2E83]/20 bg-[#4B2E83] text-[#F3D70D] rounded-xl"
+        >
+          <div class="collapse-title text-base sm:text-lg font-semibold">
+            Can I work while studying in Canada?
+          </div>
+          <div class="collapse-content text-sm sm:text-base text-gray-100">
+            <p>
+             Yes, students can work up to 20 hours per week during term and full-time during breaks.
+            </p>
+          </div>
+        </div>
+
+        <!-- Accordion 3 -->
+        <div
+          tabindex="0"
+          class="collapse collapse-arrow border border-[#4B2E83]/20 bg-[#4B2E83] text-[#F3D70D] rounded-xl"
+        >
+          <div class="collapse-title text-base sm:text-lg font-semibold">
+            What are the language requirements for studying in Canada?
+          </div>
+          <div class="collapse-content text-sm sm:text-base text-gray-100">
+            <p>
+             Most universities require an English proficiency test like IELTS or TOEFL. Some may also accept French tests for certain programs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- We collaborate with -->
+    <section
+        id="newsletter"
+        class="mb-20 px-4 sm:px-6 lg:px-8 mt-20 w-full max-w-6xl mx-auto"
+      >
+        <div
+          class="bg-gradient-to-r from-indigo-800 to-purple-800 rounded-xl p-6 sm:p-8 md:p-10 flex flex-col md:flex-row items-center justify-around gap-8 md:gap-16 max-w-6xl mx-auto"
+        >
+          <!-- Text Content -->
+          <div
+            class="text-white space-y-4 max-w-full sm:max-w-md md:max-w-lg text-center md:text-left"
+          >
+            <h2
+              class="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-300 leading-snug"
+            >
+              Your Study Abroad<br />Dream Awaits!
+            </h2>
+            <p class="text-sm sm:text-base md:text-lg opacity-90 text_group">
+              Let us guide you to your ideal university and make your journey
+              stress-free. Contact us today for a free consultation.
+            </p>
+            <button
+              class="btn text-blue-700 bg-white px-5 py-2 sm:py-3 text-sm sm:text-base md:text-base transition-transform duration-200 transform hover:scale-105 hover:bg-blue-700 hover:text-white rounded-lg shadow-md border-none"
+            >
+              Book a Free Consultation 📅
+            </button>
+          </div>
+
+          <!-- Image Section -->
+          <div
+            class="flex-shrink-0 w-full max-w-[220px] sm:max-w-xs md:max-w-sm mt-6 md:mt-0"
+          >
+            <img
+              src="./assets/students-group.png"
+              alt="studying_abroad"
+              class="rounded-lg shadow-lg w-full object-cover"
+            />
+          </div>
+        </div>
+    </section>
+
+
+  <!-- footer section -> Jarif -->
+  <section
+      class="footer_img bg-base-200 bg-opacity-90 text-base-content mt-20"
+    >
+    <div
+        class="min-h-screen flex flex-col justify-between bg-black/60 text-white"
+      >
+        <div class="container mx-auto px-6 md:px-12 lg:px-24 py-16">
+          <div
+            class="flex flex-col bg-white/10 p-6 md:p-10 rounded-2xl shadow-xl backdrop-blur-md"
+          >
+            <!-- Contact Section -->
+            <div class="grid lg:grid-cols-2 gap-10">
+              <!-- Left Side - Contact Info -->
+              <div class="text-center lg:text-left">
+                <h2
+                  class="font_3 dest_heading text-4xl md:text-5xl font-bold mb-10 text-yellow-400"
+                >
+                  Contact Info
+                </h2>
+                <ul class="space-y-8 md:space-y-10">
+                  <li
+                    class="flex flex-col sm:flex-row items-center sm:items-start gap-3"
+                  >
+                    <img
+                      src="./assets/telephone.png"
+                      alt="phone"
+                      class="w-6 h-6"
+                    />
+                    <p>+88 01730-589112</p>
+                  </li>
+                  <li
+                    class="flex flex-col sm:flex-row items-center sm:items-start gap-3"
+                  >
+                    <img src="./assets/msg.png" alt="email" class="w-6 h-6" />
+                    <p>cambry.bd@gmail.com</p>
+                  </li>
+                  <li
+                    class="flex flex-col sm:flex-row items-center sm:items-start gap-3 text-center sm:text-left"
+                  >
+                    <img
+                      src="./assets/location.png"
+                      alt="location"
+                      class="w-6 h-6"
+                    />
+                    <p>
+                      H# 398 (1st Floor), R# 29, Mohakhali DOHS, Dhaka-1212,
+                      Bangladesh
+                    </p>
+                  </li>
+                  <li
+                    class="flex flex-col sm:flex-row items-center sm:items-start gap-3"
+                  >
+                    <img src="./assets/clock.png" alt="clock" class="w-6 h-6" />
+                    <p>Saturday - Thursday: 10:00 AM to 06:00 PM</p>
+                  </li>
+                </ul>
+
+                <div
+                  class="mt-10 flex justify-center lg:justify-start gap-6 text-3xl"
+                >
+                  <a class="hover:text-yellow-400" href="#"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                  <a class="hover:text-yellow-400" href="#"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a class="hover:text-yellow-400" href="#"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </div>
+              </div>
+
+              <!-- Right Side - Contact Form -->
+              <div>
+                <p
+                  class="mb-6 font_2 contact_form_heading text-yellow-400 text-center lg:text-left"
+                >
+                  Have questions? We’re here to help! Fill out the form. We
+                  shall reach out to you as soon as possible.
+                </p>
+                <form class="space-y-6">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    class="font_2 input input-bordered w-full text-[#00000099]"
+                  />
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input
+                      type="text"
+                      placeholder="Phone"
+                      class="font_2 input input-bordered text-[#00000099]"
+                    />
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      class="font_2 input input-bordered text-[#00000099]"
+                    />
+                  </div>
+                  <textarea
+                    placeholder="Message"
+                    class="font_2 textarea textarea-bordered w-full h-32 text-[#00000099]"
+                  ></textarea>
+                  <button
+                    type="submit"
+                    class="font_2 button_form btn bg-yellow-400 border-none text-[#4C3C93] hover:bg-yellow-500 w-full"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="mt-16 text-gray-200">
+              <div
+                class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 text-center lg:text-left text-sm"
+              >
+                <!-- About -->
+                <div>
+                  <img
+                    src="./assets/Cambry_Official_logo.webp"
+                    alt="logo"
+                    class="mx-auto lg:mx-0"
+                  />
+                  <p class="font_2 text-[14px] mt-4 font-medium">
+                    Your trusted partner since 2009, offering study abroad
+                    consultancy, having 600+ partner institutes globally.
+                  </p>
+                </div>
+
+                <!-- Explore -->
+                <div class="ml-10">
+                  <h3 class="explore font-bold mb-3 text-yellow-400">
+                    Explore
+                  </h3>
+                  <ul class="space-y-4 explore_component">
+                    <li><a href="#" class="hover:text-yellow-400">Home</a></li>
+                    <li>
+                      <a href="#" class="hover:text-yellow-400"
+                        >Study Destinations</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover:text-yellow-400"
+                        >Student Services</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover:text-yellow-400">About Cambry</a>
+                    </li>
+                    <li>
+                      <a href="#" class="hover:text-yellow-400">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Visit -->
+                <div>
+                  <h3 class="explore font-bold mb-3 text-yellow-400">Visit</h3>
+                  <p class="explore_component">
+                    H# 398 (1st Floor), R# 29, Mohakhali DOHS, Dhaka-1212,
+                    Bangladesh
+                  </p>
+                  <h3 class="explore font-bold my-6 text-yellow-400">
+                    Let's Talk
+                  </h3>
+                  <p class="explore_component">
+                    <i class="fa-solid fa-phone-volume pr-3"></i> +88
+                    01730-589112
+                  </p>
+                  <p class="explore_component mt-3">
+                    <i class="fa-solid fa-envelope pr-3"></i>
+                    cambry.bd@gmail.com
+                  </p>
+                </div>
+
+                <!-- Opening Hours -->
+                <div>
+                  <h3 class="explore font-bold mb-3 text-yellow-400">
+                    Opening Hours
+                  </h3>
+                  <ul class="explore_component py-2 space-y-3">
+                    <li>Saturday : 10:00 AM – 6:00 PM</li>
+                    <li>Sunday : 10:00 AM – 6:00 PM</li>
+                    <li>Monday : 10:00 AM – 6:00 PM</li>
+                    <li>Tuesday : 10:00 AM – 6:00 PM</li>
+                    <li>Wednesday : 10:00 AM – 6:00 PM</li>
+                    <li>Thursday : 10:00 AM – 6:00 PM</li>
+                    <li>Friday : Closed</li>
+                  </ul>
+                </div>
+
+                <!-- Legal & Social -->
+                <div>
+                  <h3 class="explore font-bold mb-3 text-yellow-400">Legal</h3>
+                  <ul class="explore_component py-2 space-y-3">
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                  </ul>
+                  <h3 class="explore font-bold my-6 text-yellow-400">Social</h3>
+                  <div
+                    class="flex justify-center lg:justify-start gap-4 text-[25px] text-[#4C3C93]"
+                  >
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-linkedin"></i>
+                    <i class="fa-brands fa-square-whatsapp"></i>
+                    <i class="fa-brands fa-square-youtube"></i>
+                  </div>
+                  <p class="explore_component mt-4">
+                    Copyright © Cambry 2025. All rights reserved.
+                  </p>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="./scripts/study_destination_canada.js"></script>
+
+</body>
+</html>

@@ -1,5 +1,5 @@
 const destinations = [
-    { flag: "Australia", image: "assets/flags/aus.jpg" },
+    { flag: "Australia", image: "assets/flags/aus.png" },
     { flag: "Canada", image: "assets/flags/canada.jpeg" },
     { flag: "Malaysia", image: "assets/flags/mal.jpg" },
     { flag: "New Zealand", image: "assets/flags/nz.webp" },
@@ -46,8 +46,8 @@ function renderCarousel() {
         // Set content
         cardDiv.innerHTML = `
                     <!-- Background Image with Fallback -->
-                    <img src="${dest.image}" class="object-cover" alt="${dest.name}" 
-                         class="absolute inset-0 w-full h-full object-cover">
+                    <img src="${dest.image}" alt="${dest.name}" 
+                         class="absolute inset-0 w-full h-full object-fit">
                     
                     <!-- Content Overlay -->
                     <div class="absolute inset-0 flex flex-col  justify-end p-6">
