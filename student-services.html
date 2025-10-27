@@ -14,8 +14,8 @@
 </head>
 <body>
   <header>
-    <nav class="fixed left-0 right-0 bg-white/30 backdrop-blur-md z-50">
-      <div class="navbar shadow-sm">
+    <nav class=" fixed left-0 right-0 bg-white/30 backdrop-blur-md z-50">
+      <div class="w-11/12 mx-auto navbar">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -64,7 +64,9 @@
             <li><a>About Us</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost text-xl">daisyUI</a>
+          <a class="">
+            <img class="w-20" src="./assets/Cambry_Official.png">
+          </a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
@@ -117,7 +119,7 @@
     </nav>
   </header>
   <main>
-    <section id="hero-section" class="sm:h-svh py-20 bg-[url(./assets/hero-image-cambry-2.png)] bg-cover bg-no-repeat bg-center flex justify-center items-center">
+    <section id="hero-section" class="sm:h-svh py-20 bg-[url(./assets/hero-image-cambry-2.png)] bg-fixed bg-cover bg-no-repeat bg-center flex justify-center items-center">
       <div id="hero-contents" class="bg-white/30 backdrop-blur-md sm:w-[50%] py-10 px-5 rounded-sm w-11/12 mx-auto">
         <h1 class="sm:text-4xl text-3xl font-black text-center text-white uppercase">
           Guidance to Go to Top Universities worldwide
@@ -330,16 +332,211 @@
       </div>
     </section>
 
+    <section id="universities-list" class="w-11/12 mx-auto my-20">
+      <h1 class="sm:text-3xl text-2xl font-bold uppercase text-center mb-10 text-violet-700">
+        University Guidance
+      </h1>
+      <div classs="w-full p-6">
+        <!-- single card containers -->
+        <div class="flex items-center bg-white rounded-sm shadow-sm overflow-hidden my-5">
+          <!-- number block -->
+          <div class="flex-shrink-0 bg-black text-white w-10 md:w-14 h-28 md:h-24 flex items-center justify-center">
+            <span class="text-2xl md:text-3xl font-semibold">1</span>
+          </div>
+          <div class="flex-1 px-6 py-6 md:py-4">
+            <div class="flex items-center justify-between">
+              <!-- Left -->
+              <div class="flex items-center gap-4">
+                <!-- Thumbnail -->
+                <img src="./assets/waterloo-uni.webp"
+                    alt="University thumbnail"
+                    class="w-14 h-14 md:w-16 md:h-16 object-cover rounded-sm shadow-sm" />
+
+                <!-- Title + small detail -->
+                <div>
+                  <h3 class="text-md md:text-lg font-semibold text-violet-700">University of Waterloo</h3>
+                  <div class="mt-1 text-sm text-slate-500 flex items-center gap-2">
+                    <span>Details >></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right -->
+              <div>
+                <button
+                  type="button"
+                  class="inline-flex items-center justify-center bg-violet-600 hover:bg-violet-700 text-white font-medium rounded-sm px-5 py-2 md:px-6 md:py-2 shadow focus:outline-nones cursor-pointer">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center bg-white rounded-sm shadow-sm overflow-hidden my-5">
+          <!-- number block -->
+          <div class="flex-shrink-0 bg-black text-white w-10 md:w-14 h-28 md:h-24 flex items-center justify-center">
+            <span class="text-2xl md:text-3xl font-semibold">2</span>
+          </div>
+          <div class="flex-1 px-6 py-6 md:py-4">
+            <div class="flex items-center justify-between">
+              <!-- Left -->
+              <div class="flex items-center gap-4">
+                <!-- Thumbnail -->
+                <img src="./assets/alberta-uni.jpg"
+                    class="w-14 h-14 md:w-16 md:h-16 object-cover rounded-sm shadow-sm" />
+
+                <!-- Title + small detail -->
+                <div>
+                  <h3 class="text-md md:text-lg font-semibold text-violet-700">University of Alberta</h3>
+                  <div class="mt-1 text-sm text-slate-500 flex items-center gap-2">
+                    <span>Details >></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right -->
+              <div>
+                <button
+                  type="button"
+                  class="inline-flex items-center justify-center bg-violet-600 hover:bg-violet-700 text-white font-medium rounded-sm px-5 py-2 md:px-6 md:py-2 shadow focus:outline-nones cursor-pointer">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center bg-white rounded-sm shadow-sm overflow-hidden my-5">
+          <!-- number block -->
+          <div class="flex-shrink-0 bg-black text-white w-10 md:w-14 h-28 md:h-24 flex items-center justify-center">
+            <span class="text-2xl md:text-3xl font-semibold">3</span>
+          </div>
+          <div class="flex-1 px-6 py-6 md:py-4">
+            <div class="flex items-center justify-between">
+              <!-- Left -->
+              <div class="flex items-center gap-4">
+                <!-- Thumbnail -->
+                <img src="./assets/british-col-uni.jpg"
+                    class="w-14 h-14 md:w-16 md:h-16 object-cover rounded-sm shadow-sm" />
+
+                <!-- Title + small detail -->
+                <div>
+                  <h3 class="text-md md:text-lg font-semibold text-violet-700">University of British Columbia</h3>
+                  <div class="mt-1 text-sm text-slate-500 flex items-center gap-2">
+                    <span>Details >></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right -->
+              <div>
+                <button
+                  type="button"
+                  class="inline-flex items-center justify-center bg-violet-600 hover:bg-violet-700 text-white font-medium rounded-sm px-5 py-2 md:px-6 md:py-2 shadow focus:outline-nones cursor-pointer">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center bg-white rounded-sm shadow-sm overflow-hidden my-5">
+          <!-- number block -->
+          <div class="flex-shrink-0 bg-black text-white w-10 md:w-14 h-28 md:h-24 flex items-center justify-center">
+            <span class="text-2xl md:text-3xl font-semibold">4</span>
+          </div>
+          <div class="flex-1 px-6 py-6 md:py-4">
+            <div class="flex items-center justify-between">
+              <!-- Left -->
+              <div class="flex items-center gap-4">
+                <!-- Thumbnail -->
+                <img src="./assets/mcgill-uni.jpg"
+                    class="w-14 h-14 md:w-16 md:h-16 object-cover rounded-sm shadow-sm" />
+
+                <!-- Title + small detail -->
+                <div>
+                  <h3 class="text-md md:text-lg font-semibold text-violet-700">MG Gill University</h3>
+                  <div class="mt-1 text-sm text-slate-500 flex items-center gap-2">
+                    <span>Details >></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right -->
+              <div>
+                <button
+                  type="button"
+                  class="inline-flex items-center justify-center bg-violet-600 hover:bg-violet-700 text-white font-medium rounded-sm px-5 py-2 md:px-6 md:py-2 shadow focus:outline-nones cursor-pointer">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center bg-white rounded-sm shadow-sm overflow-hidden my-5">
+          <!-- number block -->
+          <div class="flex-shrink-0 bg-black text-white w-10 md:w-14 h-28 md:h-24 flex items-center justify-center">
+            <span class="text-2xl md:text-3xl font-semibold">5</span>
+          </div>
+          <div class="flex-1 px-6 py-6 md:py-4">
+            <div class="flex items-center justify-between">
+              <!-- Left -->
+              <div class="flex items-center gap-4">
+                <!-- Thumbnail -->
+                <img src="./assets/toronto-uni.webp"
+                    alt="University thumbnail"
+                    class="w-14 h-14 md:w-16 md:h-16 object-cover rounded-sm shadow-sm" />
+
+                <!-- Title + small detail -->
+                <div>
+                  <h3 class="text-md md:text-lg font-semibold text-violet-700">University of Toronto</h3>
+                  <div class="mt-1 text-sm text-slate-500 flex items-center gap-2">
+                    <span>Details >></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right -->
+              <div>
+                <button
+                  type="button"
+                  class="inline-flex items-center justify-center bg-violet-600 hover:bg-violet-700 text-white font-medium rounded-sm px-5 py-2 md:px-6 md:py-2 shadow focus:outline-nones cursor-pointer">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="scholarship-guidance" class="w-11/12 mx-auto my-20">
+      <h1 class="sm:text-3xl text-2xl font-bold uppercase text-center mb-10 text-violet-700">
+        University Guidance
+      </h1>
+      <p>
+        We provide end-to-end scholarship guidance to turn your study abroad dream into an affordable reality. Our experts don't just give you a list—we help you build a winning application. We'll match you with the right opportunities, craft compelling essays, and prepare you for interviews to maximize your chances of securing financial aid.
+      </p>
+      <p>
+        Our dedicated service provides everything you need to secure financial aid:
+      </p>
+      <ul class="list-disc ml-10 my-4">
+        <li>Personalized Matching: Discover scholarships that fit your unique profile.</li>
+        <li>Winning Application Support: Get expert help with essays, forms, and reviews.</li>
+        <li>End-to-End Guidance: From discovery to interview prep, we're with you all the way.</li>
+      </ul>
+      <p>
+        Let us help you build a strong case for why you deserve funding.
+      </p>
+    </section>
 
   </main>
-  <footer class="py-20 bg-[url(./assets/malaysia.jpg)] bg-cover bg-no-repeat bg-center">
+  <footer class="py-10 bg-[url(./assets/hero-image-cambry-2.png)] bg-fixed bg-cover bg-no-repeat bg-center">
   <!-- main container: translucent panel with backdrop blur -->
   <div class="max-w-7xl mx-auto px-6">
-    <div class="bg-white/20 backdrop-blur-sm border border-white/20 rounded-lg p-6 md:p-8">
+    <div class="  rounded-lg p-6 md:p-8">
       <!-- top section -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
         <!-- contact text -->
-        <div class="">
+        <div class="p-4 rounded-md bg-white/6 backdrop-blur-sm">
           <div class="pl-2">
             <h2 class="text-3xl md:text-4xl font-extrabold text-yellow-300 mb-4">
               Contact Info
@@ -374,7 +571,7 @@
           </div>
         </div>
         <!-- Contact Form -->
-         <div class="">
+         <div class="p-4 rounded-md bg-white/6 backdrop-blur-sm">
           <div class="contact-form">
             <p class="text-white/90 mb-4 sm:text-base text-sm">
               Have questions? We’re here to help! Fill out the form. We shall reach out to you as soon as possible.
@@ -409,13 +606,15 @@
       </div>
       <!-- bottom section -->
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-        <div class="p-4 rounded-md bg-white/6">
+        <div class="p-4 rounded-md bg-white/6 backdrop-blur-sm">
           <div class="mb-4">
-            <div class="text-yellow-300 font-extrabold text-lg">Cambry</div>
+            <div class="text-yellow-300 font-extrabold text-lg">
+              <img class="w-30" src="./assets/Cambry_Official.png">
+            </div>
             <p class="text-sm text-white/85 mt-2">Your trusted partner since 2009, offering study abroad consultancy, having 600+ partner institutes globally.</p>
           </div>
         </div>
-        <div class="p-4 rounded-md bg-white/6">
+        <div class="p-4 rounded-md bg-white/6 backdrop-blur-sm">
           <h3 class="text-yellow-300 font-semibold mb-3">Explore</h3>
           <ul class="space-y-2 text-white/90 text-sm">
             <li><a href="#" class="hover:underline">Home</a></li>
@@ -424,14 +623,14 @@
             <li><a href="#" class="hover:underline">About Cambry</a></li>
           </ul>
         </div>
-        <div class="text-sm p-4 rounded-md bg-white/6">
+        <div class="text-sm p-4 rounded-md bg-white/6 backdrop-blur-sm">
           <h3 class="text-yellow-300 font-semibold mb-3">Visit</h3>
           <p class="text-white/90 mb-3">H# 398 (1st Floor), R# 29, Mohakhali DOHS, Dhaka-1212, Bangladesh</p>
           <h4 class="text-yellow-300 font-semibold mb-2">Let's Talk</h4>
           <p class="text-white/90"><i class="fa-solid fa-phone-volume pr-2"></i> +880 1730-589112</p>
           <p class="text-white/90"><i class="fa-solid fa-envelope pr-2"></i> cambry.bd@gmail.com</p>
         </div>
-        <div class="p-4 rounded-md bg-white/6">
+        <div class="p-4 rounded-md bg-white/6 backdrop-blur-sm">
           <h3 class="text-yellow-300 font-semibold mb-3">Opening Hours</h3>
           <ul class="text-white/90 text-sm space-y-1">
             <li>SAT: 10:00 AM – 06:00 PM</li>
@@ -441,7 +640,7 @@
             <li>WED: 10:00 AM – 06:00 PM</li>
           </ul>
         </div>
-        <div class="p-4 rounded-md bg-white/6">
+        <div class="p-4 rounded-md bg-white/6 backdrop-blur-sm">
           <h3 class="text-yellow-300 font-semibold mb-3">Legal</h3>
           <ul class="text-white/90 text-sm space-y-2 mb-3">
             <li><a href="#" class="hover:underline">Privacy Policy</a></li>
