@@ -1,10 +1,10 @@
 const destinations = [
-    { flag: "Australia", image: "assets/flags/aus.png" },
-    { flag: "Canada", image: "assets/flags/canada.jpeg" },
-    { flag: "Malaysia", image: "assets/flags/mal.jpg" },
-    { flag: "New Zealand", image: "assets/flags/nz.webp" },
-    { flag: "Sweden", image: "assets/flags/sweden.webp" },
-    { flag: "UK", image: "assets/flags/uk.png" },
+    { flag: "Australia", image: "assets/Australia_dest.svg" },
+    { flag: "Canada", image: "assets/canada_dest.svg" },
+    { flag: "Malaysia", image: "assets/Malaysia_dest.svg" },
+    { flag: "New Zealand", image: "assets/newzeland_dest.svg" },
+    { flag: "Sweden", image: "assets/sweden_dest.svg" },
+    { flag: "UK", image: "assets/uk_dest.svg" },
 ];
 
 let currentIndex = 0;
@@ -47,7 +47,7 @@ function renderCarousel() {
         cardDiv.innerHTML = `
                     <!-- Background Image with Fallback -->
                     <img src="${dest.image}" alt="${dest.name}" 
-                         class="absolute inset-0 w-full h-full object-fit">
+                         class="absolute inset-0 w-full h-full object-cover">
                     
                     <!-- Content Overlay -->
                     <div class="absolute inset-0 flex flex-col  justify-end p-6">
