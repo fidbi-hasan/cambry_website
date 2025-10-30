@@ -51,8 +51,8 @@ function renderCarousel() {
                     
                     <!-- Content Overlay -->
                     <div class="absolute inset-0 flex flex-col  justify-end p-6">
-                        <div class="flag-overlay py-2 px-4 rounded-lg flex hover:bg-blue-500 bg-white/80 backdrop-blur-xl flex-col items-center justify-center">
-                            <a href="${dest.link}"><h3 class="text-white">Learn more about ${dest.flag}</h3></a>
+                        <div class="flag-overlay py-2 px-4 rounded-lg flex  bg-white/80 backdrop-blur-xl flex-col items-center justify-center">
+                            <a href="${dest.link}"><h3 class="text-white text-lg font-black text-center"> ${dest.flag}</h3></a>
                         </div>
                     </div>
                 `;
