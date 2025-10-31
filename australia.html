@@ -1,1407 +1,768 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Study Destination Australia</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study in Australia</title>
   <!-- daisy ui -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <!-- daisy ui -->
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Calistoga&family=Heebo:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
-    rel="stylesheet" />
-
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <link rel="stylesheet" href="./styles/study_destination.css" />
-  <!-- AOS CDN -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <style>
-    .footer_img {
-      background-image: url("./assets/footer_bg.png");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-  </style>
 </head>
-
 <body>
-  <!-- header section -->
-  <section class="relative bg-cover bg-center bg-no-repeat min-h-[100vh] flex flex-col overflow-visible object-cover"
-    style="background-image: url('./assets/aus_bg.jpg')">
-    <!-- Gradient Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-violet-700/30 z-[1]"></div>
-
-    <!-- ====== FIXED NAVBAR ====== -->
-    <header id="main-header" class="fixed top-0 left-0 w-full z-[100]"></header>
-
-    <!-- ====== HERO SECTION ====== -->
-    <div
-      class="relative z-[20] flex flex-col items-center justify-center flex-grow px-4 py-5 sm:py-5 text-center pt-28 ">
-      <div
-        class="bg-white/10 backdrop-blur-md text-white p-6 sm:p-10 md:p-14 rounded-sm shadow-2xl sm:max-w-7/12 mx-auto animate-fadeInUp">
-        <h1
-          class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#FFF] mb-4 leading-tight font_3 drop-shadow-lg">
-          Your Dream to Study in
-          <span class="text-[#ffe521]">Australia</span> is Closer Than You
-          Think!
-        </h1>
-
-        <p class="text-[#ffe521] font-bold font_2 text-sm sm:text-base md:text-lg my-10 max-w-xl mx-auto">
-          Learn everything you need to know about studying in Australia and
-          get end to end expert guidance from us.
-        </p>
-
-        <button
-          class="btn bg-[#FACC15] text-violet-700 font-semibold border-none hover:bg-[#EAB308] hover:scale-105 active:scale-95 transition-all duration-300 font_1 shadow-md rounded-sm">
-          <a id="openContactModalBtn">Get Started For Free</a>
-        </button>
-      </div>
-    </div>
-  </section>
-
+  <header id="main-header" class="fixed top-0 left-0 w-full z-[100]">
+    <!-- added from navbar.js -->
+  </header>
+  
   <main>
-    <!-- ===== STUDY DESTINATION SECTION ===== -->
-    <section class="bg-gradient-to-b from-white to-[#F8F7FF] py-16 px-6 md:px-12 lg:px-24 mt-20">
-      <div class="text-center mb-12">
-        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-violet-700 leading-snug dream_destination_heading">
-          Study in <span class="text-[#FACC15]">Australia</span> as a
-          Bangladeshi Student
-        </h2>
-      </div>
-
-      <!-- ===== CONTENT WRAPPER ===== -->
-      <div
-        class="container mx-auto max-w-6xl flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-20 bg-white shadow-xl rounded-sm overflow-hidden hover:shadow-2xl transition-shadow duration-500">
-        <!-- ===== LEFT CONTENT ===== -->
-        <div class="w-full lg:w-1/2 px-6 md:px-10 py-10 animate__animated animate__fadeInLeft">
-          <p class="text-gray-700 mb-6 font_1 leading-relaxed text-justify md:text-justify hero_counter_para dest_para">
-            Australia stands proud among international students' preferred
-            study destinations, with eight globally ranked universities. A
-            strong Bangladeshi community helps students adjust easily. Perth,
-            Brisbane, Melbourne, Adelaide, and Sydney are among the most
-            popular cities.
-          </p>
-          <p class="text-gray-700 font_1 leading-relaxed text-justify md:text-justify hero_counter_para dest_para">
-            Australia offers a wide range of study choices for international
-            students — from popular fields like Medicine, Engineering, and
-            Computer Science, to unique disciplines like Performing Arts,
-            Theology, and Eastern Medicine. Programs are designed for both
-            theoretical and hands-on learning experiences.
-          </p>
-        </div>
-
-        <!-- ===== RIGHT IMAGE ===== -->
-        <div
-          class="w-full lg:w-1/2 flex justify-center items-center p-6 md:p-10 animate__animated animate__fadeInRight">
-          <div
-            class="card shadow-xl rounded-sm overflow-hidden transform hover:scale-105 transition-transform duration-500">
-            <figure>
-              <img src="./assets/aus_hero_bg.jpg" alt="Study in Australia illustration"
-                class="w-full h-full object-cover backdrop-blur-sm" />
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- why choose australia -->
-    <section class="bg-[#F9F8FF] py-16 px-6 md:px-12 lg:px-20 mt-20">
-      <div class="container mx-auto max-w-6xl text-center">
-        <!-- ===== HEADING ===== -->
-        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-violet-700 mb-6">
-          Why Choose <span class="text-[#FACC15]">Australia</span> as Your
-          Dream Destination
-        </h2>
-        <p class="text-gray-600 max-w-2xl mx-auto mb-16">
-          All students are choosy when it comes to selecting their study
-          destination. Many students have preferred Australia.
+    <section id="hero-section" class="sm:h-svh py-20 bg-[url(https://images.unsplash.com/photo-1622852060528-b94f83cfc6a7)] bg-cover bg-fit bg-fixed bg-center bg-no-repeat flex justify-center items-center">
+      <div id="hero-contents" class="bg-white/30 backdrop-blur-md sm:w-[50%] py-10 px-5 rounded-sm w-11/12 mx-auto">
+        <h1 class="sm:text-4xl text-3xl font-black text-center text-white uppercase">
+          Your Dream to Study in Australia is Closer Than You Think!
+        </h1>
+        <p class="text-center sm:text-md text-sm text-black my-4">
+          Learn everything you need to know about studying in Australia and get end to end expert guidance from us.
         </p>
-
-        <!-- ===== FEATURES GRID ===== -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <!-- Card 1 -->
-          <div
-            class="relative card bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group overflow-hidden">
-            <div class="card-body items-center text-center">
-              <img src="./assets/p1.png" alt="Career Opportunities" class="w-25 h-25 mb-2" />
-              <h3 class="font-semibold text-violet-700 text-lg">
-                Abundant Career Opportunities
-              </h3>
-            </div>
-            <div
-              class="absolute inset-0 bg-violet-700/95 text-white flex items-center justify-center text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              <p class="text-sm md:text-base leading-relaxed">
-                Australia offers several short-term courses to help you land a good job. The country gives great
-                importance to career-oriented programs.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div
-            class="relative card bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group overflow-hidden">
-            <div class="card-body items-center text-center">
-              <img src="./assets/p2.png" alt="Career Oriented Education" class="w-25 h-25 mb-2" />
-              <h3 class="font-semibold text-violet-700 text-lg">
-                Career Oriented Education
-              </h3>
-            </div>
-            <div
-              class="absolute inset-0 bg-violet-700/95 text-white flex items-center justify-center text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              <p class="text-sm md:text-base leading-relaxed">
-                The programs offered by universities in Australia give great importance to research. The country is also
-                known for some great inventions as well.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div
-            class="relative card bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group overflow-hidden">
-            <div class="card-body items-center text-center">
-              <img src="./assets/p3.png" alt="Research Program" class="w-25 h-25 mb-2" />
-              <h3 class="font-semibold text-violet-700 text-lg">
-                Research Specific Program
-              </h3>
-            </div>
-            <div
-              class="absolute inset-0 bg-violet-700/95 text-white flex items-center justify-center text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              <p class="text-sm md:text-base leading-relaxed">
-                If you have your certificate from an Australian University, you will find that it is highly respected
-                and valued by others worldwide. It will make it easier for both your job and higher education.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div
-            class="relative card bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group overflow-hidden">
-            <div class="card-body items-center text-center">
-              <img src="./assets/p1.png" alt="Qualification" class="w-25 h-25 mb-2" />
-              <h3 class="font-semibold text-violet-700 text-lg">
-                Highly Dignified Qualification
-              </h3>
-            </div>
-            <div
-              class="absolute inset-0 bg-violet-700/95 text-white flex items-center justify-center text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              <p class="text-sm md:text-base leading-relaxed">
-                Australia follows simpler processes for getting a work visa. You can also work 20 hours a week during
-                your course and earn some money thus.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div
-            class="relative card bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group overflow-hidden">
-            <div class="card-body items-center text-center">
-              <img src="./assets/p5.png" alt="Student Rights" class="w-25 h-25 mb-2" />
-              <h3 class="font-semibold text-violet-700 text-lg">
-                International Student’s Right
-              </h3>
-            </div>
-            <div
-              class="absolute inset-0 bg-violet-700/95 text-white flex items-center justify-center text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              <p class="text-sm md:text-base leading-relaxed">
-                Australia is a diverse country to live in. You will find students from all
-                over the world. You can interact with them, which in turn helps you
-                understand different cultures.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 6 -->
-          <div
-            class="relative card bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group overflow-hidden">
-            <div class="card-body items-center text-center">
-              <img src="./assets/p6.png" alt="Diverse Country" class="w-25 h-25 mb-2" />
-              <h3 class="font-semibold text-violet-700 text-lg">
-                Diverse Country
-              </h3>
-            </div>
-            <div
-              class="absolute inset-0 bg-violet-700/95 text-white flex items-center justify-center text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              <p class="text-sm md:text-base leading-relaxed">
-                Compared to countries like the USA and the UK, it is comparatively cheaper to live in Australia. There
-                are several scholarships available at your disposal too.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 7 -->
-          <div
-            class="relative card bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group overflow-hidden">
-            <div class="card-body items-center text-center">
-              <img src="./assets/p7.png" alt="Lessen Expense" class="w-25 h-25 mb-2" />
-              <h3 class="font-semibold text-violet-700 text-lg">
-                Lessen the Expense
-              </h3>
-            </div>
-            <div
-              class="absolute inset-0 bg-violet-700/95 text-white flex items-center justify-center text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              <p class="text-sm md:text-base leading-relaxed">
-                The scenic beauty of Australia is reason enough to move to the country. If you are a fan of nature trips
-                and adventures, you can visit the Great Barrier Reef, Bondi Beach etc.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 8 -->
-          <div
-            class="relative card bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group overflow-hidden">
-            <div class="card-body items-center text-center">
-              <img src="./assets/p8.png" alt="Landscape" class="w-25 h-25 mb-2" />
-              <h3 class="font-semibold text-violet-700 text-lg">
-                Incredible Landscape
-              </h3>
-            </div>
-            <div
-              class="absolute inset-0 bg-violet-700/95 text-white flex items-center justify-center text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              <p class="text-sm md:text-base leading-relaxed">
-                Australia is unbeaten when offering people rights and powers. The Australian Education Services for
-                Overseas Students (ESOS) Act 2000 ensures that international students' study
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-    </section>
-
-    <!-- top university section -->
-    <section class="bg-[#F9F8FF] py-16 px-6 md:px-12 lg:px-20">
-      <div class="container mx-auto max-w-6xl text-center">
-        <!-- ====== SECTION TITLE ====== -->
-        <h2 class="text-2xl sm:text-3xl font_1 md:text-4xl font-bold text-violet-700 mb-4">
-          Top University of Australia
-        </h2>
-        <p class="text-gray-500 font_2 max-w-5xl mx-auto leading-relaxed mb-12 message_text_paragraph">
-          Australia is renowned for its exceptional higher education
-          institutions, offering a wide range of courses and research
-          opportunities. For students from Bangladesh who aspire to study in
-          Australia, it is essential to choose the right university.
-          <br />
-          Here are some of the top universities in Australia known for their
-          academic excellence and global reputation:
-        </p>
-
-        <!-- ====== UNIVERSITY GRID SECTION (ALL DIV VERSION) ====== -->
-        <div class="bg-gradient-to-b from-white to-[#F8F7FF] py-16 px-4">
-          <div class="container mx-auto max-w-7xl">
-            <!-- HEADING -->
-            <div class="text-center mb-12">
-              <h2 class="text-3xl md:text-4xl font-bold text-violet-700">
-                Top Australian Universities
-              </h2>
-              <p class="text-gray-500 mt-2">Explore and find your dream university</p>
-            </div>
-
-            <!-- ====== UNIVERSITY GRID ====== -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-
-              <!-- CARD 1 -->
-              <div
-                class="bg-white shadow-md border border-gray-100 rounded-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-[1.02]">
-                <div class="overflow-hidden rounded-t-2xl">
-                  <img src="./assets/aus_university/melbourn.png" alt="University of Melbourne"
-                    class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
-                </div>
-                <div class="p-6 text-left">
-                  <div class="flex gap-4 items-start">
-                    <img class="w-8 h-8 mt-1" src="./assets/university_icon/uni_icon_1.png" alt="" />
-                    <h3 class="font-semibold text-violet-700 text-lg uppercase">
-                      University of Melbourne
-                    </h3>
-                  </div>
-                  <p class="text-gray-500 ml-12 mt-1">
-                    <i class="fa-solid fa-location-dot mr-1 text-violet-700"></i>
-                    Melbourne
-                  </p>
-                  <div class="mt-5">
-                    <button
-                      class="btn gap-3 btn-sm p-4 bg-[#FACC15] text-violet-700 hover:bg-[#EAB308] border-none rounded-sm shadow-md hover:shadow-lg transition-transform duration-300 hover:scale-105">
-                      View Details
-                      <img src="./assets/select_uni_icon.png" alt="" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- CARD 5 -->
-              <div
-                class="bg-white shadow-md border border-gray-100 rounded-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-[1.02]">
-                <div class="overflow-hidden rounded-t-2xl">
-                  <img src="./assets/aus_university/uni5.png" alt="Deakin University"
-                    class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
-                </div>
-                <div class="p-6 text-left">
-                  <div class="flex gap-4 items-start">
-                    <img class="w-8 h-8 mt-1" src="./assets/university_icon/uni_icon_5.png" alt="" />
-                    <h3 class="font-semibold text-violet-700 text-lg uppercase">
-                      Deakin University
-                    </h3>
-                  </div>
-                  <p class="text-gray-500 mt-1 ml-12">
-                    <i class="fa-solid fa-location-dot mr-1 text-violet-700"></i>Melborne
-                  </p>
-                  <div class="mt-5">
-                    <button
-                      class="btn gap-3 btn-sm p-4 bg-[#FACC15] text-violet-700 hover:bg-[#EAB308] border-none rounded-sm shadow-md hover:shadow-lg transition-transform duration-300 hover:scale-105">
-                      View Details
-                      <img src="./assets/select_uni_icon.png" alt="" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- CARD 7 -->
-              <div
-                class="bg-white shadow-md border border-gray-100 rounded-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-[1.02]">
-                <div class="overflow-hidden rounded-t-2xl">
-                  <img src="./assets/aus_university/uni7.png" alt="University of Sydney"
-                    class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
-                </div>
-                <div class="p-6 text-left">
-                  <div class="flex gap-4 items-start">
-                    <img class="w-8 h-8 mt-1" src="./assets/university_icon/uni_icon_7.png" alt="" />
-                    <h3 class="font-semibold text-violet-700 text-lg uppercase">
-                      university of sydney
-                    </h3>
-                  </div>
-                  <p class="text-gray-500 mt-1 ml-12">
-                    <i class="fa-solid fa-location-dot mr-1 text-violet-700"></i>Sydney
-                  </p>
-                  <div class="mt-5">
-                    <button
-                      class="btn gap-3 btn-sm p-4 bg-[#FACC15] text-violet-700 hover:bg-[#EAB308] border-none rounded-sm shadow-md hover:shadow-lg transition-transform duration-300 hover:scale-105">
-                      View Details
-                      <img src="./assets/select_uni_icon.png" alt="" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-
-
-              <!-- CARD 4 -->
-              <div
-                class="bg-white shadow-md border border-gray-100 rounded-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-[1.02]">
-                <div class="overflow-hidden rounded-t-2xl">
-                  <img src="./assets/aus_university/uni4.png" alt="University of Queensland"
-                    class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
-                </div>
-                <div class="p-6 text-left">
-                  <div class="flex gap-4 items-start">
-                    <img class="w-8 h-8 mt-1" src="./assets/university_icon/uni_icon_4.png" alt="" />
-                    <h3 class="font-semibold text-violet-700 text-lg uppercase">
-                      University of Queensland
-                    </h3>
-                  </div>
-                  <p class="text-gray-500 mt-1 ml-12">
-                    <i class="fa-solid fa-location-dot mr-1 text-violet-700"></i>Brisbane
-                  </p>
-                  <div class="mt-5">
-                    <button
-                      class="btn gap-3 btn-sm p-4 bg-[#FACC15] text-violet-700 hover:bg-[#EAB308] border-none rounded-sm shadow-md hover:shadow-lg transition-transform duration-300 hover:scale-105">
-                      View Details
-                      <img src="./assets/select_uni_icon.png" alt="" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- CARD 2 -->
-              <div
-                class="bg-white shadow-md border border-gray-100 rounded-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-[1.02]">
-                <div class="overflow-hidden rounded-t-2xl">
-                  <img src="./assets/aus_university/uni2.png" alt="University of New South Wales"
-                    class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
-                </div>
-                <div class="p-6 text-left">
-                  <div class="flex gap-4 items-start">
-                    <img class="w-8 h-8 mt-1" src="./assets/university_icon/uni_icon_2.png" alt="" />
-                    <h3 class="font-semibold text-violet-700 text-lg uppercase">
-                      University of New south wales
-                    </h3>
-                  </div>
-                  <p class="text-gray-500 mt-1 ml-12">
-                    <i class="fa-solid fa-location-dot mr-1 text-violet-700"></i>Sydney
-                  </p>
-                  <div class="mt-5">
-                    <button
-                      class="btn gap-3 btn-sm p-4 bg-[#FACC15] text-violet-700 hover:bg-[#EAB308] border-none rounded-sm shadow-md hover:shadow-lg transition-transform duration-300 hover:scale-105">
-                      View Details
-                      <img src="./assets/select_uni_icon.png" alt="" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- CARD 6 -->
-              <div
-                class="bg-white shadow-md border border-gray-100 rounded-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-[1.02]">
-                <div class="overflow-hidden rounded-t-2xl">
-                  <img src="./assets/aus_university/uni6.png" alt="University of Technology Sydney"
-                    class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
-                </div>
-                <div class="p-6 text-left">
-                  <div class="flex gap-4 items-start">
-                    <img class="w-8 h-8 mt-1" src="./assets/university_icon/uni_icon_6.png" alt="" />
-                    <h3 class="font-semibold text-violet-700 text-lg uppercase">
-                      University of technology sydney
-                    </h3>
-                  </div>
-                  <p class="text-gray-500 mt-1 ml-12">
-                    <i class="fa-solid fa-location-dot mr-1 text-violet-700"></i>Melborne
-                  </p>
-                  <div class="mt-5">
-                    <button
-                      class="btn gap-3 btn-sm p-4 bg-[#FACC15] text-violet-700 hover:bg-[#EAB308] border-none rounded-sm shadow-md hover:shadow-lg transition-transform duration-300 hover:scale-105">
-                      View Details
-                      <img src="./assets/select_uni_icon.png" alt="" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- CARD 3 -->
-              <div
-                class="bg-white shadow-md border border-gray-100 rounded-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-[1.02]">
-                <div class="overflow-hidden rounded-t-2xl">
-                  <img src="./assets/aus_university/uni3.png" alt="Australian National University"
-                    class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
-                </div>
-                <div class="p-6 text-left">
-                  <div class="flex gap-4 items-start">
-                    <img class="w-8 h-8 mt-1" src="./assets/university_icon/uni_icon_3.png" alt="" />
-                    <h3 class="font-semibold text-violet-700 text-lg uppercase">
-                      Australian National University
-                    </h3>
-                  </div>
-                  <p class="text-gray-500 mt-1 ml-12">
-                    <i class="fa-solid fa-location-dot mr-1 text-violet-700"></i>Canberra
-                  </p>
-                  <div class="mt-5">
-                    <button
-                      class="btn gap-3 btn-sm p-4 bg-[#FACC15] text-violet-700 hover:bg-[#EAB308] border-none rounded-sm shadow-md hover:shadow-lg transition-transform duration-300 hover:scale-105">
-                      View Details
-                      <img src="./assets/select_uni_icon.png" alt="" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- CARD 8 -->
-              <div
-                class="bg-white shadow-md border border-gray-100 rounded-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-[1.02]">
-                <div class="overflow-hidden rounded-t-2xl">
-                  <img src="./assets/aus_university/uni8.png" alt="University of Western Australia"
-                    class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
-                </div>
-                <div class="p-6 text-left">
-                  <div class="flex gap-4 items-start">
-                    <img class="w-8 h-8 mt-1" src="./assets/university_icon/uni_icon_8.png" alt="" />
-                    <h3 class="font-semibold text-violet-700 text-lg uppercase">
-                      The university of western australia
-                    </h3>
-                  </div>
-                  <p class="text-gray-500 mt-1 ml-12">
-                    <i class="fa-solid fa-location-dot mr-1 text-violet-700"></i>Sydney
-                  </p>
-                  <div class="mt-5">
-                    <button
-                      class="btn gap-3 btn-sm p-4 bg-[#FACC15] text-violet-700 hover:bg-[#EAB308] border-none rounded-sm shadow-md hover:shadow-lg transition-transform duration-300 hover:scale-105">
-                      View Details
-                      <img src="./assets/select_uni_icon.png" alt="" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-
-          </div>
-        </div>
-
-        <!-- ====== CTA (Bottom) ====== -->
-        <div class="text-center mt-10">
-          <p class="mb-12 message_text_paragraph text-violet-700">
-            Why spend your time when you can seek an expert’s help all for
-            free?<br />
-            Contact AECC and get free assistance to study in Australia today!
-          </p>
-          <button
-            class="btn bg-[#FACC15] text-violet-700 text-[18px] font_2 font-bold hover:bg-[#EAB308] border-none rounded-sm px-8 py-2">
-            <a href="contact_us.html">Get Free Assistant From Cambry</a>
+        <div id="hero-buttons-container" class="flex sm:flex-row flex-col-reverse justify-center gap-4">
+          <button class="btn sm:btn-md btn-sm bg-violet-700/50 hover:bg-yellow-400/60 backdrop-blur-sm border-none shadow-none text-white">
+            <a id="openModalBtn"><i class="fa-solid fa-calendar-check"></i> Book an appointment</a>
+          </button>
+          <button class="btn sm:btn-md btn-sm bg-violet-700/50 hover:bg-yellow-400/60 backdrop-blur-sm border-none shadow-none text-white">
+            <a href="study-destination-mainpage.html"><i class="fa-solid fa-earth-americas"></i> Explore destinations</a>
           </button>
         </div>
       </div>
     </section>
 
-    <!-- top courses section -->
-    <section class="bg-[#F9F8FF] py-16 px-6 md:px-12 lg:px-20">
-      <div
-        class="container mx-auto max-w-6xl flex flex-col-reverse lg:flex-row items-center gap-10 shadow-xl rounded-sm bg-white/70 backdrop-blur-sm">
-        <!-- ===== LEFT CONTENT ===== -->
-        <div class="text-center lg:text-justify p-6 md:p-10">
-          <h2 class="message_form_heading text-2xl font_1 sm:text-3xl md:text-4xl font-bold text-violet-700 mb-6">
-            Top Courses in Australia
-          </h2>
-          <p class="text-gray-500 mb-8 font_1 leading-relaxed message_text_paragraph">
-            Australia is known for its high-quality education and wide range
-            of courses available for international students. Some of the
-            popular courses that attract international students to Australia
-            include:
+    <section id="study-in-australia" class="w-11/12 mx-auto flex items-center justify-between sm:my-20 my-10">
+      <div class="study-in-australia-content sm:w-[50%] w-full">
+        <h1 class="sm:text-3xl text-xl font-bold sm:text-start text-center uppercase text-violet-700">
+          Study in <span class="text-[#FACC15]">Australia</span> from Bangladesh
+        </h1>
+        <p class="text-justify mt-5 sm:text-base text-[12px]">
+          Australia stands proud among international students' preferred study destinations, with eight globally ranked universities. A strong Bangladeshi community helps students adjust easily. Perth, Brisbane, Melbourne, Adelaide, and Sydney are among the most popular cities.
+
+          Australia offers a wide range of study choices for international students - from popular fields like Medicine, Engineering, and Computer Science, to unique disciplines like Performing Arts, Theology, and Eastern Medicine. Programs are designed for both theoretical and hands-on learning experiences.
+        </p>
+      </div>
+      <div class="study-in-australia-img w-[40%] sm:flex justify-end hidden">
+        <img class="w-120" src="./assets/aus_hero_bg.jpg" alt="">
+      </div>
+    </section>
+
+    <section id="key-facts" class="w-11/12 mx-auto sm:my-20 my-10">
+      <h1 class="sm:text-3xl text-xl font-bold text-center uppercase text-violet-700">
+        Key Factors for <span class="text-[#FACC15]"> studying in Australia</span>
+      </h1>
+
+      <div id="key-facts-container" class="grid sm:grid-cols-4 grid-cols-2 gap-3 mt-10">
+        <div class="key-fact-single shadow-sm shadow-violet-300 p-4 rounded-sm"
+        >
+          <h3 class="text-violet-700 text-sm font-bold">
+            <i class="fa-solid fa-language"></i> Language of Instruction:
+          </h3>
+          <p class="text-xs italic mt-1 font-bold">English</p>
+        </div>
+        <div class="key-fact-single shadow-sm shadow-violet-300 p-4 rounded-sm" >
+          <h3 class="text-violet-700 text-sm font-bold">
+            <i class="fa-solid fa-comment-dollar"></i> Annual Tuition Fees (Approx.):
+          </h3>
+          <p class="text-xs italic mt-1 font-bold">(16,000 - 56,000+) AUD</p>
+        </div>
+        <div class="key-fact-single shadow-sm shadow-violet-300 p-4 rounded-sm" >
+          <h3 class="text-violet-700 text-sm font-bold">
+            <i class="fa-solid fa-handshake-angle"></i> Funding Options:
+          </h3>
+          <p class="text-xs italic mt-1 font-bold">
+            Scholarships, bursaries, part-time employment, financial aid programs
           </p>
+        </div>
+        <div class="key-fact-single shadow-sm shadow-violet-300 p-4 rounded-sm" >
+          <h3 class="text-violet-700 text-sm font-bold">
+            <i class="fa-solid fa-list-check"></i> Required Exams:
+          </h3>
+          <p class="text-xs italic mt-1 font-bold">
+            IELTS, TOEFL, PTE, GRE, GMAT (depending on course and university)
+          </p>
+        </div>
+        <div class="key-fact-single shadow-sm shadow-violet-300 p-4 rounded-sm" >
+          <h3 class="text-violet-700 text-sm font-bold">
+            <i class="fa-solid fa-school"></i> Academic Levels Available:
+          </h3>
+          <p class="text-xs italic mt-1 font-bold">
+            Diploma, Bachelor's, Master's, PhD
+          </p>
+        </div>
+        <div class="key-fact-single shadow-sm shadow-violet-300 p-4 rounded-sm" >
+          <h3 class="text-violet-700 text-sm font-bold">
+            <i class="fa-solid fa-calendar"></i> Intake Seasons:
+          </h3>
+          <p class="text-xs italic mt-1 font-bold">
+            February, July, October (varies by university; some offer rolling intakes)
+          </p>
+        </div>
+        <div class="key-fact-single shadow-sm shadow-violet-300 p-4 rounded-sm" >
+          <h3 class="text-violet-700 text-sm font-bold">
+            <i class="fa-solid fa-passport"></i> Visa Type:
+          </h3>
+          <p class="text-xs italic mt-1 font-bold">
+            Student Visa (Subclass 500)
+          </p>
+        </div>
+        <div class="key-fact-single shadow-sm shadow-violet-300 p-4 rounded-sm" >
+          <h3 class="text-violet-700 text-sm font-bold">
+            <i class="fa-solid fa-money-bill-1"></i> Visa Application Fee:
+          </h3>
+          <p class="text-xs italic mt-1 font-bold">
+            Starting from approximately AUD 2,000
+          </p>
+        </div>
+        <div class="key-fact-single shadow-sm shadow-violet-300 p-4 rounded-sm" >
+          <h3 class="text-violet-700 text-sm font-bold">
+            <i class="fa-solid fa-coins"></i> Proof of Financial Capacity (Living Costs):
+          </h3>
+          <p class="text-xs italic mt-1 font-bold">
+            Minimum financial requirement: around AUD 29,710 per year for living expenses (excluding tuition & travel)
+          </p>
+        </div>
+        <div class="key-fact-single shadow-sm shadow-violet-300 p-4 rounded-sm" >
+          <h3 class="text-violet-700 text-sm font-bold">
+            <i class="fa-regular fa-credit-card"></i> Estimated Monthly Living Expenses:
+          </h3>
+          <p class="text-xs italic mt-1 font-bold">
+            AUD 1,800 – AUD 3,200 (depending on city and lifestyle)
+          </p>
+        </div>
+        <div class="key-fact-single shadow-sm shadow-violet-300 p-4 rounded-sm" >
+          <h3 class="text-violet-700 text-sm font-bold">
+            <i class="fa-solid fa-city"></i> Popular Student Cities:
+          </h3>
+          <p class="text-xs italic mt-1 font-bold">
+            Melbourne, Sydney, Brisbane, Adelaide, Perth, Canberra
+          </p>
+        </div>
+        <div class="key-fact-single shadow-sm shadow-violet-300 p-4 rounded-sm" >
+          <h3 class="text-violet-700 text-sm font-bold">
+            <i class="fa-solid fa-user-check"></i> Post-Study Work Opportunities:
+          </h3>
+          <p class="text-xs italic mt-1 font-bold">
+            Eligible graduates may apply for post-study work visas (Temporary Graduate Visa Subclass 485), allowing work experience in Australia after completing studies
+          </p>
+        </div>
+      </div>  
+      <p class="mt-5 text-sm font-semibold p-2 text-shadow-xs text-shadow-violet-300 text-justify">
+        These updated details reflect recent requirements and costs for international students planning to study in Australia. This information helps Bangladeshi students plan budgets, understand visa requirements, and make informed decisions about pursuing higher education in Australia.
+      </p>
+    </section>
 
-          <!-- ===== COURSES GRID ===== -->
-          <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 mb-8">
-            <button
-              class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-violet-700 hover:text-white text-violet-700 text-sm rounded-sm">
-              Health & Science
-            </button>
-            <button
-              class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-violet-700 hover:text-white text-violet-700 text-sm font-2 rounded-sm">
-              Information Technology
-            </button>
-            <button
-              class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-violet-700 hover:text-white text-violet-700 text-sm rounded-sm">
-              Art & Design
-            </button>
-            <button
-              class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-violet-700 hover:text-white text-violet-700 text-sm rounded-sm">
-              Accounting
-            </button>
-            <button
-              class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-violet-700 hover:text-white text-violet-700 text-sm rounded-sm">
-              Computer Science
-            </button>
-            <button
-              class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-violet-700 hover:text-white text-violet-700 text-sm rounded-sm">
-              Medicine
-            </button>
-            <button
-              class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-violet-700 hover:text-white text-violet-700 text-sm rounded-sm">
-              Business Management
-            </button>
-            <button
-              class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-violet-700 hover:text-white text-violet-700 text-sm rounded-sm">
-              Engineering
-            </button>
-            <button
-              class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-violet-700 hover:text-white text-violet-700 text-sm rounded-sm">
-              Mass & Media
-            </button>
+    <section id="why-choose-australia" class="w-11/12 mx-auto sm:my-20 my-10">
+      <h1 class="sm:text-3xl text-xl font-bold text-center uppercase text-violet-700">
+        Why Choose <span class="text-[#FACC15]">Australia</span> as Your Dream Destination
+      </h1>
+      <p class="text-center sm:text-base text-[12px]">
+        All students are choosy when it comes to selecting their study destination. Many students have preferred Australia.
+      </p>
+      <div id="features-container" class="grid sm:grid-cols-4 grid-cols-2 gap-4 mt-10">
+        <div class="feature-single p-3 rounded-sm shadow-sm shadow-violet-300 flex flex-col justify-center items-center">
+          <img class="w-20" src="./assets/p1.png" alt="">
+          <h3 class="text-md font-medium text-center text-violet-700">
+            Abundant Career Opportunities
+          </h3>
+          <p class="text-xs text-justify text-gray-500 italic hover:text-black mt-1">
+            Australia offers several short-term courses to help you land a good job. The country gives great importance to career-oriented programs.
+          </p>
+        </div>
+        <div class="feature-single p-3 rounded-sm shadow-sm shadow-violet-300 flex flex-col justify-center items-center">
+          <img class="w-20" src="./assets/p2.png" alt="">
+          <h3 class="text-md font-medium text-center text-violet-700">
+            Career Oriented Education
+          </h3>
+          <p class="text-xs text-justify text-gray-500 italic hover:text-black mt-1">
+            The programs offered by universities in Australia give great importance to research. The country is also known for some great inventions as well.
+          </p>
+        </div>
+        <div class="feature-single p-3 rounded-sm shadow-sm shadow-violet-300 flex flex-col justify-center items-center">
+          <img class="w-20" src="./assets/p3.png" alt="">
+          <h3 class="text-md font-medium text-center text-violet-700">
+            Research Specific Program
+          </h3>
+          <p class="text-xs text-justify text-gray-500 italic hover:text-black mt-1">
+            Having certified from an Australian University, you will find that it is highly respected and valued by others worldwide. It will make it easier for both your job and higher education.
+          </p>
+        </div>
+        <div class="feature-single p-3 rounded-sm shadow-sm shadow-violet-300 flex flex-col justify-center items-center">
+          <img class="w-20" src="./assets/p1.png" alt="">
+          <h3 class="text-md font-medium text-center text-violet-700">
+            Highly Dignified Qualification
+          </h3>
+          <p class="text-xs text-justify text-gray-500 italic hover:text-black mt-1">
+            Having certified from an Australian University, you will find that it is highly respected and valued by others worldwide. It will make it easier for both your job and higher education.
+          </p>
+        </div>
+        <div class="feature-single p-3 rounded-sm shadow-sm shadow-violet-300 flex flex-col justify-center items-center">
+          <img class="w-20" src="./assets/p5.png" alt="">
+          <h3 class="text-md font-medium text-center text-violet-700">
+            Internation Student Rights
+          </h3>
+          <p class="text-xs text-justify text-gray-500 italic hover:text-black mt-1">
+            Australia follows simpler processes for getting a work visa. You can also work 20 hours a week during your course and earn some money thus.
+          </p>
+        </div>
+        <div class="feature-single p-3 rounded-sm shadow-sm shadow-violet-300 flex flex-col justify-center items-center">
+          <img class="w-20" src="./assets/p6.png" alt="">
+          <h3 class="text-md font-medium text-center text-violet-700">
+            Cultural Diversity
+          </h3>
+          <p class="text-xs text-justify text-gray-500 italic hover:text-black mt-1">
+            Australia is a diverse country to live in. You will find students from all over the world. You can interact with them, which in turn helps you understand different cultures.
+          </p>
+        </div>
+        <div class="feature-single p-3 rounded-sm shadow-sm shadow-violet-300 flex flex-col justify-center items-center">
+          <img class="w-20" src="./assets/p7.png" alt="">
+          <h3 class="text-md font-medium text-center text-violet-700">
+            Reasonable Study Expense
+          </h3>
+          <p class="text-xs text-justify text-gray-500 italic hover:text-black mt-1">
+            The scenic beauty of Australia is reason enough to move to the country. If you are a fan of nature trips and adventures, you can visit the Great Barrier Reef, Bondi Beach etc.
+          </p>
+        </div>
+        <div class="feature-single p-3 rounded-sm shadow-sm shadow-violet-300 flex flex-col justify-center items-center">
+          <img class="w-20" src="./assets/p8.png" alt="">
+          <h3 class="text-md font-medium text-center text-violet-700">
+            Incredible Landscape & Nature
+          </h3>
+          <p class="text-xs text-justify text-gray-500 italic hover:text-black mt-1">
+            Australia is unbeaten when offering people rights and powers. The Australian Education Services for Overseas Students (ESOS) Act 2000 ensures that international students' study
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="top-universities" class="w-11/12 mx-auto sm:my-20 my-10">
+      <h1 class="sm:text-3xl text-xl font-bold text-center uppercase text-violet-700">
+        Top Universities in <span class="text-[#FACC15]">Australia</span>
+      </h1>
+      <p class="text-center sm:text-base text-[12px]">
+        Explore and find your dream university
+      </p>
+      <div id="university-card-container" class="mt-10 grid sm:grid-cols-4 grid-cols-2 gap-5">
+        <div id="university-card-single" class="rounded-sm shadow-sm shadow-violet-300 hover:shadow-violet-400 transition-all duration-300">
+          <img class="w-full sm:h-60 h-50 object-cover rounded-t-sm" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy1dI2mjnU8GOQP0mvjvqDy17YN6Ab1DLLm3LgmrB2zWJa36xLEIXw1Mu8Uf3yuPC-7CX2w0sMSi_Mb3rKBhIDFGoO_EtyQEFPwWPDGbnvJpw55GymfiMzv2jbpuMlB2hvBwHf-vw=s1360-w1360-h1020-rw">
+          <div id="university-card-content" class="flex items-start gap-3 px-3 py-2">
+            <div id="card-img" class="">
+              <img class="w-9 mt-0.5" src="./assets/university_icon/uni_icon_1.png">
+            </div>
+            <div id="card-texts">
+              <h3 class="sm:text-md text-sm font-medium text-violet-700">
+                University of Melbourne
+              </h3>
+              <p class="sm:text-[12px] text-[8px] -ml-1 text-gray-500 hover:text-black">
+                <i class="fa-solid fa-location-dot text-violet-700"></i> Grattan Street, Parkville, Victoria, 3010
+              </p>
+              <a class="sm:text-[10px] text-[7px] text-gray-400 hover:text-violet-700" href="https://www.unimelb.edu.au/" target="_blank">Visit Official Website <i class="fa-solid fa-caret-right"></i></a>
+            </div>
           </div>
+        </div>
+        <div id="university-card-single" class="rounded-sm shadow-sm shadow-violet-300">
+          <img class="w-full sm:h-60 h-50 object-cover rounded-t-sm" src="https://lh5.googleusercontent.com/proxy/LypuZf1dAtWguvNzYXXx10qG03hyVP6l_73Se-VanyIgAd5tY3frr7ihfjM02BAf3z9MXnIF6pM1LX5KJHS9MBP2ITg2MYl5mb2lATvJWutdthOddCx2sIP9">
+          <div id="university-card-content" class="flex items-start gap-3 px-3 py-2">
+            <div id="card-img" class="">
+              <img class="w-9 mt-0.5" src="./assets/university_icon/uni_icon_5.png">
+            </div>
+            <div id="card-texts">
+              <h3 class="sm:text-md text-sm font-medium text-violet-700">
+                Deakin University
+              </h3>
+              <p class="sm:text-[12px] text-[8px] -ml-1 text-gray-500 hover:text-black">
+                <i class="fa-solid fa-location-dot text-violet-700"></i> Geelong, Australia
+              </p>
+              <a class="sm:text-[10px] text-[7px] text-gray-400 hover:text-violet-700" href="https://www.deakin.edu.au/" target="_blank">Visit Official Website <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div id="university-card-single" class="rounded-sm shadow-sm shadow-violet-300">
+          <img class="w-full sm:h-60 h-50 object-cover rounded-t-sm" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxWMeqKXFR2WWwUfWIn_zsh_8k5SifVvd6aqYQYBydcQM9_gxAqCnnhOyaiYkhk9SK6aVrTwPZemD1UcYSRs6ws3xbAebMjjkTvMS3Vm8A382RLQojjgZpMuxTrLuxPtGIiRz8=s1360-w1360-h1020-rw">
+          <div id="university-card-content" class="flex items-start gap-3 px-3 py-2">
+            <div id="card-img" class="">
+              <img class="w-9 mt-0.5" src="./assets/university_icon/uni_icon_7.png">
+            </div>
+            <div id="card-texts">
+              <h3 class="sm:text-md text-sm font-medium text-violet-700">
+                University of Sydney
+              </h3>
+              <p class="sm:text-[12px] text-[8px] -ml-1 text-gray-500 hover:text-black">
+                <i class="fa-solid fa-location-dot text-violet-700"></i> Camperdown NSW 2050, Australia
+              </p>
+              <a class="sm:text-[10px] text-[7px] text-gray-400 hover:text-violet-700" href="https://www.sydney.edu.au/" target="_blank">Visit Official Website <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div id="university-card-single" class="rounded-sm shadow-sm shadow-violet-300">
+          <img class="w-full sm:h-60 h-50 object-cover rounded-t-sm" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxoaakwyrK7ghRXe9hIBF-NNFdnEoFlNz20IzvFeZAg8HOu1kp9g8YFkVBOgSVlr3kSpYCccBad3BGvY2t8dlqpT88cYo0TINmrlg-7cw2QEnwU-ysHoDnNFTIr-Hmm_VxDPgw=s1360-w1360-h1020-rw">
+          <div id="university-card-content" class="flex items-start gap-3 px-3 py-2">
+            <div id="card-img" class="">
+              <img class="w-9 mt-0.5" src="./assets/university_icon/uni_icon_4.png">
+            </div>
+            <div id="card-texts">
+              <h3 class="sm:text-md text-sm font-medium text-violet-700">
+                University of Queensland
+              </h3>
+              <p class="sm:text-[12px] text-[8px] -ml-1 text-gray-500 hover:text-black">
+                <i class="fa-solid fa-location-dot text-violet-700"></i> St Lucia QLD 4072, Australia
+              </p>
+              <a class="sm:text-[10px] text-[7px] text-gray-400 hover:text-violet-700" href="https://www.uq.edu.au/" target="_blank">Visit Official Website <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div id="university-card-single" class="rounded-sm shadow-sm shadow-violet-300">
+          <img class="w-full sm:h-60 h-50 object-cover rounded-t-sm" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxXClVonRom5oRTVwg3v9sRe4GeXauZKzJqaWHE9IMOlcZEXAvt42w5_1e6RAChj2O7-tzWkKKo1eebK2xumhRbsFlzQuLbybuJqepEkxMkfh1SyX4GXemVzRHK7G5KAarxENHw=s1360-w1360-h1020-rw">
+          <div id="university-card-content" class="flex items-start gap-3 px-3 py-2">
+            <div id="card-img" class="">
+              <img class="w-9 mt-0.5" src="./assets/university_icon/uni_icon_2.png">
+            </div>
+            <div id="card-texts">
+              <h3 class="sm:text-md text-sm font-medium text-violet-700">
+                University of New South Wales
+              </h3>
+              <p class="sm:text-[12px] text-[8px] -ml-1 text-gray-500 hover:text-black">
+                <i class="fa-solid fa-location-dot text-violet-700"></i> Sydney NSW 2033, Australia
+              </p>
+              <a class="sm:text-[10px] text-[7px] text-gray-400 hover:text-violet-700" href="https://www.unsw.edu.au/" target="_blank">Visit Official Website <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div id="university-card-single" class="rounded-sm shadow-sm shadow-violet-300">
+          <img class="w-full sm:h-60 h-50 object-cover rounded-t-sm" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx2Pks-Hc8aKZQaXH-uJg_JOFb4YllSEB1H96otA1_RHrljIrHAoySAJlldt8jccHP7_p8XATuAqLLlGj3FnD_RWup-yhRCS5AgXwZAH9MzXWf3pDprMfJ6SXfTVzh5-s67PaM2=s1360-w1360-h1020-rw">
+          <div id="university-card-content" class="flex items-start gap-3 px-3 py-2">
+            <div id="card-img" class="">
+              <img class="w-9 mt-0.5" src="./assets/university_icon/uni_icon_6.png">
+            </div>
+            <div id="card-texts">
+              <h3 class="sm:text-md text-sm font-medium text-violet-700">
+                University of Technology Sydney
+              </h3>
+              <p class="sm:text-[12px] text-[8px] -ml-1 text-gray-500 hover:text-black">
+                <i class="fa-solid fa-location-dot text-violet-700"></i> 15 Broadway, Ultimo NSW 2007, Australia
+              </p>
+              <a class="sm:text-[10px] text-[7px] text-gray-400 hover:text-violet-700" href="https://www.uts.edu.au/" target="_blank">Visit Official Website <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div id="university-card-single" class="rounded-sm shadow-sm shadow-violet-300">
+          <img class="w-full sm:h-60 h-50 object-cover rounded-t-sm" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxfOiWS0GGB76Pe1d10UliW-538JwEX-XE3v__f1ml9xS3ZDUj55db3A8MRRZyxh_Ymb96gsX9TXpRHHSRtJO1UpQMPJYp4S5cyGW4Rqw5jv39NDYBqIzjaZ_98rvIk87KXjR0e=s1360-w1360-h1020-rw">
+          <div id="university-card-content" class="flex items-start gap-3 px-3 py-2">
+            <div id="card-img" class="">
+              <img class="w-9 mt-0.5" src="./assets/university_icon/uni_icon_3.png">
+            </div>
+            <div id="card-texts">
+              <h3 class="sm:text-md text-sm font-medium text-violet-700">
+                Australian National University
+              </h3>
+              <p class="sm:text-[12px] text-[8px] -ml-1 text-gray-500 hover:text-black">
+                <i class="fa-solid fa-location-dot text-violet-700"></i> Canberra ACT 2601, Australia
+              </p>
+              <a class="sm:text-[10px] text-[7px] text-gray-400 hover:text-violet-700" href="https://www.anu.edu.au/" target="_blank">Visit Official Website <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div id="university-card-single" class="rounded-sm shadow-sm shadow-violet-300">
+          <img class="w-full sm:h-60 h-50 object-cover rounded-t-sm" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxSeIon2plYCUr8kJUtHsgvbMvs5fv9_ISGnI6hFjOmjCyKWvIjin7hG9p_uXDR7vzwdKRiNRGXz_h1D_-NvYJc_95E5ieW1QE6RwuKY1j4I5wJUv-aZjvSY9STRwud0PzRP2VH_A=s1360-w1360-h1020-rw">
+          <div id="university-card-content" class="flex items-start gap-3 px-3 py-2">
+            <div id="card-img" class="">
+              <img class="w-9 mt-0.5" src="./assets/university_icon/uni_icon_8.png">
+            </div>
+            <div id="card-texts">
+              <h3 class="sm:text-md text-sm font-medium text-violet-700">
+                The university of western australia
+              </h3>
+              <p class="sm:text-[12px] text-[8px] -ml-1 text-gray-500 hover:text-black">
+                <i class="fa-solid fa-location-dot text-violet-700"></i> 35 Stirling Hwy, Crawley WA 6009, Australia
+              </p>
+              <a class="sm:text-[10px] text-[7px] text-gray-400 hover:text-violet-700" href="https://www.uwa.edu.au/" target="_blank">Visit Official Website <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div id="university-card-single" class="rounded-sm shadow-sm shadow-violet-300 hover:shadow-violet-400 transition-all duration-300">
+          <img class="w-full sm:h-60 h-50 object-cover rounded-t-sm" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzVagORMULimHA4heA8vdoNFhJF99KyA0pzbSNHdH1GbD3aWB0i-HmrLT7hICBN_yLkTxGLX3TMJjYNeptdjfhOumUMWux3poq35cfrgMvcciElpAOU2bdLsAQ3F_HZYC_Q7qU=s1360-w1360-h1020-rw">
+          <div id="university-card-content" class="flex items-start gap-3 px-3 py-2">
+            <div id="card-img" class="">
+              <img class="w-9 mt-0.5" src="./assets/university_icon/uni_icon_9.png">
+            </div>
+            <div id="card-texts">
+              <h3 class="sm:text-md text-sm font-medium text-violet-700">
+                University of Adelaide
+              </h3>
+              <p class="sm:text-[12px] text-[8px] -ml-1 text-gray-500 hover:text-black">
+                <i class="fa-solid fa-location-dot text-violet-700"></i> Adelaide, SA, Australia
+              </p>
+              <a class="sm:text-[10px] text-[7px] text-gray-400 hover:text-violet-700" href="https://www.adelaide.edu.au/" target="_blank">Visit Official Website <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div id="university-card-single" class="rounded-sm shadow-sm shadow-violet-300 hover:shadow-violet-400 transition-all duration-300">
+          <img class="w-full sm:h-60 h-50 object-cover rounded-t-sm" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzADdmI57ZlkXeYmZxJEZ8ZXKpH4Zxq-LAQKgP8486k3jPbp6AxMSMRvKZB8nPOC4_T_m9Xt_BCQh61VYW_dzk9XwG5sM6TEvPzBFE7km2qCgagBgufJT7OVErBWNz7rNha8ATM=s1360-w1360-h1020-rw">
+          <div id="university-card-content" class="flex items-start gap-3 px-3 py-2">
+            <div id="card-img" class="">
+              <img class="w-9 mt-0.5" src="./assets/university_icon/uni_icon_10.png">
+            </div>
+            <div id="card-texts">
+              <h3 class="sm:text-md text-sm font-medium text-violet-700">
+                University of Wollongong
+              </h3>
+              <p class="sm:text-[12px] text-[8px] -ml-1 text-gray-500 hover:text-black">
+                <i class="fa-solid fa-location-dot text-violet-700"></i> Wollongong, NSW, Australia
+              </p>
+              <a class="sm:text-[10px] text-[7px] text-gray-400 hover:text-violet-700" href="https://www.uow.edu.au/" target="_blank">Visit Official Website <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div id="university-card-single" class="rounded-sm shadow-sm shadow-violet-300 hover:shadow-violet-400 transition-all duration-300">
+          <img class="w-full sm:h-60 h-50 object-cover rounded-t-sm" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSygoGl3BB03MKPbvmVQkF_dTcdOEWQ_t47R1YK1obgyDX_-UYLu9VZi86pFKz2KilLyjnJct_rs0M8_f4RCTp5lbB4_WNIcQ7oIa6q8IDWS-sr3KaoCU9adqoOm2LkURu67YW8rBg=s1360-w1360-h1020-rw">
+          <div id="university-card-content" class="flex items-start gap-3 px-3 py-2">
+            <div id="card-img" class="">
+              <img class="w-9 mt-0.5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc0Wuz1G9ZlIlE1redEupFDZqdrUgN_variw&s">
+            </div>
+            <div id="card-texts">
+              <h3 class="sm:text-md text-sm font-medium text-violet-700">
+                University of Newcastle Australia
+              </h3>
+              <p class="sm:text-[12px] text-[8px] -ml-1 text-gray-500 hover:text-black">
+                <i class="fa-solid fa-location-dot text-violet-700"></i> Callaghan, NSW, Australia
+              </p>
+              <a class="sm:text-[10px] text-[7px] text-gray-400 hover:text-violet-700" href="https://www.newcastle.edu.au/" target="_blank">Visit Official Website <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div id="university-card-single" class="rounded-sm shadow-sm shadow-violet-300 hover:shadow-violet-400 transition-all duration-300">
+          <img class="w-full sm:h-60 h-50 object-cover rounded-t-sm" src="https://accommodationforstudents.com/cdn-cgi/image/f=auto,q=85,w=1200/https://images.accommodationforstudents.com/website/university-guides/au/griffith-university/uni.jpg">
+          <div id="university-card-content" class="flex items-start gap-3 px-3 py-2">
+            <div id="card-img" class="">
+              <img class="w-9 mt-0.5" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Griffith_University_Logo_Variant_2022.svg/1200px-Griffith_University_Logo_Variant_2022.svg.png">
+            </div>
+            <div id="card-texts">
+              <h3 class="sm:text-md text-sm font-medium text-violet-700">
+                Griffith University
+              </h3>
+              <p class="sm:text-[12px] text-[8px] -ml-1 text-gray-500 hover:text-black">
+                <i class="fa-solid fa-location-dot text-violet-700"></i> Gold Coast, QLD, Australia
+              </p>
+              <a class="sm:text-[10px] text-[7px] text-gray-400 hover:text-violet-700" href="https://www.griffith.edu.au/" target="_blank">Visit Official Website <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-          <!-- ===== BUTTON ===== -->
-          <button
-            class="font_2 font-bold btn bg-[#FACC15] hover:bg-[#EAB308] text-violet-700 border-none rounded-sm px-8">
-            <a href="https://en.wikipedia.org/wiki/List_of_universities_in_Australia">View Details</a>
+      <div id="top-uni-cta" class="flex sm:flex-row flex-col justify-between items-center gap-4 p-4 shadow-sm shadow-violet-300 mt-10">
+        <p class="sm:w-190 sm:text-start text-center sm:text-lg text-sm">
+          Why spend your time when you can seek an expert's help all for free? Reach out to us and get free assistance to study in Australia today!
+        </p>
+        <a href="./contact-us.html" target="_blank">
+          <button class="btn sm:btn-md btn-sm border-none shadow-none bg-violet-700 text-white hover:bg-[#FACC15] hover:text-black transition-all duration-300">
+            Contact Us Today! <i class="fa-solid fa-handshake-angle"></i>
           </button>
-        </div>
-
-        <!-- ===== RIGHT IMAGE ===== -->
-        <div class="w-full lg:w-1/2 flex justify-center p-6 md:p-10">
-          <img src="./assets/reader_man.png" alt="Top Courses Illustration"
-            class="max-w-xs sm:max-w-sm lg:max-w-md h-auto" />
-        </div>
+        </a>
       </div>
     </section>
 
-    <!-- application process -->
-    <section class="bg-[#F9F8FF] py-16 px-4 sm:px-8 md:px-12 lg:px-20">
-      <div
-        class="container mx-auto max-w-6xl shadow-xl rounded-sm bg-white/70 backdrop-blur-md p-6 md:p-10 transition-all duration-500 hover:shadow-violet-700/30">
-        <div>
-          <h2
-            class="text-2xl sm:text-3xl md:text-4xl font-bold text-violet-700 text-center lg:text-center mb-6 font_1 requirement_heading">
-            Visa Requirement and Application Process
-          </h2>
-          <p
-            class="text-gray-600 text-center lg:text-center mb-8 leading-relaxed text-sm sm:text-base font_2 message_text_paragraph">
-            All students are choosy when it comes to selecting their study
-            destination. Many students have preferred Australia.
-          </p>
-        </div>
+    <section id="additional-universities" class="w-11/12 mx-auto sm:my-20 my-10">
+      <h1 class="sm:text-3xl text-xl font-bold text-center uppercase text-violet-700">
+        We Also Work With
+      </h1>
+      <p class="text-center sm:text-base text-[12px]">
+        Other universities you may consider
+      </p>
 
-        <div class="flex flex-col-reverse lg:flex-row items-center gap-10 py-10">
-          <!-- ===== LEFT CONTENT ===== -->
-          <div class="w-full lg:w-3/4">
-            <!-- ====== PROCESS STEPS ====== -->
-            <div class="space-y-6">
-              <!-- Step 1 -->
-              <div
-                class="flex items-start gap-4 bg-white p-4 rounded-sm shadow-md hover:shadow-lg hover:shadow-yellow-400/60 transition-all duration-300">
-                <div
-                  class="w-10 h-10 flex items-center justify-center bg-[#FACC15] text-violet-700 font-bold rounded-sm text-lg">
-                  1
-                </div>
-                <div>
-                  <h3 class="text-[#ffe521] font_1 explore font-semibold text-lg">
-                    Obtain Offer Letter
-                  </h3>
-                  <p class="text-gray-600 text-sm process_element">
-                    Obtain an offer of admission from an Australian
-                    university.
-                  </p>
-                </div>
-              </div>
+      <div id="additional-uni-container" class="mt-10 grid sm:grid-cols-4 grid-cols-3 gap-x-3 gap-y-10 content-center">
 
-              <!-- Arrow -->
-              <div class="flex justify-center">
-                <span class="text-violet-700 text-2xl font-bold">↓</span>
-              </div>
-
-              <!-- Step 2 -->
-              <div
-                class="flex items-start gap-4 bg-white p-4 rounded-sm shadow-md hover:shadow-lg hover:shadow-yellow-400/60 transition-all duration-300">
-                <div
-                  class="w-10 h-10 flex items-center justify-center bg-[#FACC15] text-violet-700 font-bold rounded-sm text-lg">
-                  2
-                </div>
-                <div>
-                  <h3 class="text-[#ffe521] font_1 font-semibold text-lg explore">
-                    Register OSHC
-                  </h3>
-                  <p class="text-gray-600 text-sm process_element">
-                    Register for an OSHC (Overseas Student Health Cover)
-                    policy.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Arrow -->
-              <div class="flex justify-center">
-                <span class="text-violet-700 text-2xl font-bold">↓</span>
-              </div>
-
-              <!-- Step 3 -->
-              <div
-                class="flex items-start gap-4 bg-white p-4 rounded-sm shadow-md hover:shadow-lg hover:shadow-yellow-400/60 transition-all duration-300">
-                <div
-                  class="w-10 h-10 flex items-center justify-center bg-[#FACC15] text-violet-700 font-bold rounded-sm text-lg">
-                  3
-                </div>
-                <div>
-                  <h3 class="text-[#ffe521] font_1 font-semibold text-lg explore">
-                    Submit Online Application
-                  </h3>
-                  <p class="text-gray-600 text-sm process_element">
-                    Submit your online application through the Australian
-                    Immigration Website.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Arrow -->
-              <div class="flex justify-center">
-                <span class="text-violet-700 text-2xl font-bold">↓</span>
-              </div>
-
-              <!-- Step 4 -->
-              <div
-                class="flex items-start gap-4 bg-white p-4 rounded-sm shadow-md hover:shadow-lg hover:shadow-yellow-400/60 transition-all duration-300">
-                <div
-                  class="w-10 h-10 flex items-center justify-center bg-[#FACC15] text-violet-700 font-bold rounded-sm text-lg">
-                  4
-                </div>
-                <div>
-                  <h3 class="text-[#ffe521] font_1 font-semibold text-lg explore">
-                    Provide Essential Documents
-                  </h3>
-                  <p class="text-gray-600 text-sm process_element">
-                    Like passport, confirmation of enrollment, proof of
-                    financial capacity, and English test scores.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Arrow -->
-              <div class="flex justify-center">
-                <span class="text-violet-700 text-2xl font-bold">↓</span>
-              </div>
-
-              <!-- Step 5 -->
-              <div
-                class="flex items-start gap-4 bg-white p-4 rounded-sm shadow-md hover:shadow-lg hover:shadow-yellow-400/60 transition-all duration-300">
-                <div
-                  class="w-10 h-10 flex items-center justify-center bg-[#FACC15] text-violet-700 font-bold rounded-sm text-lg">
-                  5
-                </div>
-                <div>
-                  <h3 class="text-[#ffe521] font_1 explore font-semibold text-lg">
-                    Attend Visa Interview
-                  </h3>
-                  <p class="text-gray-600 text-sm process_element">
-                    Attend a visa interview (if required) and await the
-                    decision.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- ===== RIGHT IMAGE ===== -->
-          <div class="w-full lg:w-1/2 flex justify-center items-center animate-float">
-            <img src="./assets/woman_traveling.png" alt="Student with luggage"
-              class="max-w-[230px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[420px] h-auto drop-shadow-2xl transition-transform duration-500 hover:scale-105" />
-          </div>
-        </div>
+        <a href="https://www.uwa.edu.au/" target="_blank">
+          <img class="sm:w-30 w-20 mx-auto hover:scale-105 transition-all duration-300" src="./assets/aus_university/additional-unis/university-of-western-australia-1.jpg">
+        </a>
+        
+        <a href="https://analyticsinstitute.edu.au/" target="_blank">
+          <img class="sm:w-30 w-20 mx-auto hover:scale-105 transition-all duration-300" src="./assets/aus_university/additional-unis/analytics-institute-of-australia.webp">
+        </a>
+        
+        <a href="https://apexhe.nsw.edu.au/" target="_blank">
+          <img class="sm:w-30 w-20 mx-auto hover:scale-105 transition-all duration-300" src="./assets/aus_university/additional-unis/asia-pacific-international-college.png">
+        </a>
+        
+        <a href="httpshttps://www.eca.edu.au/" target="_blank">
+          <img class="sm:w-30 w-20 mx-auto hover:scale-105 transition-all duration-300" src="./assets/aus_university/additional-unis/eca-college.png">
+        </a>
+        
+        <a href="https://www.eit.edu.au/" target="_blank">
+          <img class="sm:w-30 w-20 mx-auto hover:scale-105 transition-all duration-300" src="./assets/aus_university/additional-unis/engineering-institute-of-technology.webp">
+        </a>
+        
+        <a href="https://www.eynesbury.edu.au/" target="_blank">
+          <img class="sm:w-30 w-20 mx-auto hover:scale-105 transition-all duration-300" src="./assets/aus_university/additional-unis/eynesbury-college.png">
+        </a>
+        
+        <a href="https://kent.edu.au/" target="_blank">
+          <img class="sm:w-30 w-20 mx-auto hover:scale-105 transition-all duration-300" src="./assets/aus_university/additional-unis/Kent-Institute-australia.png">
+        </a>
+        
+        <a href="https://www.canberra.edu.au/" target="_blank">
+          <img class="sm:w-30 w-20 mx-auto hover:scale-105 transition-all duration-300" src="./assets/aus_university/additional-unis/university-of-canberra.png">
+        </a>
+        
+        <a href="https://www.sibt.edu.au/" target="_blank">
+          <img class="sm:w-30 w-20 mx-auto hover:scale-105 transition-all duration-300" src="./assets/aus_university/additional-unis/sydney-institute-of-business-and-technology.jpg">
+        </a>
+        
+        <a href="https://www.usc.edu.au/" target="_blank">
+          <img class="sm:w-30 w-20 mx-auto hover:scale-105 transition-all duration-300" src="./assets/aus_university/additional-unis/university-of-sunshine-coast.png">
+        </a>
+        
+        <a href="https://www.utas.edu.au/" target="_blank">
+          <img class="sm:w-30 w-20 mx-auto hover:scale-105 transition-all duration-300" src="./assets/aus_university/additional-unis/university-of-tasmania.png">
+        </a>
+        
+        <a href="https://www.vu.edu.au/" target="_blank">
+          <img class="sm:w-30 w-20 mx-auto hover:scale-105 transition-all duration-300" src="./assets/aus_university/additional-unis/victoria-university.png">
+        </a>
+      
       </div>
     </section>
 
-    <!-- Cost of Education Section -->
-    <section class="bg-[#F9F8FF] py-16 px-4 sm:px-8 md:px-12 lg:px-20">
-      <div
-        class="container mx-auto max-w-6xl flex flex-col-reverse lg:flex-row items-center gap-16 bg-white/70 backdrop-blur-md rounded-sm shadow-xl p-6 md:p-10 transition-all duration-500"
-        data-aos="fade-up" data-aos-duration="1200">
-        <!-- LEFT CONTENT -->
-        <div class="lg:w-3/4 space-y-6 text-center lg:text-left">
-          <div data-aos="fade-up" data-aos-delay="100">
-            <h2 class="requirement_heading font_1 font-bold text-violet-700 mb-3">
-              Cost of Education and Living in Australia
-            </h2>
-            <p class="text-gray-600 italic text-sm sm:text-base dream_destination_textpara">
-              Plan Your Budget
+    <section id="top-courses" class="w-11/12 mx-auto sm:my-20 my-10">
+      <h1 class="sm:text-3xl text-xl font-bold text-center uppercase text-violet-700">
+        Top Courses in <span class="text-[#FACC15]">Australia</span>
+      </h1>
+      <p class="text-center sm:text-base text-[12px] sm:mt-4 mt-2">
+        Australia is known for its high-quality education and wide range of courses available for international students. Some of the popular courses that attract international students to Australia include:
+      </p>
+      <div id="top-courses-contents" class="flex sm:flex-row flex-col-reverse justify-between items-center sm:gap-5 gap-2 sm:mt-10 mt-5">
+        <div class="programs-wrapper">
+          <div class="programs grid grid-cols-3 sm:gap-15 gap-5 text-violet-700 sm:text-sm text-[10px]">
+            <p class="py-2 px-4 rounded-sm shadow-inner shadow-violet-200 hover:bg-violet-700 hover:text-white hover:shadow-none cursor-pointer">
+              <i class="fa-solid fa-user-nurse"></i> Health & Science
+            </p>
+            <p class="py-2 px-4 rounded-sm shadow-inner shadow-violet-200 hover:bg-violet-700 hover:text-white hover:shadow-none cursor-pointer">
+              <i class="fa-solid fa-microchip"></i> Information Technology
+            </p>
+            <p class="py-2 px-4 rounded-sm shadow-inner shadow-violet-200 hover:bg-violet-700 hover:text-white hover:shadow-none cursor-pointer">
+              <i class="fa-solid fa-calculator"></i> Accounting
+            </p>
+            <p class="py-2 px-4 rounded-sm shadow-inner shadow-violet-200 hover:bg-violet-700 hover:text-white hover:shadow-none cursor-pointer">
+              <i class="fa-solid fa-pen-nib"></i> Art & Design
+            </p>
+            <p class="py-2 px-4 rounded-sm shadow-inner shadow-violet-200 hover:bg-violet-700 hover:text-white hover:shadow-none cursor-pointer">
+              <i class="fa-solid fa-robot"></i> Computer Science
+            </p>
+            <p class="py-2 px-4 rounded-sm shadow-inner shadow-violet-200 hover:bg-violet-700 hover:text-white hover:shadow-none cursor-pointer">
+              <i class="fa-solid fa-hospital"></i> Medicine
+            </p>
+            <p class="py-2 px-4 rounded-sm shadow-inner shadow-violet-200 hover:bg-violet-700 hover:text-white hover:shadow-none cursor-pointer">
+              <i class="fa-solid fa-business-time"></i> Business Management
+            </p>
+            <p class="py-2 px-4 rounded-sm shadow-inner shadow-violet-200 hover:bg-violet-700 hover:text-white hover:shadow-none cursor-pointer">
+              <i class="fa-solid fa-lightbulb"></i> Engineering
+            </p>
+            <p class="py-2 px-4 rounded-sm shadow-inner shadow-violet-200 hover:bg-violet-700 hover:text-white hover:shadow-none cursor-pointer">
+              <i class="fa-solid fa-radio"></i> Mass & Media
             </p>
           </div>
-
-          <!-- COST BUTTONS -->
-          <div class="flex flex-col sm:flex-row lg:flex-col gap-4 mt-6" data-aos="fade-up" data-aos-delay="200">
-            <!-- Tuition Fees -->
-            <div
-              class="flex flex-col items-center justify-center bg-white/60 border border-violet-700/50 rounded-sm py-4 px-4 text-center cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_18px_rgba(80,80,200,0.45)]">
-              <img src="./assets/fees_money.png" class="w-10 h-10 mb-2" />
-              <h3 class="text-violet-700 font-semibold text-base sm:text-lg">
-                Tuition Fees
-              </h3>
-            </div>
-
-            <!-- Living Expense -->
-            <div
-              class="flex flex-col items-center justify-center bg-white/60 border border-violet-700/50 rounded-sm py-4 px-4 text-center cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_18px_rgba(80,80,200,0.45)]">
-              <img src="./assets/living_expense.png" class="w-10 h-10 mb-2" />
-              <h3 class="text-violet-700 font-semibold text-base sm:text-lg">
-                Living Expense
-              </h3>
-            </div>
-          </div>
-
-          <!-- FOOTNOTE -->
-          <p class="text-gray-500 text-xs sm:text-sm italic mt-8 leading-relaxed font_2 message_text_paragraph"
-            data-aos="fade-up" data-aos-delay="350">
-            *The amounts mentioned above are approximate. It may vary
-            depending on various factors. Consult with us for further
-            information.
-          </p>
         </div>
-
-        <!-- RIGHT IMAGE -->
-        <div class="w-full lg:w-1/2 flex justify-center items-center animate-float" data-aos="fade-up"
-          data-aos-delay="250">
-          <img src="./assets/money_man.png"
-            class="max-w-[220px] sm:max-w-[300px] md:max-w-[360px] lg:max-w-[420px] drop-shadow-2xl transition-transform duration-500 hover:scale-105" />
-        </div>
+        <img class="w-[30%]" src="./assets/reader_man.png" alt="">
       </div>
     </section>
 
-    <!-- scholarship and financial adds -->
-    <section class="py-16 bg-white" data-aos="fade-up" data-aos-duration="1200">
-      <div class="max-w-6xl mx-auto px-4 text-center">
-        <h2 class="text-3xl md:text-4xl font_1 message_heading font-bold text-violet-700 mb-2">
-          Scholarship and Financial Aids
-        </h2>
-        <p class="text-gray-600 mb-12 dream_destination_textpara">
-          Fund Your Education in Australia
-        </p>
-
-        <!-- Responsive Cards Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Card 1 -->
-          <div class="border rounded-sm p-8 shadow-md hover:shadow-xl hover:shadow-[#4C3C93] transition-all bg-white">
-            <div class="flex justify-center mb-4">
-              <img src="./assets/cap.png" class="w-10" />
-            </div>
-            <h3 class="text-violet-700 font_2 font-semibold text-lg mb-2 financial_cards_heading">
-              Australia Awards Scholarship
-            </h3>
-            <p class="text-gray-600 font_2 text-sm requirements_cards">
-              Covers tuition, living expenses, and travel costs for eligible
-              students.
-            </p>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="border rounded-sm p-8 shadow-md hover:shadow-xl hover:shadow-[#4C3C93] transition-all bg-white">
-            <div class="flex justify-center mb-4">
-              <img src="./assets/man_icon.png" class="w-10" />
-            </div>
-            <h3 class="text-violet-700 font_2 font-semibold text-lg mb-2 financial_cards_heading">
-              University-Specific Scholarship
-            </h3>
-            <p class="text-gray-600 text-sm font_2 requirements_cards">
-              Many Australian universities offer merit-based and need-based
-              scholarships.
-            </p>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="border rounded-sm p-8 shadow-md hover:shadow-xl hover:shadow-[#4C3C93] transition-all bg-white">
-            <div class="flex justify-center mb-4">
-              <img src="./assets/light_cap.png" class="w-10" />
-            </div>
-            <h3 class="text-violet-700 font_2 font-semibold text-lg mb-2 financial_cards_heading">
-              Destination Australia Scholarship
-            </h3>
-            <p class="text-gray-600 font_2 text-sm requirements_cards">
-              Designed to attract international students to regional areas.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- post study -->
-    <section class="bg-white py-16 px-4 sm:px-8 md:px-12 lg:px-20" data-aos="fade-up" data-aos-duration="1200">
-      <div class="max-w-6xl mx-auto text-center">
-        <!-- Heading -->
-        <h2 class="text-3xl md:text-4xl font-bold text-violet-700 mb-2 message_heading">
-          Post Study Opportunities
-        </h2>
-        <p class="text-gray-600 mb-12 dream_destination_textpara">
-          Australia offers excellent opportunities for international graduates
-        </p>
-
-        <!-- Cards Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Card 1 -->
-          <div
-            class="border rounded-sm p-8 shadow-md hover:shadow-xl hover:shadow-[#4C3C93] transition-all duration-300 bg-white">
-            <div class="flex justify-center mb-4">
-              <img src="./assets/cap.png" class="w-10" />
-            </div>
-            <h3 class="text-violet-700 font-semibold text-lg mb-2 financial_cards_heading">
-              Post-Study Work Visa
-            </h3>
-            <p class="text-gray-600 requirements_cards">
-              Students can apply for a Post-Study Work Visa (PSWV) and stay up
-              to 4 years after graduation.
-            </p>
-          </div>
-
-          <!-- Card 2 -->
-          <div
-            class="border rounded-sm p-8 shadow-md hover:shadow-xl hover:shadow-[#4C3C93] transition-all duration-300 bg-white">
-            <div class="flex justify-center mb-4">
-              <img src="./assets/cap.png" class="w-10" />
-            </div>
-            <h3 class="text-violet-700 font-semibold text-lg mb-2 financial_cards_heading">
-              Buildup Demanding Career
-            </h3>
-            <p class="text-gray-600 requirements_cards">
-              Explore careers in high-demand sectors such as healthcare, IT,
-              and construction.
-            </p>
-          </div>
-
-          <!-- Card 3 -->
-          <div
-            class="border rounded-sm p-8 shadow-md hover:shadow-xl hover:shadow-[#4C3C93] transition-all duration-300 bg-white">
-            <div class="flex justify-center mb-4">
-              <img src="./assets/cap.png" class="w-10" />
-            </div>
-            <h3 class="text-violet-700 font-semibold text-lg mb-2 financial_cards_heading">
-              Permanent Residency
-            </h3>
-            <p class="text-gray-600 requirements_cards">
-              Transition to permanent residency through pathways like the
-              Skilled Migration Program.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- student life and culture in Australia -->
-    <section class="bg-[#F9F8FF] py-16 px-6 sm:px-10 lg:px-20" data-aos="fade-up" data-aos-duration="1200">
-      <div class="container mx-auto max-w-6xl flex flex-col-reverse lg:flex-row items-center gap-16">
-        <!-- ========= LEFT CONTENT ========= -->
-        <div class="w-full lg:w-1/2 space-y-4 ml-4">
-          <h2 class="text-xl sm:text-2xl font_1 md:text-3xl font_1 font-bold text-violet-700 text-center lg:text-left">
-            Student Life and Culture in Australia
-          </h2>
-          <p class="text-gray-500 italic text-center lg:text-left text-sm sm:text-base message_text_paragraph">
-            Experience the Australian Way of Life
-          </p>
-
-          <!-- ======= LIST OF FEATURES ======= -->
-          <ul class="space-y-4 mt-6">
-            <li class="flex items-start gap-3">
-              <span
-                class="w-8 h-8 flex items-center justify-center text-violet-700 rounded-sm text-lg font-semibold"><img
-                  src="./assets/finger_icon.svg" alt="" /></span>
-              <p class="text-gray-700 text-sm sm:text-base font_2">
-                Live in vibrant cities like Sydney, Melbourne, and Brisbane or
-                explore serene regional areas.
-              </p>
+    <section id="visa-processing" class="w-11/12 mx-auto sm:my-20 my-10">
+      <h1 class="sm:text-3xl text-xl font-bold text-center uppercase text-violet-700">
+        Visa Requirements & <span class="text-[#FACC15]">Application Process</span>
+      </h1>
+      <p class="text-center sm:text-base text-[12px]">
+        All students are choosy when it comes to selecting their study destination. Many students have preferred Australia.
+      </p>
+      
+      <div id="visa-processing-contents" class="flex sm:flex-row-reverse flex-col-reverse justify-between items-center gap-5 mt-10">
+        <div class="processing-steps-wrapper sm:mt-10 mt-5 sm:w-[50%] w-full">        
+          <ul class="timeline timeline-vertical w-full">
+            <li class="grid-cols-[auto_auto_1fr]">
+              <div class="timeline-start font-bold">Step 1</div>
+              <div class="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="sm:h-7 sm:w-7 h-5 w-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="timeline-end timeline-box shadow-sm shadow-violet-300">
+                <h3 class="sm:text-xl text-[15px] font-bold text-violet-700">Obtain Offer Letter</h3>
+                <p>Obtain an offer of admission from an Australian university.</p>
+              </div>
+              <hr class="bg-[#FACC15]" />
             </li>
-            <li class="flex items-start gap-3">
-              <span
-                class="w-7 h-7 flex items-center justify-center text-violet-700 rounded-sm text-lg font-semibold"><img
-                  src="./assets/finger_icon.svg" alt="" /></span>
-              <p class="text-gray-700 text-sm sm:text-base font_2">
-                Enjoy outdoor activities like surfing, hiking, and wildlife
-                exploration.
-              </p>
+            <li class="grid-cols-[auto_auto_1fr]">
+              <hr class="bg-[#FACC15]" />
+              <div class="timeline-start font-bold">Step 2</div>
+              <div class="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="sm:h-7 sm:w-7 h-5 w-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="timeline-end timeline-box shadow-sm shadow-violet-300">
+                <h3 class="sm:text-xl text-[15px] font-bold text-violet-700">Register OSHC</h3>
+                <p>Register for an OSHC (Overseas Student Health Cover) policy.</p>
+              </div>
+              <hr class="bg-[#FACC15]" />
             </li>
-            <li class="flex items-start gap-3">
-              <span
-                class="w-8 h-8 flex items-center justify-center text-violet-700 rounded-sm text-lg font-semibold"><img
-                  src="./assets/finger_icon.svg" alt="" /></span>
-              <p class="text-gray-700 text-sm sm:text-base font_2">
-                Experience cultural richness through festivals, art galleries,
-                and indigenous traditions.
-              </p>
+            <li class="grid-cols-[auto_auto_1fr]">
+              <hr class="bg-[#FACC15]" />
+              <div class="timeline-start font-bold">Step 3</div>
+              <div class="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/.svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="sm:h-7 sm:w-7 h-5 w-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="timeline-end timeline-box shadow-sm shadow-violet-300">
+                <h3 class="sm:text-xl text-[15px] font-bold text-violet-700">Submit Online Application</h3>
+                <p>Submit your online application through the Australian Immigration Website.</p>
+              </div>
+              <hr class="bg-[#FACC15]" />
             </li>
-            <li class="flex items-start gap-3">
-              <span class="w-8 h-8 flex items-center justify-center rounded-sm text-lg font-semibold font_2">
-                <img src="./assets/finger_icon.svg" alt="" />
-              </span>
-              <p class="text-gray-700 text-sm sm:text-base">
-                Participate in world-renowned events like the Sydney Opera
-                House shows and Australian Open.
-              </p>
+            <li class="grid-cols-[auto_auto_1fr]">
+              <hr class="bg-[#FACC15]" />
+              <div class="timeline-start font-bold">Step 4</div>
+              <div class="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="sm:h-7 sm:w-7 h-5 w-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="timeline-end timeline-box shadow-sm shadow-violet-300">
+                <h3 class="sm:text-xl text-[15px] font-bold text-violet-700">Provide Essential Documents</h3>
+                <p>Like passport, confirmation of enrollment, proof of financial capacity, and English test scores.</p>
+              </div>
+              <hr class="bg-[#FACC15]" />
+            </li>
+            <li class="grid-cols-[auto_auto_1fr]">
+              <hr class="bg-[#FACC15]" />
+              <div class="timeline-start font-bold">Step 5</div>
+              <div class="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="sm:h-7 sm:w-7 h-5 w-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="timeline-end timeline-box shadow-sm shadow-violet-300">
+                <h3 class="sm:text-xl text-[15px] font-bold text-violet-700">Attend Visa Interview</h3>
+                <p>
+                  Attend a visa interview (if required) and await the decision.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
-
-        <!-- ========= RIGHT IMAGE COLLAGE ========= -->
-        <div class="w-full lg:w-1/2 flex justify-center items-center relative">
-          <div class="relative w-full max-w-sm sm:max-w-md md:max-w-lg">
-            <!-- Top Left Image -->
-            <div
-              class="absolute top-0 left-0 w-40 sm:w-48 md:w-56 lg:w-64 rounded-sm overflow-hidden shadow-lg z-20 hover:scale-105 transition-transform duration-300">
-              <img src="./assets/study_group.png" alt="Graduation" class="w-full h-full object-cover" />
-            </div>
-
-            <!-- Top Right Image -->
-            <div
-              class="absolute top-6 right-0 w-44 sm:w-52 md:w-60 lg:w-72 rounded-sm overflow-hidden shadow-lg z-10 hover:scale-105 transition-transform duration-300">
-              <img src="./assets/study_group2.png" alt="Students Walking" class="w-full h-full object-cover" />
-            </div>
-
-            <!-- Bottom Left Image -->
-            <div
-              class="absolute bottom-0 left-10 sm:left-16 md:left-20 w-40 sm:w-48 md:w-56 lg:w-64 rounded-sm overflow-hidden shadow-lg z-0 hover:scale-105 transition-transform duration-300">
-              <img src="./assets/study_group3.png" alt="Library" class="w-full h-full object-cover" />
-            </div>
-
-            <!-- Spacer for height -->
-            <div class="w-full h-[280px] sm:h-[340px] md:h-[400px] lg:h-[440px]"></div>
-          </div>
-        </div>
+        <img class="w-[50%]" src="./assets/visa-processing/visa-processing-nobg.png">
       </div>
     </section>
 
-    <!-- FAQ's -->
-    <section class="bg-[#F9F8FF] py-16 px-6 sm:px-10 lg:px-20">
-      <div class="container mx-auto max-w-4xl text-center">
-        <!-- ===== HEADING ===== -->
-        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-violet-700 mb-4">
-          FAQs
-        </h2>
-        <p class="text-gray-500 mt-2 italic text-sm sm:text-base">
-          Got Questions? We’ve Got Answers
-        </p>
-
-        <!-- ===== ACCORDION SECTION ===== -->
-        <div class="mt-10 space-y-4">
-          <!-- Accordion 1 -->
-          <div tabindex="0"
-            class="collapse collapse-arrow border border-violet-700/20 bg-violet-700 text-[#ffe521] rounded-sm">
-            <div class="collapse-title text-base sm:text-lg font-semibold">
-              How much does it cost to study in Australia?
-            </div>
-            <div class="collapse-content text-sm sm:text-base text-gray-100">
-              <p>
-                The cost varies based on your course and location. On average,
-                tuition fees range from AUD 20,000 to 45,000 per year, while
-                living expenses can be around AUD 21,000 per year.
+    <section id="cost-of-education" class="w-11/12 mx-auto sm:my-20 my-10">
+      <h1 class="sm:text-3xl text-xl font-bold text-center uppercase text-violet-700">
+        Cost of Education and Living in <span class="text-[#FACC15]">Australia</span>
+      </h1>
+      <p class="text-center sm:text-base text-[12px]">
+        Plan Your Budget
+      </p>
+      <div id="cost-of-education-contents" class="flex sm:flex-row-reverse flex-col justify-between items-center gap-5 mt-10">
+        <img class="sm:w-full w-[70%]" src="./assets/cost of education/cost-of-education-nobg.png" alt="">
+        <div id="cost-of-education-left" class="w-full">
+          <div class="tabs tabs-lift">
+            <input type="radio" name="my_tabs_3" class="tab shadow-sm shadow-violet-300 sm:text-base text-xs" aria-label="Tuition Fees" checked="checked" /> 
+            <div class="tab-content border-base-300 p-6">
+              <h3 class="sm:text-2xl text-md font-bold text-violet-700">
+                <i class="fa-solid fa-graduation-cap"></i> Undergraduate Programs
+              </h3>
+              <p class="sm:text-lg text-sm font-medium mt-4 text-gray-500">
+                <i class="fa-solid fa-money-bills"></i> AUD 20,000 - $45,000/year*1
+              </p>
+              <h3 class="sm:text-2xl text-md mt-4 font-bold text-violet-700">
+                <i class="fa-solid fa-user-graduate"></i> Graduate Programs
+              </h3>
+              <p class="sm:text-lg text-sm font-medium mt-4 text-gray-500">
+                <i class="fa-solid fa-money-bills"></i> AUD 22,000 - $50,000/year*
               </p>
             </div>
-          </div>
 
-          <!-- Accordion 2 -->
-          <div tabindex="0"
-            class="collapse collapse-arrow border border-violet-700/20 bg-violet-700 text-[#ffe521] rounded-sm">
-            <div class="collapse-title text-base sm:text-lg font-semibold">
-              Can I work while studying in Australia?
-            </div>
-            <div class="collapse-content text-sm sm:text-base text-gray-100">
-              <p>
-                Yes! International students can work up to 48 hours per
-                fortnight during semesters and full-time during breaks.
+            <input type="radio" name="my_tabs_3" class="tab shadow-sm shadow-violet-300 sm:text-base text-xs" aria-label="Living Expenses" />
+            <div class="tab-content border-base-300 p-6">
+              <h3 class="sm:text-2xl text-md font-bold text-violet-700">
+                <i class="fa-solid fa-utensils"></i> Accommodation, food, transport, and utilities
+              </h3>
+              <p class="sm:text-lg text-sm font-medium mt-4 text-gray-500">
+                <i class="fa-solid fa-money-bills"></i> AUD 20,000 - $27,000/year*
               </p>
             </div>
-          </div>
 
-          <!-- Accordion 3 -->
-          <div tabindex="0"
-            class="collapse collapse-arrow border border-violet-700/20 bg-violet-700 text-[#ffe521] rounded-sm">
-            <div class="collapse-title text-base sm:text-lg font-semibold">
-              Do I need health insurance to study in Australia?
-            </div>
-            <div class="collapse-content text-sm sm:text-base text-gray-100">
-              <p>
-                Yes, all international students must purchase OSHC (Overseas
-                Student Health Cover) to access healthcare services while
-                studying in Australia.
-              </p>
+            <input type="radio" name="my_tabs_3" class="tab shadow-sm shadow-violet-300 sm:text-base text-xs" aria-label="Cost Saving Tips" />
+            <div class="tab-content bg-base-100 border-base-300 p-6">
+              <ul class="list-disc sm:text-base text-sm">
+                <li>Utilize public transport discounts and on-campus housing options.</li>
+                <li>Work part-time to offset living costs.</li>
+              </ul>
             </div>
           </div>
+          <p class="sm:w-100 text-xs italic">*The amounts mentioned above are approximate. It may vary depending on various factors. Consult with us for further information.</p>
         </div>
       </div>
     </section>
-
-    <!-- We collaborate with -->
-    <section id="newsletter" class="mb-20 px-4 sm:px-6 lg:px-8 mt-20 w-full max-w-6xl mx-auto">
-      <div
-        class="bg-gradient-to-r from-indigo-800 to-purple-800 rounded-sm p-6 sm:p-8 md:p-10 flex flex-col md:flex-row items-center justify-around gap-8 md:gap-16 max-w-6xl mx-auto">
-        <!-- Text Content -->
-        <div class="text-white space-y-4 max-w-full sm:max-w-md md:max-w-lg text-center md:text-left">
-          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-300 leading-snug">
-            Your Study Abroad<br />Dream Awaits!
-          </h2>
-          <p class="text-sm sm:text-base md:text-lg opacity-90 text_group">
-            Let us guide you to your ideal university and make your journey
-            stress-free. Contact us today for a free consultation.
-          </p>
-          <button
-            class="btn text-blue-700 bg-white px-5 py-2 sm:py-3 text-sm sm:text-base md:text-base transition-transform duration-200 transform hover:scale-105 hover:bg-blue-700 hover:text-white rounded-sm shadow-md border-none">
-            <a id="openModalBtn">Book a Free Consultation 📅</a>
-          </button>
-        </div>
-
-        <!-- Image Section -->
-        <div class="flex-shrink-0 w-full max-w-[220px] sm:max-w-xs md:max-w-sm mt-6 md:mt-0">
-          <img src="./assets/students-group.png" alt="studying_abroad"
-            class="rounded-sm shadow-lg w-full object-cover" />
-        </div>
-      </div>
-    </section>
-
+   
   </main>
 
-    <!-- footer section -> Jarif -->
-    <footer class="py-10 bg-[url(./assets/hero-image-cambry-2.png)] bg-fixed bg-cover bg-no-repeat bg-center">
-  <!-- main container: translucent panel with backdrop blur -->
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="  rounded-sm p-6 md:p-8">
-      <!-- top section -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
-        <!-- contact text -->
-        <div class="p-4 rounded-sm bg-white/6 backdrop-blur-sm">
-          <div class="pl-2">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-yellow-300 mb-4">
-              Contact Info
-            </h2>
-            <div class="space-y text-white/90 sm:text-base text-sm">
-              <p class="flex items-start gap-3">
-                <span class="text-yellow-300 text-lg"><i class="fa-solid fa-phone-volume"></i></span>
-                <span>+880 1730-589112</span>
-              </p>
+  <footer id="footer" class="py-10 bg-[url(./assets/hero-image-cambry-2.png)] bg-fixed bg-cover bg-no-repeat bg-center">
+    <!-- added from footer.js -->
+  </footer>
 
-              <p class="flex items-start gap-3">
-                <span class="text-yellow-300 text-lg"><i class="fa-solid fa-envelope"></i></span>
-                <span>cambry.bd@gmail.com</span>
-              </p>
-
-              <p class="flex items-start gap-3">
-                <span class="text-yellow-300 text-lg"><i class="fa-solid fa-map-location-dot"></i></span>
-                <span>H# 398 (1st Floor), R# 29, Mohakhali DOHS, Dhaka-1212, Bangladesh</span>
-              </p>
-
-              <p class="flex items-start gap-3">
-                <span class="text-yellow-300 text-lg"><i class="fa-solid fa-clock"></i></span>
-                <span>Saturday - Thursday: 10:00 AM to 06:00 PM</span>
-              </p>
-
-              <div class="mt-4 flex items-center gap-3">
-                <a class="inline-flex items-center justify-center w-9 h-9 bg-yellow-400 text-blue-900 rounded-sm shadow" href="#" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                <a class="inline-flex items-center justify-center w-9 h-9 bg-yellow-400 text-blue-900 rounded-sm shadow" href="#" aria-label="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a class="inline-flex items-center justify-center w-9 h-9 bg-yellow-400 text-blue-900 rounded-sm shadow" href="#" aria-label="youtube"><i class="fa-brands fa-youtube"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Contact Form -->
-         <div class="p-4 rounded-sm bg-white/6 backdrop-blur-sm">
-          <div class="contact-form">
-            <p class="text-white/90 mb-4 sm:text-base text-sm">
-              Have questions? We’re here to help! Fill out the form. We shall reach out to you as soon as possible.
-            </p>
-
-            <form class="w-full">
-              <div class="grid grid-cols-12 gap-3">
-                <div class="col-span-12">
-                  <input id="name" name="name" type="text" placeholder="Name" class="w-full sm:h-10 h-8 sm:text-base text-sm px-3 placeholder-gray-600 bg-white/90 border-none rounded-sm focus:outline-none" />
-                </div>
-
-                <div class="col-span-12 sm:col-span-6">
-                  <input id="phone" name="phone" type="tel" placeholder="Phone" class="w-full sm:h-10 h-8 sm:text-base text-sm px-3 placeholder-gray-600 bg-white/90 border-none rounded-sm focus:outline-none" />
-                </div>
-
-                <div class="col-span-12 sm:col-span-6">
-                  <input id="email" name="email" type="email" placeholder="Email" class="w-full sm:h-10 h-8 sm:text-base text-sm px-3 placeholder-gray-600 bg-white/90 border-none rounded-sm focus:outline-none" />
-                </div>
-
-                <div class="col-span-12">
-                  <textarea id="message" name="message" rows="5" placeholder="Message" class="w-full sm:text-base text-sm px-3 py-3 placeholder-gray-600 bg-white/90 border-none rounded-sm resize-none focus:outline-none"></textarea>
-                </div>
-                <div class="col-span-12">
-                  <button type="submit" class="btn sm:btn-md btn-sm w-full border-none shadow-none text-white bg-yellow-400 hover:bg-yellow-300">
-                    Submit
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <!-- bottom section -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-        <div class="p-4 rounded-sm bg-white/6 backdrop-blur-sm">
-          <div class="mb-4">
-            <div class="text-yellow-300 font-extrabold text-lg">
-              <img class="w-30" src="./assets/Cambry_Official.png">
-            </div>
-            <p class="text-sm text-white/85 mt-2">Your trusted partner since 2009, offering study abroad consultancy, having 600+ partner institutes globally.</p>
-          </div>
-        </div>
-        <div class="p-4 rounded-sm bg-white/6 backdrop-blur-sm">
-          <h3 class="text-yellow-300 font-semibold mb-3">Explore</h3>
-          <ul class="space-y-2 text-white/90 text-sm">
-            <li><a href="#" class="hover:underline">Home</a></li>
-            <li><a href="#" class="hover:underline">Study Destinations</a></li>
-            <li><a href="#" class="hover:underline">Student Services</a></li>
-            <li><a href="#" class="hover:underline">About Cambry</a></li>
-          </ul>
-        </div>
-        <div class="text-sm p-4 rounded-sm bg-white/6 backdrop-blur-sm">
-          <h3 class="text-yellow-300 font-semibold mb-3">Visit</h3>
-          <p class="text-white/90 mb-3">H# 398 (1st Floor), R# 29, Mohakhali DOHS, Dhaka-1212, Bangladesh</p>
-          <h4 class="text-yellow-300 font-semibold mb-2">Let's Talk</h4>
-          <p class="text-white/90"><i class="fa-solid fa-phone-volume pr-2"></i> +880 1730-589112</p>
-          <p class="text-white/90"><i class="fa-solid fa-envelope pr-2"></i> cambry.bd@gmail.com</p>
-        </div>
-        <div class="p-4 rounded-sm bg-white/6 backdrop-blur-sm">
-          <h3 class="text-yellow-300 font-semibold mb-3">Opening Hours</h3>
-          <ul class="text-white/90 text-sm space-y-1">
-            <li>SAT: 10:00 AM – 06:00 PM</li>
-            <li>SUN: 10:00 AM – 06:00 PM</li>
-            <li>MON: 10:00 AM – 06:00 PM</li>
-            <li>TUES: 10:00 AM – 06:00 PM</li>
-            <li>WED: 10:00 AM – 06:00 PM</li>
-          </ul>
-        </div>
-        <div class="p-4 rounded-sm bg-white/6 backdrop-blur-sm">
-          <h3 class="text-yellow-300 font-semibold mb-3">Legal</h3>
-          <ul class="text-white/90 text-sm space-y-2 mb-3">
-            <li><a href="#" class="hover:underline">Privacy Policy</a></li>
-            <li><a href="#" class="hover:underline">Terms &amp; Conditions</a></li>
-          </ul>
-          <div class="text-sm text-white/90">
-            <div class="mb-2 font-semibold text-yellow-300">Social</div>
-            <div class="flex items-center gap-2">
-              <a class="inline-flex items-center justify-center w-8 h-8 bg-white text-blue-900 rounded-sm" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a class="inline-flex items-center justify-center w-8 h-8 bg-white text-blue-900 rounded-sm" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a class="inline-flex items-center justify-center w-8 h-8 bg-white text-blue-900 rounded-sm" href="#"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-            <p class="text-xs text-white/70 mt-3">
-              Copyright © Cambry 2025 | Developed by TechWisdom Web Solution.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-    <div id="appointmentModal" 
-         class="hidden fixed inset-0 bg-black/50  items-center justify-center p-4 z-500 opacity-0 transition-opacity duration-300 ease-out">
-      <div id="modalPanel" class="bg-white/10 backdrop-blur-lg rounded-sm shadow-2xl w-full max-w-lg p-6  opacity-0 scale-95 transition-all duration-300 ease-out"> <div class="flex justify-between items-center mb-6">
-        <h3 class="text-3xl font-bold text-white">Send <span class="text-[#FFD700]">Us</span> A Message</h3>
-        <button id="closeModalBtn" class="text-white hover:text-gray-300 text-2xl font-semibold bg-white/10 hover:bg-white/20 rounded-sm w-8 h-8 flex items-center justify-center">
-                    &times;
-                </button>
-            </div>
-            
-            <form action="https://formspree.io/f/xdkpelzo" method="POST">
-                
-                <div class="mb-4">
-                    <input type="text" id="name" name="name" placeholder="Name" 
-                           class="w-full bg-white px-5 py-3 border-none rounded-sm text-gray-900 placeholder-gray-500 
-                                  focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required> </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                    <div>
-                        <input type="email" id="email" name="email" placeholder="Email" 
-                               class="w-full bg-white px-5 py-3 border-none rounded-sm text-gray-900 placeholder-gray-500 
-                                      focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required> </div>
-                    <div>
-                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" 
-                               class="w-full bg-white px-5 py-3 border-none rounded-sm text-gray-900 placeholder-gray-500 
-                                      focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required> </div>
-                </div>
-
-                <div class="mb-4">
-                    <input type="text" id="subject" name="subject" placeholder="Subject" 
-                           class="w-full bg-white px-5 py-3 border-none rounded-sm text-gray-900 placeholder-gray-500 
-                                  focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required> </div>
-                
-                <div class="mb-6">
-                    <textarea id="message" name="message" rows="3" placeholder="Your Message" 
-                              class="w-full bg-white px-5 py-3 border-none rounded-sm text-gray-900 placeholder-gray-500 
-                                     focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required></textarea> </div>
-                
-                <div>
-                    <button type="submit" 
-                            class="w-full bg-[#FFD700] text-gray-900 text-lg font-semibold px-6 py-3 rounded-sm 
-                                   hover:shadow-lg hover:-translate-y-1 transition-all duration-300 shadow-md">
-                        Send Message
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-    <!-- started modal -->
-
-    <div id="contactModal" 
-         class="hidden fixed inset-0 bg-black/60  items-center justify-center p-4 z-500 
-                opacity-0 transition-opacity duration-300 ease-out">
-        
-        <div id="contactModalPanel"
-             class="bg-white/10 backdrop-blur-lg rounded-sm shadow-2xl w-full max-w-lg p-5 
-                    opacity-0 scale-95 transition-all duration-300 ease-out relative">
-            
-            <button id="closeContactModalBtn" 
-                    class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl font-semibold">&times;</button>
-            
-            <h3 class="text-3xl font-bold text-center mb-5 text-yellow-400">Send Us A Message</h3>
-
-            <form action="https://formspree.io/f/xdkpelzo" method="POST">
-                
-                <div class="mb-2">
-                    <input type="text" id="contactName" name="name" placeholder="Name" 
-                           class="w-full px-5 py-2 border border-gray-300 rounded-sm text-gray-900 placeholder-gray-500 bg-white/80 
-                                  focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required>
-                </div>
-                
-                <div class="mb-2">
-                    <input type="email" id="contactEmail" name="email" placeholder="Email" 
-                           class="w-full px-5 py-2 border bg-white/80  border-gray-300 rounded-sm text-gray-900 placeholder-gray-500 
-                                  focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required>
-                </div>
-
-                <div class="grid grid-cols-4 gap-3 mb-2">
-                    <div class="col-span-1">
-                        <input type="text" value="+880" readonly 
-                               class="w-full px-5 py-2 border bg-white/80  border-gray-300 rounded-sm bg-gray-100 text-gray-700 focus:outline-none">
-                    </div>
-                    <div class="col-span-3">
-                        <input type="tel" id="contactPhone" name="phone" placeholder="Contact Number" 
-                               class="w-full px-5 py-2 border bg-white/80  border-gray-300 rounded-sm text-gray-900 placeholder-gray-500 
-                                      focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required>
-                    </div>
-                </div>
-
-                <div class="mb-2">
-                    <select id="contactDestination" name="destination" 
-                            class="w-full px-5 py-2 border bg-white/80  border-gray-300 rounded-sm text-gray-900 
-                                   focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required>
-                        <option value="" disabled selected>Preferred Study Destination</option>
-                        <option value="usa">USA</option>
-                        <option value="canada">Canada</option>
-                        <option value="uk">UK</option>
-                        <option value="australia">Australia</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-
-                <div class="mb-2">
-                    <select id="contactLevel" name="level" 
-                            class="w-full px-5 py-2 border bg-white/80  border-gray-300 rounded-sm text-gray-900 
-                                   focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required>
-                        <option value="" disabled selected>Preferred Study Level</option>
-                        <option value="undergraduate">Undergraduate</option>
-                        <option value="postgraduate">Postgraduate</option>
-                        <option value="diploma">Diploma</option>
-                        <option value="foundation">Foundation</option>
-                    </select>
-                </div>
-
-                <div class="mb-3">
-                    <select id="contactYear" name="year" 
-                            class="w-full px-5 py-2 border bg-white/80  border-gray-300 rounded-sm text-gray-900 
-                                   focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required>
-                        <option value="" disabled selected>Preferred Study Year</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
-                        <option value="2026">2026</option>
-                        <option value="later">Later</option>
-                    </select>
-                </div>
-                
-                <div class="mb-5 flex items-start">
-                    <input type="checkbox" id="contactAgreement" name="agreement" class="mt-1 mr-3 h-5 w-5 text-violet-600 rounded focus:ring-violet-500 border-gray-300" required>
-                    <label for="contactAgreement" class="text-white text-sm">
-                        By clicking you agree to our 
-                        <a href="#" class="text-orange-500 hover:underline">Privacy Policy</a> and 
-                        <a href="#" class="text-orange-500 hover:underline">Terms & Conditions</a> *
-                    </label>
-                </div>
-                
-                <div>
-                    <button type="submit" 
-                            class="w-full bg-yellow-400 text-white text-lg font-semibold px-6 py-3 rounded-sm 
-                                   hover:bg-yellow-600 transition-all duration-300 shadow-md">
-                        Get Started For Free
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <script src="scripts/started_modals.js"></script>
-    <script src="scripts/appointment_booking_modal.js"></script>
-    <script src="./scripts/navbar.js"></script>
-    <script src="./scripts/common-scripts.js"></script>
-
+  <!-- scripts -->
+   <script src="./scripts/navbar.js"></script>
+   <script src="./scripts/footer.js"></script>
 </body>
-
 </html>
