@@ -3,6 +3,8 @@
 const ShowNav = () => {
   const header = document.getElementById('main-header');
 
+  // header.classList.add("bg-white/10", "backdrop-blur-lg");
+
   header.innerHTML = `
     <nav class="navbar text-white w-11/12 mx-auto flex items-center justify-between p-0" id="navbar">
       <!-- LEFT SIDE -->
@@ -139,10 +141,10 @@ const ShowNav = () => {
 window.addEventListener("scroll", function () {
   const header = document.getElementById("main-header");
   // const nav = document.getElementById("navbar");
-  if (window.scrollY > 500) {
+  if (window.scrollY > 300) {
     // When scrolled
     header.classList.add("shadow-md");
-    header.classList.remove("bg-transparent", "border-transparent");
+    header.classList.remove("bg-transparent", "border-transparent", "bg-white/10", "backdrop-blur-lg");
     header.classList.add("bg-violet-700/80", "border-white/10", "backdrop-blur-2xl");
   } else {
     // Back to top

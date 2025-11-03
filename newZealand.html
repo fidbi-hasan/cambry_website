@@ -1,1316 +1,663 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New Zealand</title>
-
-    <!-- daisy ui -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@5"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- daisy ui -->
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Calistoga&family=Heebo:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <link rel="stylesheet" href="./styles/study_destination_  nz.css" />
-    <!-- AOS CDN -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
-    <style>
-      .footer_img {
-        background-image: url("./assets/footer_bg.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-    </style>
-  </head>
-
-  <body>
-   <!-- header section -->
-    <section
-      class="relative bg-cover bg-center bg-no-repeat min-h-[100vh] flex flex-col overflow-visible object-cover"
-      style="background-image: url('assets/University/university-of-toronto.jpg')"
-    >
-      <!-- Gradient Overlay -->
-      <div
-        class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-violet-700/30 z-[1]"
-      ></div>
-
-      <!-- ====== FIXED NAVBAR ====== -->
-      <header id="main-header" class="fixed top-0 left-0 w-full z-[100]"></header>
-
-
-
-      <!-- ====== HERO SECTION ====== -->
-      <div
-        class="relative z-[20] flex flex-col items-center justify-center flex-grow px-4 py-10 sm:py-16 text-center"
-      >
-        <div
-          class="bg-white/10 backdrop-blur-md text-white p-6 sm:p-10 md:p-14 rounded-sm shadow-2xl max-w-3xl mx-auto animate-fadeInUp"
-        >
-          <h1
-            class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#FFF] mb-4 leading-tight font_3 drop-shadow-lg"
-          >
-            Explore World-Class Education in a Land of Endless Adventure: Study in <span class="text-[#ffe521]">New Zealand</span>
-          </h1>
-
-          <p
-            class="text-[#ffe521] font-bold font_2 text-sm sm:text-base md:text-lg my-10 max-w-xl mx-auto"
-          >
-           Achieve your academic dreams in one of the safest, most welcoming, and innovative countries in the world.
-          </p>
-
-          <button
-              class="btn bg-[#FACC15] text-violet-700 font-semibold border-none hover:bg-[#EAB308] hover:scale-105 active:scale-95 transition-all duration-300 font_1 shadow-md rounded-sm"
-            >
-                          <a id="openContactModalBtn" >Get Started For Free</a>
-
-            </button>
-
-          
-
-            
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study in New Zealand</title> <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header id="main-header" class="fixed top-0 left-0 w-full z-[100]">
+    </header>
+  
+  <main>
+    <section id="hero-section" class="sm:h-svh py-20 bg-[url(https://www.canterbury.ac.nz/content/dam/uoc-main-site/images/1-exterior-images/a-gardens-and-trees/cherry-blossom-trees-on-campus.jpg)] bg-cover bg-fit bg-fixed bg-center bg-no-repeat flex justify-center items-center"> <div id="hero-contents" class="bg-white/30 backdrop-blur-md sm:w-[50%] py-10 px-5 rounded-sm w-11/12 mx-auto">
+        <h1 class="sm:text-4xl text-3xl font-black text-center text-white uppercase">
+          Explore World-Class Education in a Land of Endless Adventure: Study in New Zealand </h1>
+        <p class="text-center sm:text-md text-sm text-black my-4">
+          Achieve your academic dreams in one of the safest, most welcoming, and innovative countries in the world. </p>
+        <div id="hero-buttons-container" class="flex sm:flex-row flex-col-reverse justify-center gap-4">
+          <button class="btn sm:btn-md btn-sm bg-violet-700/50 hover:bg-yellow-400/60 backdrop-blur-sm border-none shadow-none text-white">
+            <a id="openModalBtn"><i class="fa-solid fa-calendar-check"></i> Book an appointment</a>
+          </button>
+          <button class="btn sm:btn-md btn-sm bg-violet-700/50 hover:bg-yellow-400/60 backdrop-blur-sm border-none shadow-none text-white">
+            <a href="study-destination-mainpage.html"><i class="fa-solid fa-earth-americas"></i> Explore destinations</a>
+          </button>
         </div>
       </div>
     </section>
 
-    <main>
-
-      <!-- ===== STUDY DESTINATION SECTION ===== -->
-    <section class="bg-gradient-to-b from-white to-[#F8F7FF] py-16 px-6 md:px-12 lg:px-24 mt-20">
-      <div class="text-center mb-12">
-        <h2
-          class="text-2xl sm:text-3xl md:text-4xl font-bold text-violet-700 leading-snug dream_destination_heading"
-        >
-          Study in <span class="text-[#FACC15]">New Zealand</span> as a Bangladeshi Student
-        </h2>
-        
-      </div>
-
-      <!-- ===== CONTENT WRAPPER ===== -->
-      <div
-        class="container mx-auto max-w-6xl flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-20 bg-white shadow-xl rounded-sm overflow-hidden hover:shadow-2xl transition-shadow duration-500"
-      >
-        <!-- ===== LEFT CONTENT ===== -->
-        <div
-          class="w-full lg:w-1/2 px-6 md:px-10 py-10 animate__animated animate__fadeInLeft"
-        >
-          <p
-            class="text-gray-700 mb-6 font_1 leading-relaxed text-justify md:text-justify hero_counter_para dest_para"
-          >
-           New Zealand is an increasingly desirable destination for international students, celebrated for its world-class education within a safe, supportive, and stunning natural environment. Its institutions are committed to high academic standards, with all eight of its universities consistently placed in the QS World University Rankings. The country's welcoming culture and high quality of life help students adjust easily. Auckland, Wellington, Christchurch, and Dunedin are among the most popular cities.
-          </p>
-          <p
-            class="text-gray-700 font_1 leading-relaxed text-justify md:text-justify hero_counter_para dest_para"
-          >
-            New Zealand offers a diverse range of study choices—from popular fields like Information Technology, Engineering, and Business Management, to unique and growing disciplines like Agriculture, Environmental Science, and Tourism & Hospitality Management. Programs often feature a hands-on learning approach through internships, placements, and practical projects, preparing students for the global workforce and leading to post-study work opportunities.
-          </p>
-        </div>
-
-        <!-- ===== RIGHT IMAGE ===== -->
-        <div
-          class="w-full lg:w-1/2 flex justify-center items-center p-6 md:p-10 animate__animated animate__fadeInRight"
-        >
-          <div
-            class="card shadow-xl rounded-sm overflow-hidden transform hover:scale-105 transition-transform duration-500"
-          >
-            <figure>
-              <img
-                src="./assets/emote-2.webp"
-                alt="Study in New Zealand illustration"
-                class="w-full h-full object-cover backdrop-blur-sm"
-              />
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-  
-      <!-- why choose New zealand-->
-      <section class="bg-[#F9F8FF] py-16 px-6 md:px-12 lg:px-20 mt-20">
-        <div class="container mx-auto max-w-6xl text-center">
-          <!-- ===== HEADING ===== -->
-          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-violet-700 mb-6">
-            Why Choose <span class="text-[#FACC15]">New Zealand</span> as Your Dream Destination
-          </h2>
-          <p class="text-gray-600 max-w-2xl mx-auto mb-16">
-            All students are choosy when it comes to selecting their study destination.
-            Many students have preferred New Zealand.
-          </p>
-  
-          <!-- ===== FEATURES GRID ===== -->
-
-
-                    <!-- ===== FEATURES GRID ===== -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Card 1 -->
-            <div
-              class="relative card bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group overflow-hidden"
-            >
-              <div class="card-body items-center text-center">
-                <img src="./assets/safety.png" alt="Career Opportunities" class="w-25 h-25 mb-2" />
-                <h3 class="font-semibold text-violet-700 text-lg">
-                  Post-Study Work Visa
-                </h3>
-              </div>
-              <div
-                class="absolute inset-0 bg-violet-700/95 text-white flex items-center justify-center text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-              >
-                <p class="text-sm md:text-base leading-relaxed">
-                  Graduates from eligible New Zealand courses can get a Post-Study Work Visa for up to 3 years, providing a clear path to gain local work experience.
-
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div
-              class="relative card bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group overflow-hidden"
-            >
-              <div class="card-body items-center text-center">
-                <img src="./assets/consultancy.png" alt="Career Oriented Education" class="w-25 h-25 mb-2" />
-                <h3 class="font-semibold text-violet-700 text-lg">
-                  Practical, Hands-On Learning
-                </h3>
-              </div>
-              <div
-                class="absolute inset-0 bg-violet-700/95 text-white flex items-center justify-center text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-              >
-                <p class="text-sm md:text-base leading-relaxed">
-                  New Zealand's education system focuses on practical skills and work-integrated learning, making graduates highly skilled and ready for the job market.
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div
-              class="relative card bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group overflow-hidden"
-            >
-              <div class="card-body items-center text-center">
-                <img src="./assets/research.png" alt="Research Program" class="w-25 h-25 mb-2" />
-                <h3 class="font-semibold text-violet-700 text-lg">
-                  Globally Ranked Universities
-                </h3>
-              </div>
-              <div
-                class="absolute inset-0 bg-violet-700/95 text-white flex items-center justify-center text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-              >
-                <p class="text-sm md:text-base leading-relaxed">
-                  All eight of New Zealand's universities are ranked in the QS World University Rankings, ensuring your qualification is internationally recognised and respected.
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div
-              class="relative card bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group overflow-hidden"
-            >
-              <div class="card-body items-center text-center">
-                <img src="./assets/safety.png" alt="Qualification" class="w-25 h-25 mb-2" />
-                <h3 class="font-semibold text-violet-700 text-lg">
-                  Earn While You Learn
-                </h3>
-              </div>
-              <div
-                class="absolute inset-0 bg-violet-700/95 text-white flex items-center justify-center text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-              >
-                <p class="text-sm md:text-base leading-relaxed">
-                 International students can work part-time up to 20 hours a week during their studies and full-time during scheduled holidays to help support their stay.
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div
-              class="relative card bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group overflow-hidden"
-            >
-              <div class="card-body items-center text-center">
-                <img src="./assets/work.png" alt="Student Rights" class="w-25 h-25 mb-2" />
-                <h3 class="font-semibold text-violet-700 text-lg">
-                  Excellent Student Support
-                </h3>
-              </div>
-              <div
-                class="absolute inset-0 bg-violet-700/95 text-white flex items-center justify-center text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-              >
-                <p class="text-sm md:text-base leading-relaxed">
-                  New Zealand has a "Code of Practice for the Pastoral Care of International Students" that ensures providers offer strong support and care for your well-being.
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 6 -->
-            <div
-              class="relative card bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group overflow-hidden"
-            >
-              <div class="card-body items-center text-center">
-                <img src="./assets/resident.png" alt="Diverse Country" class="w-25 h-25 mb-2" />
-                <h3 class="font-semibold text-violet-700 text-lg">
-                  Welcome & Multicultural
-                </h3>
-              </div>
-              <div
-                class="absolute inset-0 bg-violet-700/95 text-white flex items-center justify-center text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-              >
-                <p class="text-sm md:text-base leading-relaxed">
-                  Known for its friendly "Kiwi" hospitality, New Zealand is a safe and multicultural society that welcomes people from all over the world.
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 7 -->
-            <div
-              class="relative card bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group overflow-hidden"
-            >
-              <div class="card-body items-center text-center">
-                <img src="./assets/living expense.png" alt="Lessen Expense" class="w-25 h-25 mb-2" />
-                <h3 class="font-semibold text-violet-700 text-lg">
-                  High Quality of Life
-                </h3>
-              </div>
-              <div
-                class="absolute inset-0 bg-violet-700/95 text-white flex items-center justify-center text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-              >
-                <p class="text-sm md:text-base leading-relaxed">
-                 New Zealand consistently ranks high for its quality of life, offering a perfect balance between vibrant city life and easy access to nature.
-                </p>
-              </div>
-            </div>
-
-            <!-- Card 8 -->
-            <div
-              class="relative card bg-white shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group overflow-hidden"
-            >
-              <div class="card-body items-center text-center">
-                <img src="./assets/natural.png" alt="Landscape" class="w-25 h-25 mb-2" />
-                <h3 class="font-semibold text-violet-700 text-lg">
-                  Unbeatable Landscapes
-                </h3>
-              </div>
-              <div
-                class="absolute inset-0 bg-violet-700/95 text-white flex items-center justify-center text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-              >
-                <p class="text-sm md:text-base leading-relaxed">
-                 From snow-capped mountains to stunning beaches and forests, New Zealand's world-famous natural beauty provides endless opportunities for adventure.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-  
-      <!-- top university section -->
-      <section class="bg-[#F9F8FF] py-16 px-6 md:px-12 lg:px-20">
-        <div class="container mx-auto max-w-6xl text-center">
-  
-          <!-- ====== SECTION TITLE ====== -->
-          <h2 class="text-2xl sm:text-3xl font_1 md:text-4xl font-bold text-violet-700 mb-4">
-            Top University of New Zealand
-          </h2>
-          <p class="text-gray-500 font_2 max-w-5xl mx-auto leading-relaxed mb-12 message_text_paragraph">
-            New Zealand 🇳🇿 is renowned for its world-class higher education institutions, offering a wide range of programs and high-impact research opportunities, with all eight public universities ranking in the top 3% globally. For students from Bangladesh who aspire to study in New Zealand, it is essential to choose the right university.
-            <br />The country's institutions are particularly strong in fields like Agriculture and Forestry, Environmental Studies, and Creative Arts. Universities are known for a high percentage of international students, offering a supportive and welcoming environment. Popular choices include:
-          </p>
-  
-          <!-- ====== UNIVERSITY GRID ====== -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            
-            <!-- CARD 1 -->
-            <div class="card bg-white shadow-md hover:shadow-xl border border-gray-100 transition-all duration-300">
-              <figure>
-                <img src="./assets/University/auckland-university-of-technology.jpg" alt="Auckland University of Technology" class="w-full h-48 object-cover" />
-              </figure>
-              <div class="card-body flex flex-row text-left">
-                <img src="assets/university-icon/aut.png" class="w-8 h-8" alt="">
-                <div>
-                  <h3 class="font-bold text-violet-700 text-lg uppercase">Auckland University of Technology</h3>
-                <p class="text-gray-500"><i class="fa-solid fa-location-dot mr-1 text-violet-700"></i>Auckland</p>
-                <div class="mt-4">
-                  <button class="btn gap-4 btn-sm uni_view_details p-4 bg-[#FACC15] text-violet-700 hover:bg-[#EAB308] border-none rounded-sm">
-                    View Details
-                    <img src="./assets/select_uni_icon.png" alt="">
-                  </button>
-                </div>
-                  
-                </div>
-              </div>
-            </div>
-  
-            <!-- CARD 2 -->
-            <div class="card bg-white shadow-md hover:shadow-xl border border-gray-100 transition-all duration-300">
-              <figure>
-                <img src="./assets/University/waikato.webp" alt="University of Waikato" class="w-full h-48 object-cover" />
-              </figure>
-              <div class="card-body flex flex-row text-left">
-                <img src="/assets/university-icon/waikato.png" class="h-8 w-8" alt="">
-                <div>
-                  <h3 class="font-bold text-violet-700 text-lg uppercase">University of Waikato</h3>
-                <p class="text-gray-500"><i class="fa-solid fa-location-dot mr-1 text-violet-700"></i>Waikato</p>
-                <div class="mt-4">
-                  <button class="btn gap-4 btn-sm uni_view_details p-4 bg-[#FACC15] text-violet-700 hover:bg-[#EAB308] border-none rounded-sm">
-                    View Details
-                    <img src="./assets/select_uni_icon.png" alt="">
-                  </button>
-                </div>
-                </div>
-              </div>
-            </div>
-  
-            <!-- CARD 3 -->
-            <div class="card bg-white shadow-md hover:shadow-xl border border-gray-100 transition-all duration-300">
-              <figure>
-                <img src="./assets/University/lincoln.jpeg" alt="Lincoln University" class="w-full h-48 object-cover" />
-              </figure>
-              <div class="card-body flex flex-row text-left">
-                <img src="assets/university-icon/lincoln.png" class="h-8 w-8" alt="">
-               <div>
-                 <h3 class="font-bold text-violet-700 text-lg uppercase">Lincoln University</h3>
-                <p class="text-gray-500"><i class="fa-solid fa-location-dot mr-1 text-violet-700"></i>Lincoln</p>
-                <div class="mt-4">
-                  <button class="btn gap-4 btn-sm uni_view_details p-4 bg-[#FACC15] text-violet-700 hover:bg-[#EAB308] border-none rounded-sm">
-                    View Details
-                    <img src="./assets/select_uni_icon.png" alt="">
-                  </button>
-                </div>
-               </div>
-              </div>
-            </div>
-  
-            <!-- CARD 4 -->
-            <div class="card bg-white shadow-md hover:shadow-xl border border-gray-100 transition-all duration-300">
-              <figure>
-                <img src="./assets/University/canterbury.jpeg" alt="University of Canterbury" class="w-full h-48 object-cover" />
-              </figure>
-              <div class="card-body flex flex-row text-left">
-                <img src="assets/university-icon/canterbury.png" class="h-8 w-8" alt="">
-                <div>
-                  <h3 class="font-bold text-violet-700 text-lg uppercase">University of Canterbury</h3>
-                <p class="text-gray-500"><i class="fa-solid fa-location-dot mr-1 text-violet-700"></i>Christchurch
-</p>
-                <div class="mt-4">
-                  <button class="btn gap-4 btn-sm uni_view_details p-4 bg-[#FACC15] text-violet-700 hover:bg-[#EAB308] border-none rounded-sm">
-                    View Details
-                    <img src="./assets/select_uni_icon.png" alt="">
-                  </button>
-                </div>
-                </div>
-              </div>
-            </div>
-  
-            <!-- CARD 5 -->
-            <div class="card bg-white shadow-md hover:shadow-xl border border-gray-100 transition-all duration-300">
-              <figure>
-                <img src="./assets/University/aucland.jpg" alt="University of Auckland" class="w-full h-48 object-cover" />
-              </figure>
-              <div class="card-body flex flex-row text-left">
-                <img src="assets/university-icon/ua.png" class="h-8 w-8" alt="">
-                <div>
-                  <h3 class="font-bold text-violet-700 text-lg uppercase">University of Auckland</h3>
-                <p class="text-gray-500"><i class="fa-solid fa-location-dot mr-1 text-violet-700"></i>Auckland</p>
-                <div class="mt-4">
-                  <button class="btn gap-4 btn-sm uni_view_details p-4 bg-[#FACC15] text-violet-700 hover:bg-[#EAB308] border-none rounded-sm">
-                    View Details
-                    <img src="./assets/select_uni_icon.png" alt="">
-                  </button>
-                </div>
-                </div>
-              </div>
-            </div>
-  
-            <!-- CARD 6 -->
-            <div class="card bg-white shadow-md hover:shadow-xl border border-gray-100 transition-all duration-300">
-              <figure>
-                <img src="./assets/University/otago.png" alt="University of Otago" class="w-full h-48 object-cover" />
-              </figure>
-              <div class="card-body flex flex-row text-left">
-                <img src="assets/university-icon/otago.png" class="h-8 w-8" alt="">
-                <div>
-                  <h3 class="font-bold text-violet-700 text-lg uppercase">University of Otago</h3>
-                <p class="text-gray-500"><i class="fa-solid fa-location-dot mr-1 text-violet-700"></i>Dunedin</p>
-                <div class="mt-4">
-                  <button class="btn gap-4 btn-sm uni_view_details p-4 bg-[#FACC15] text-violet-700 hover:bg-[#EAB308] border-none rounded-sm">
-                    View Details
-                    <img src="./assets/select_uni_icon.png" alt="">
-                  </button>
-                </div>
-                </div>
-              </div>
-            </div>
-  
-            <!-- CARD 7 -->
-            <div class="card bg-white shadow-md hover:shadow-xl border border-gray-100 transition-all duration-300">
-              <figure>
-                <img src="./assets/University/welling.jpg" alt="Victoria University of Wellington" class="w-full h-48 object-cover" />
-              </figure>
-              <div class="card-body flex flex-row text-left">
-                <img src="assets/university-icon/welling.png" class="h-8 w-8" alt="">
-                <div>
-                  <h3 class="font-bold text-violet-700 text-lg uppercase">Victoria University of Wellington</h3>
-                <p class="text-gray-500"><i class="fa-solid fa-location-dot mr-1 text-violet-700"></i>Wellington</p>
-                <div class="mt-4">
-                  <button class="btn gap-4 btn-sm uni_view_details p-4 bg-[#FACC15] text-violet-700 hover:bg-[#EAB308] border-none rounded-sm">
-                    View Details
-                    <img src="./assets/select_uni_icon.png" alt="">
-                  </button>
-                </div>
-                </div>
-              </div>
-            </div>
-  
-            <!-- CARD 8 -->
-            <div class="card bg-white shadow-md hover:shadow-xl border border-gray-100 transition-all duration-300">
-              <figure>
-                <img src="./assets/University/southern.jpg" alt="Southern Institute of Technology" class="w-full h-48 object-cover" />
-              </figure>
-              <div class="card-body flex flex-row text-left">
-                <img src="assets/university-icon/south.jpeg" class="h-8 w-8" alt="">
-                <div>
-                  <h3 class="font-bold text-violet-700 text-lg uppercase">Southern Institute of Technology</h3>
-                <p class="text-gray-500"><i class="fa-solid fa-location-dot mr-1 text-violet-700"></i>Invercargill</p>
-                <div class="mt-4">
-                  <button class="btn font_2 uni_view_details p-4 gap-4 btn-sm bg-[#FACC15] text-violet-700 hover:bg-[#EAB308] border-none rounded-sm">
-                    View Details
-                    <img src="./assets/select_uni_icon.png" alt="">
-                  </button>
-                </div>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <!-- ====== CTA (Bottom) ====== -->
-          <div class="text-center mt-10">
-            <p class="mb-12 message_text_paragraph text-violet-700">
-              Why spend your time when you can seek an expert’s help all for free?<br />
-              Contact Cambry and get free assistance to study in New zealand today!
-            </p>
-            <button class="btn bg-[#FACC15] text-violet-700 text-[18px] font_2 font-bold hover:bg-[#EAB308] border-none rounded-sm px-8 py-2">
-                           <a href="contact_us.html"> Get Free Assistant From Cambry</a>
-
-            </button>
-          </div>
-        </div>
-      </section>
-  
-  
-      <!-- top courses section -->
-      <section class="bg-[#F9F8FF] py-16 px-6 md:px-12 lg:px-20">
-        <div
-          class="container mx-auto max-w-6xl flex flex-col-reverse lg:flex-row items-center gap-10 shadow-xl rounded-sm bg-white/70 backdrop-blur-sm"
-        >
-          <!-- ===== LEFT CONTENT ===== -->
-          <div class="text-center lg:text-justify p-6 md:p-10">
-            <h2 class="message_form_heading text-2xl font_1 sm:text-3xl md:text-4xl font-bold text-violet-700 mb-6">
-              Top Courses in New Zealand
-            </h2>
-            <p class="text-gray-500 mb-8 font_1 leading-relaxed message_text_paragraph">
-              New zealand is known for its high-quality education and wide range of courses available for international students. Some of the popular and in-demand fields of study that attract international students to New Zealand include:
-            </p>
-  
-            <!-- ===== COURSES GRID ===== -->
-            <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 mb-8">
-  
-              <button class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-violet-700 hover:text-white text-violet-700 text-sm rounded-sm">
-                Information Technology (IT)
-              </button>
-              <button class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-violet-700 hover:text-white text-violet-700 text-sm font-2 rounded-sm">
-                Computer Science
-              </button>
-              <button class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-violet-700 hover:text-white text-violet-700 text-sm rounded-sm">
-                Engineering and Construction
-              </button>
-              <button class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-violet-700 hover:text-white text-violet-700 text-sm rounded-sm">
-                Health Sciences and Nursing
-              </button>
-              <button class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-violet-700 hover:text-white text-violet-700 text-sm rounded-sm">
-                Agriculture and Environmental Science
-              </button>
-              <button class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-violet-700 hover:text-white text-violet-700 text-sm rounded-sm">
-               Hospitality and Tourism
-              </button>
-              <button class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-violet-700 hover:text-white text-violet-700 text-sm rounded-sm">
-                Business Management
-              </button>
-              <button class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-violet-700 hover:text-white text-violet-700 text-sm rounded-sm">
-                Engineering
-              </button>
-              <button class="font_2 font-bold btn bg-white border border-gray-200 hover:bg-violet-700 hover:text-white text-violet-700 text-sm rounded-sm">
-                Mass & Media
-              </button>
-  
-            </div>
-  
-            <!-- ===== BUTTON ===== -->
-            <button class="font_2 font-bold btn bg-[#FACC15] hover:bg-[#EAB308] text-violet-700 border-none rounded-sm px-8">
-              View Details
-            </button>
-          </div>
-  
-          <!-- ===== RIGHT IMAGE ===== -->
-          <div class="w-full lg:w-1/2 flex justify-center p-6 md:p-10">
-            <img src="./assets/top-courses-image.png" alt="Top Courses Illustration" class="max-w-xs sm:max-w-sm lg:max-w-md h-auto"
-            />
-          </div>
-          
-        </div>
-      </section>
-  
-      <!-- application process -->
-      <section class="bg-[#F9F8FF] py-16 px-4 sm:px-8 md:px-12 lg:px-20">
-        <div class="container mx-auto max-w-6xl shadow-xl rounded-sm bg-white/70 backdrop-blur-md p-6 md:p-10 transition-all duration-500 hover:shadow-violet-700/30">
-          <div>
-            <h2
-              class="text-2xl sm:text-3xl md:text-4xl font-bold text-violet-700 text-center lg:text-center mb-6 font_1 requirement_heading"
-            >
-              Visa Requirement and Application Process
-            </h2>
-            <p
-              class="text-gray-600 text-center lg:text-center mb-8 leading-relaxed text-sm sm:text-base font_2 message_text_paragraph"
-            >
-              All students are choosy when it comes to selecting their study
-              destination. Many students have preferred New Zealand.
-            </p>
-          </div>
-  
-          <div
-          class="flex flex-col-reverse lg:flex-row items-center gap-10 py-10"
-          >
-          <!-- ===== LEFT CONTENT ===== -->
-          <div class="w-full lg:w-3/4">
-  
-  
-            <!-- ====== PROCESS STEPS ====== -->
-            <div class="space-y-6">
-              <!-- Step 1 -->
-              <div
-                class="flex items-start gap-4 bg-white p-4 rounded-sm shadow-md hover:shadow-lg hover:shadow-yellow-400/60 transition-all duration-300"
-              >
-                <div
-                  class="w-10 h-10 flex items-center justify-center bg-[#FACC15] text-violet-700 font-bold rounded-sm text-lg"
-                >
-                  1
-                </div>
-                <div>
-                  <h3 class="text-[#ffe521] font_1 explore font-semibold text-lg">
-                    Obtain Offer of Place
-                  </h3>
-                  <p class="text-gray-600 text-sm process_element">
-                    Obtain Offer of Place from an approved New Zealand education provider (must be a signatory to the Code of Practice).
-                  </p>
-                </div>
-              </div>
-  
-              <!-- Arrow -->
-              <div class="flex justify-center">
-                <span class="text-violet-700 text-2xl font-bold">↓</span>
-              </div>
-  
-              <!-- Step 2 -->
-              <div
-                class="flex items-start gap-4 bg-white p-4 rounded-sm shadow-md hover:shadow-lg hover:shadow-yellow-400/60 transition-all duration-300"
-              >
-                <div
-                  class="w-10 h-10 flex items-center justify-center bg-[#FACC15] text-violet-700 font-bold rounded-sm text-lg"
-                >
-                  2
-                </div>
-                <div>
-                  <h3 class="text-[#ffe521] font_1 font-semibold text-lg explore">Gather Documents</h3>
-                  <p class="text-gray-600 text-sm process_element">
-                    Gather Documents including your Offer of Place, proof of sufficient funds (for tuition and living costs: NZD $20,000/year for students over 17), passport, and accepted English test scores.
-                  </p>
-                </div>
-              </div>
-  
-              <!-- Arrow -->
-              <div class="flex justify-center">
-                <span class="text-violet-700 text-2xl font-bold">↓</span>
-              </div>
-  
-              <!-- Step 3 -->
-              <div
-                class="flex items-start gap-4 bg-white p-4 rounded-sm shadow-md hover:shadow-lg hover:shadow-yellow-400/60 transition-all duration-300"
-              >
-                <div
-                  class="w-10 h-10 flex items-center justify-center bg-[#FACC15] text-violet-700 font-bold rounded-sm text-lg"
-                >
-                  3
-                </div>
-                <div>
-                  <h3 class="text-[#ffe521] font_1 font-semibold text-lg explore">
-                    Arrange Health & Character Checks
-                  </h3>
-                  <p class="text-gray-600 text-sm process_element">
-                    Arrange Health & Character Checks by booking any necessary medical exams (chest X-ray or medical certificate) and applying for police certificates (if required).
-                  </p>
-                </div>
-              </div>
-  
-              <!-- Arrow -->
-              <div class="flex justify-center">
-                <span class="text-violet-700 text-2xl font-bold">↓</span>
-              </div>
-  
-              <!-- Step 4 -->
-              <div
-                class="flex items-start gap-4 bg-white p-4 rounded-sm shadow-md hover:shadow-lg hover:shadow-yellow-400/60 transition-all duration-300"
-              >
-                <div
-                  class="w-10 h-10 flex items-center justify-center bg-[#FACC15] text-violet-700 font-bold rounded-sm text-lg"
-                >
-                  4
-                </div>
-                <div>
-                  <h3 class="text-[#ffe521] font_1 font-semibold text-lg explore">
-                    Submit Application
-                  </h3>
-                  <p class="text-gray-600 text-sm process_element">
-                  Submit Application for the Fee Paying Student Visa (the most common type) online via the Immigration New Zealand website and pay the non-refundable fee.
-                  </p>
-                </div>
-              </div>
-  
-              <!-- Arrow -->
-              <div class="flex justify-center">
-                <span class="text-violet-700 text-2xl font-bold">↓</span>
-              </div>
-  
-              <!-- Step 5 -->
-              <div
-                class="flex items-start gap-4 bg-white p-4 rounded-sm shadow-md hover:shadow-lg hover:shadow-yellow-400/60 transition-all duration-300"
-              >
-                <div
-                  class="w-10 h-10 flex items-center justify-center bg-[#FACC15] text-violet-700 font-bold rounded-sm text-lg"
-                >
-                  5
-                </div>
-                <div>
-                  <h3 class="text-[#ffe521] font_1 explore font-semibold text-lg">
-                    Await Decision
-                  </h3>
-                  <p class="text-gray-600 text-sm process_element">
-                    Await Decision which may involve a request for further information or an interview (if Immigration New Zealand requires one to verify your application details or genuine intent to study).
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <!-- ===== RIGHT IMAGE ===== -->
-          <div
-            class="w-full lg:w-1/2 flex justify-center items-center animate-float"
-          >
-            <img
-              src="./assets/student-with-laugage.png"
-              alt="Student with luggage"
-              class="max-w-[230px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[420px] h-auto drop-shadow-2xl transition-transform duration-500 hover:scale-105"
-            />
-          </div>
-        </div>
-  
-        </div>
-                  
-  
-      </section>
-
-
-
-
-<!-- Cost of Education Section -->
-<section class="bg-[#F9F8FF] py-16 px-4 sm:px-8 md:px-12 lg:px-20">
-  <div
-    class="container mx-auto max-w-6xl flex flex-col-reverse lg:flex-row items-center gap-16 bg-white/70 backdrop-blur-md rounded-sm shadow-xl p-6 md:p-10 transition-all duration-500"
-    data-aos="fade-up"
-    data-aos-duration="1200"
-  >
-    <!-- LEFT CONTENT -->
-    <div class="lg:w-3/4 space-y-6 text-center lg:text-left">
-      <div data-aos="fade-up" data-aos-delay="100">
-        <h2
-          class="requirement_heading font_1 font-bold text-violet-700 mb-3"
-        >
-          Cost of Education and Living in New Zealand
-        </h2>
-        <p class="text-gray-600 italic text-sm sm:text-base dream_destination_textpara">
-          Plan Your Budget
+    <section id="study-in-new-zealand" class="w-11/12 mx-auto flex items-center justify-between sm:my-20 my-10"> 
+      <div class="study-in-new-zealand-content sm:w-[50%] w-full"> 
+        <h1 class="sm:text-3xl text-xl font-bold sm:text-start text-center uppercase text-violet-700">
+          Study in <span class="text-[#FACC15]">New Zealand</span> from Bangladesh 
+        </h1>
+        <p class="text-justify mt-5 sm:text-base text-[12px]">
+          New Zealand is renowned for its excellent, British-based education system and world-class universities, all eight of which are ranked globally. For Bangladeshi students, it offers a safe, friendly, and multicultural environment with a high quality of life. Popular student cities like Auckland, Wellington, and Christchurch provide a perfect balance of vibrant city life and stunning natural landscapes. New Zealand offers innovative programs in fields like Business, Engineering, IT, and Agriculture, with a strong focus on practical, research-driven learning. 
         </p>
       </div>
-
-      <!-- COST BUTTONS -->
-      <div
-        class="flex flex-col sm:flex-row lg:flex-col gap-4 mt-6"
-        data-aos="fade-up"
-        data-aos-delay="200"
-      >
-        <!-- Tuition Fees -->
-        <div
-          class="flex flex-col items-center justify-center bg-white/60 border border-violet-700/50 rounded-sm py-4 px-4 text-center cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_18px_rgba(80,80,200,0.45)]"
-        >
-          <img src="./assets/tuition fee.png" class="w-10 h-10 mb-2" />
-          <h3 class="text-violet-700 font-semibold text-base sm:text-lg">
-            Tuition Fees
-          </h3>
-        </div>
-
-        <!-- Living Expense -->
-        <div
-          class="flex flex-col items-center justify-center bg-white/60 border border-violet-700/50 rounded-sm py-4 px-4 text-center cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_18px_rgba(80,80,200,0.45)]"
-        >
-          <img src="./assets/living expense.png" class="w-10 h-10 mb-2" />
-          <h3 class="text-violet-700 font-semibold text-base sm:text-lg">
-            Living Expense
-          </h3>
-        </div>
+      <div class="study-in-new-zealand-img w-[40%] sm:flex justify-end hidden"> <img class="w-120" src="https://media.licdn.com/dms/image/v2/D5612AQHI7pnlDwWJEA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1707210698247?e=2147483647&v=beta&t=ue8IY7cdWK4bldgo7s2yT_2vvjILmTjhC-kYay2xa3s" alt="Study in New Zealand"> 
       </div>
-
-      <!-- FOOTNOTE -->
-      <p
-        class="text-gray-500 text-xs sm:text-sm italic mt-8 leading-relaxed font_2 message_text_paragraph"
-        data-aos="fade-up"
-        data-aos-delay="350"
-      >
-        *The amounts mentioned above are approximate. It may vary depending on
-        various factors. Consult with us for further information.
-      </p>
-    </div>
-
-    <!-- RIGHT IMAGE -->
-    <div
-      class="w-full lg:w-1/2 flex justify-center items-center animate-float"
-      data-aos="fade-up"
-      data-aos-delay="250"
-    >
-      <img
-        src="./assets/holding money.png"
-        class="max-w-[220px] sm:max-w-[300px] md:max-w-[360px] lg:max-w-[420px] drop-shadow-2xl transition-transform duration-500 hover:scale-105"
-      />
-    </div>
-  </div>
-</section>
-
-<!-- scholarship and financial adds -->
-  <section class="py-16 bg-white" 
-    data-aos="fade-up"
-    data-aos-duration="1200"
-  >
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h2 class="text-3xl md:text-4xl font_1 message_heading font-bold text-violet-700 mb-2">
-        Scholarship and Financial Aids
-      </h2>
-      <p class="text-gray-600 mb-12 dream_destination_textpara">
-        Fund Your Education in New Zealand
-      </p>
-
-      <!-- Responsive Cards Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        
-        <!-- Card 1 -->
-        <div class="border rounded-sm p-8 shadow-md hover:shadow-xl hover:shadow-[#4C3C93] transition-all bg-white">
-          <div class="flex justify-center mb-4">
-            <img src="./assets/cap.png" class="w-10" />
-          </div>
-          <h3 class="text-violet-700 font_2 font-semibold text-lg mb-2 financial_cards_heading">
-            Manaaki New Zealand Scholarships
-          </h3>
-          <p class="text-gray-600 font_2 text-sm requirements_cards">
-            A fully-funded scholarship from the New Zealand Government, covering tuition fees, living allowance (stipend), and travel for eligible students from selected developing countries (including many in the Asia-Pacific region) for undergraduate and postgraduate study.
-          </p>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="border rounded-sm p-8 shadow-md hover:shadow-xl hover:shadow-[#4C3C93] transition-all bg-white">
-          <div class="flex justify-center mb-4">
-            <img src="./assets/cap2.png" class="w-10" />
-          </div>
-          <h3 class="text-violet-700 font_2 font-semibold text-lg mb-2 financial_cards_heading">
-            New Zealand Commonwealth Scholarship
-          </h3>
-          <p class="text-gray-600 text-sm font_2 requirements_cards">
-            New Zealand Commonwealth Scholarship For master’s and PhD students from Commonwealth countries (excluding New Zealand and Australia) to support their studies in areas that contribute to the development needs of their home country.
-          </p>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="border rounded-sm p-8 shadow-md hover:shadow-xl hover:shadow-[#4C3C93] transition-all bg-white">
-          <div class="flex justify-center mb-4">
-            <img src="./assets/cap3.png" class="w-10" />
-          </div>
-          <h3 class="text-violet-700 font_2 font-semibold text-lg mb-2 financial_cards_heading">
-            University-Specific Scholarships
-          </h3>
-          <p class="text-gray-600 font_2 text-sm requirements_cards">
-           Institutions offer numerous awards, such as the University of Auckland International Student Excellence Scholarship (up to NZD $10,000 for high achievers) and the Victoria University of Wellington Tongarewa Scholarship for academic merit.
-          </p>
-        </div>
-
-                <div class="border rounded-sm p-8 shadow-md hover:shadow-xl hover:shadow-[#4C3C93] transition-all bg-white">
-          <div class="flex justify-center mb-4">
-            <img src="./assets/cap4.png" class="w-10" />
-          </div>
-          <h3 class="text-violet-700 font_2 font-semibold text-lg mb-2 financial_cards_heading">
-            New Zealand Excellence Awards (NZEA)
-          </h3>
-          <p class="text-gray-600 font_2 text-sm requirements_cards">
-            New Zealand Excellence Awards (NZEA) Merit-based scholarships designed to attract high-achieving international students to study postgraduate degrees in various fields at New Zealand universities.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- post study -->
-   <section class="bg-white py-16 px-4 sm:px-8 md:px-12 lg:px-20"
-    data-aos="fade-up"
-    data-aos-duration="1200"
-   >
-    <div class="max-w-6xl mx-auto text-center">
-      <!-- Heading -->
-      <h2 class="text-3xl md:text-4xl font-bold text-violet-700 mb-2 message_heading">
-        Post-Study Opportunities
-      </h2>
-      <p class="text-gray-600 mb-12 dream_destination_textpara">
-        New Zealand offers excellent opportunities for international graduates
-      </p>
-
-      <!-- Cards Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <!-- Card 1 -->
-        <div class="border rounded-sm p-8 shadow-md hover:shadow-xl hover:shadow-[#4C3C93] transition-all duration-300 bg-white">
-          <div class="flex justify-center mb-4">
-            <img src="./assets/work-visa.png" class="w-10" />
-          </div>
-          <h3 class="text-violet-700 font-semibold text-lg mb-2 financial_cards_heading">
-            Post-Study Work Visa
-          </h3>
-          <p class="text-gray-600 requirements_cards">
-            🇳🇿 Apply for a Post Study Work Visa to stay and work for up to 3 years (duration depends on the level of your qualification). For a Level 7 Bachelor's degree or higher, you can work for any employer in almost any job.
-          </p>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="border rounded-sm p-8 shadow-md hover:shadow-xl hover:shadow-[#4C3C93] transition-all duration-300 bg-white">
-          <div class="flex justify-center mb-4">
-            <img src="./assets/demanding-career.jpg" class="w-10" />
-          </div>
-          <h3 class="text-violet-700 font-semibold text-lg mb-2 financial_cards_heading">
-            Buildup Demanding Career
-          </h3>
-          <p class="text-gray-600 requirements_cards">
-            Explore career paths in high-demand sectors such as Healthcare (Registered Nurses, Specialists), Technology (ICT specialists, Software Developers), and Engineering (Civil, Mechanical), many of which are listed on the Green List.
-          </p>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="border rounded-sm p-8 shadow-md hover:shadow-xl hover:shadow-[#4C3C93] transition-all duration-300 bg-white">
-          <div class="flex justify-center mb-4">
-            <img src="./assets/parmanent resident.webp" class="w-10" />
-          </div>
-          <h3 class="text-violet-700 font-semibold text-lg mb-2 financial_cards_heading">
-            Permanent Residency
-          </h3>
-          <p class="text-gray-600 requirements_cards">
-            Apply for a Straight to Residence Visa (Tier 1 roles) or a Work to Residence Visa (Tier 2 roles) after securing a job with an accredited employer.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- student life and culture in New zealaand -->
-  <section class="bg-[#F9F8FF] py-16 px-6 sm:px-10 lg:px-20" 
-  data-aos="fade-up"
-  data-aos-duration="1200"
-  >
-  <div
-    class="container mx-auto max-w-6xl flex flex-col-reverse lg:flex-row items-center gap-16"
-  >
-    <!-- ========= LEFT CONTENT ========= -->
-    <div class="w-full lg:w-1/2 space-y-4 ml-4">
-      <h2
-        class="text-xl sm:text-2xl font_1 md:text-3xl font_1 font-bold text-violet-700 text-center lg:text-left"
-      >
-        Student Life and Culture in New Zealand
-      </h2>
-      <p
-        class="text-gray-500 italic text-center lg:text-left text-sm sm:text-base message_text_paragraph"
-      >
-        Experience the New Zealand Way of Life
-      </p>
-
-      <!-- ======= LIST OF FEATURES ======= -->
-      <ul class="space-y-4 mt-6">
-        <li class="flex items-start gap-3">
-          <span
-            class="w-8 h-8 flex items-center justify-center text-violet-700 rounded-sm text-lg font-semibold"
-            ><img src="./assets/finger_icon.jpg" alt=""></span
-          >
-          <p class="text-gray-700 text-sm sm:text-base font_2">
-            Immerse yourself in New Zealand’s friendly, multicultural communities.
-          </p>
-        </li>
-        <li class="flex items-start gap-3">
-          <span
-            class="w-7 h-7 flex items-center justify-center text-violet-700 rounded-sm text-lg font-semibold"
-            ><img src="./assets/finger_icon.jpg" alt=""></span
-          >
-          <p class="text-gray-700 text-sm sm:text-base font_2">
-           Enjoy outdoor adventures like hiking, skiing, and water sports
-          </p>
-        </li>
-        <li class="flex items-start gap-3">
-          <span
-            class="w-8 h-8 flex items-center justify-center text-violet-700 rounded-sm text-lg font-semibold"
-            ><img src="./assets/finger_icon.jpg" alt=""></span
-          >
-          <p class="text-gray-700 text-sm sm:text-base font_2">
-            Experience cultural richness, from Maori traditions to modern urban life.
-          </p>
-        </li>
-        <li class="flex items-start gap-3">
-          <span
-            class="w-8 h-8 flex items-center justify-center rounded-sm text-lg font-semibold font_2"
-            >
-            <img src="./assets/finger_icon.jpg" alt="">
-            </span
-          >
-          <p class="text-gray-700 text-sm sm:text-base">
-            Explore iconic destinations like Queenstown, Milford Sound, and Hobbiton 
-          </p>
-        </li>
-      </ul>
-    </div>
-
-    <!-- ========= RIGHT IMAGE COLLAGE ========= -->
-    <div class="w-full lg:w-1/2 flex justify-center items-center relative">
-      <div class="relative w-full max-w-sm sm:max-w-md md:max-w-lg">
-        <!-- Top Left Image -->
-        <div
-          class="absolute top-0 left-0 w-40 sm:w-48 md:w-56 lg:w-64 rounded-sm overflow-hidden shadow-lg z-20 hover:scale-105 transition-transform duration-300"
-        >
-          <img
-            src="./assets/Graduation - Cap throw.webp"
-            alt="Graduation"
-            class="w-full h-full object-cover"
-          />
-        </div>
-
-        <!-- Top Right Image -->
-        <div
-          class="absolute top-6 right-0 w-44 sm:w-52 md:w-60 lg:w-72 rounded-sm overflow-hidden shadow-lg z-10 hover:scale-105 transition-transform duration-300"
-        >
-          <img
-            src="./assets/student-walking.webp"
-            alt="Students Walking"
-            class="w-full h-full object-cover"
-          />
-        </div>
-
-        <!-- Bottom Left Image -->
-        <div
-          class="absolute bottom-0 left-10 sm:left-16 md:left-20 w-40 sm:w-48 md:w-56 lg:w-64 rounded-sm overflow-hidden shadow-lg z-0 hover:scale-105 transition-transform duration-300"
-        >
-          <img
-            src="./assets/libraries.webp"
-            alt="Library"
-            class="w-full h-full object-cover"
-          />
-        </div>
-
-        <!-- Spacer for height -->
-        <div class="w-full h-[280px] sm:h-[340px] md:h-[400px] lg:h-[440px]"></div>
-      </div>
-    </div>
-  </div>
-  </section>
-
-  <!-- FAQ's -->
-  <section class="bg-[#F9F8FF] py-16 px-6 sm:px-10 lg:px-20">
-    <div class="container mx-auto max-w-4xl text-center">
-      <!-- ===== HEADING ===== -->
-      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-violet-700 mb-4">
-        FAQs
-      </h2>
-      <p class="text-gray-500 mt-2 italic text-sm sm:text-base">
-        Got Questions? We’ve Got Answers
-      </p>
-
-      <!-- ===== ACCORDION SECTION ===== -->
-      <div class="mt-10 space-y-4">
-        <!-- Accordion 1 -->
-        <div
-          tabindex="0"
-          class="collapse collapse-arrow border border-violet-700/20 bg-violet-700 text-[#ffe521] rounded-sm"
-        >
-          <div class="collapse-title text-base sm:text-lg font-semibold">
-            How much does it cost to study in New Zealand?
-          </div>
-          <div class="collapse-content text-sm sm:text-base text-gray-100">
-            <p>
-              Costs vary by program, but New Zealand offers value for money with scholarships available.
-            </p>
-          </div>
-        </div>
-
-        <!-- Accordion 2 -->
-        <div
-          tabindex="0"
-          class="collapse collapse-arrow border border-violet-700/20 bg-violet-700 text-[#ffe521] rounded-sm"
-        >
-          <div class="collapse-title text-base sm:text-lg font-semibold">
-            Can I work while studying in New Zealand?
-          </div>
-          <div class="collapse-content text-sm sm:text-base text-gray-100">
-            <p>
-             Yes, students can work up to 20 hours per week during term and full-time during holidays.
-            </p>
-          </div>
-        </div>
-
-        <!-- Accordion 3 -->
-        <div
-          tabindex="0"
-          class="collapse collapse-arrow border border-violet-700/20 bg-violet-700 text-[#ffe521] rounded-sm"
-        >
-          <div class="collapse-title text-base sm:text-lg font-semibold">
-            Do I need a specific English test score to study in New Zealand?
-          </div>
-          <div class="collapse-content text-sm sm:text-base text-gray-100">
-            <p>
-             Most universities accept IELTS, TOEFL, or equivalent test scores.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-    <!-- We collaborate with -->
-    <section
-        id="newsletter"
-        class="mb-20 px-4 sm:px-6 lg:px-8 mt-20 w-full max-w-6xl mx-auto"
-      >
-        <div
-          class="bg-gradient-to-r from-indigo-800 to-purple-800 rounded-sm p-6 sm:p-8 md:p-10 flex flex-col md:flex-row items-center justify-around gap-8 md:gap-16 max-w-6xl mx-auto"
-        >
-          <!-- Text Content -->
-          <div
-            class="text-white space-y-4 max-w-full sm:max-w-md md:max-w-lg text-center md:text-left"
-          >
-            <h2
-              class="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-300 leading-snug"
-            >
-              Your Study Abroad<br />Dream Awaits!
-            </h2>
-            <p class="text-sm sm:text-base md:text-lg opacity-90 text_group">
-              Let us guide you to your ideal university and make your journey
-              stress-free. Contact us today for a free consultation.
-            </p>
-            <button
-              class="btn text-blue-700 bg-white px-5 py-2 sm:py-3 text-sm sm:text-base md:text-base transition-transform duration-200 transform hover:scale-105 hover:bg-blue-700 hover:text-white rounded-sm shadow-md border-none"
-            >
-              <a id="openModalBtn">Book a Free Consultation 📅</a>
-            </button>
-          </div>
-
-          <!-- Image Section -->
-          <div
-            class="flex-shrink-0 w-full max-w-[220px] sm:max-w-xs md:max-w-sm mt-6 md:mt-0"
-          >
-            <img
-              src="./assets/students-group.png"
-              alt="studying_abroad"
-              class="rounded-sm shadow-lg w-full object-cover"
-            />
-          </div>
-        </div>
     </section>
 
-</main>
+    <section id="key-facts" class="w-11/12 mx-auto sm:my-20 my-10">
+      <h1 class="sm:text-3xl text-xl font-bold text-center uppercase text-violet-700">
+        Key Factors for <span class="text-[#FACC15]"> studying in New Zealand</span> </h1>
 
-    <footer id="footer" class="py-10 bg-[url(./assets/hero-image-cambry-2.png)] bg-fixed bg-cover bg-no-repeat bg-center">
-      <!-- added from footer.js -->
+      <div id="key-facts-container" class="grid sm:grid-cols-4 grid-cols-2 gap-3 mt-10">
+        <div class="key-fact-single shadow-sm shadow-violet-300 p-4 rounded-sm"
+        >
+          <h3 class="text-violet-700 text-sm font-bold">
+            <i class="fa-solid fa-language"></i> Language of Instruction:
+          </h3>
+          <p class="text-xs italic mt-1 font-bold">English</p>
+        </div>
+        <div class="key-fact-single shadow-sm shadow-violet-300 p-4 rounded-sm" >
+          <h3 class="text-violet-700 text-sm font-bold">
+            <i class="fa-solid fa-comment-dollar"></i> Annual Tuition Fees (Approx.):
+          </h3>
+          <p class="text-xs italic mt-1 font-bold">(26,000 - 50,000+) NZD</p>
+        </div>
+        <div class="key-fact-single shadow-sm shadow-violet-300 p-4 rounded-sm" >
+          <h3 class="text-violet-700 text-sm font-bold">
+            <i class="fa-solid fa-handshake-angle"></i> Funding Options:
+          </h3>
+          <p class="text-xs italic mt-1 font-bold">
+            Scholarships, part-time work (up to 20 hours/week), financial aid
+          </p>
+        </div>
+        <div class="key-fact-single shadow-sm shadow-violet-300 p-4 rounded-sm" >
+          <h3 class="text-violet-700 text-sm font-bold">
+            <i class="fa-solid fa-list-check"></i> Required Exams:
+          </h3>
+          <p class="text-xs italic mt-1 font-bold">
+            IELTS, TOEFL, PTE (depending on course and university)
+          </p>
+        </div>
+        <div class="key-fact-single shadow-sm shadow-violet-300 p-4 rounded-sm" >
+          <h3 class="text-violet-700 text-sm font-bold">
+            <i class="fa-solid fa-school"></i> Academic Levels Available:
+          </h3>
+          <p class="text-xs italic mt-1 font-bold">
+            Certificate, Diploma, Bachelor's, Master's, PhD
+          </p>
+        </div>
+        <div class="key-fact-single shadow-sm shadow-violet-300 p-4 rounded-sm" >
+          <h3 class="text-violet-700 text-sm font-bold">
+            <i class="fa-solid fa-calendar"></i> Intake Seasons:
+          </h3>
+          <p class="text-xs italic mt-1 font-bold">
+            February, July (main intakes); some universities offer November
+          </p>
+        </div>
+        <div class="key-fact-single shadow-sm shadow-violet-300 p-4 rounded-sm" >
+          <h3 class="text-violet-700 text-sm font-bold">
+            <i class="fa-solid fa-passport"></i> Visa Type:
+          </h3>
+          <p class="text-xs italic mt-1 font-bold">
+            Fee Paying Student Visa
+          </p>
+        </div>
+        <div class="key-fact-single shadow-sm shadow-violet-300 p-4 rounded-sm" >
+          <h3 class="text-violet-700 text-sm font-bold">
+            <i class="fa-solid fa-money-bill-1"></i> Visa Application Fee:
+          </h3>
+          <p class="text-xs italic mt-1 font-bold">
+            Starting from approximately NZD 430 (plus processing fees)
+          </p>
+        </div>
+        <div class="key-fact-single shadow-sm shadow-violet-300 p-4 rounded-sm" >
+          <h3 class="text-violet-700 text-sm font-bold">
+            <i class="fa-solid fa-coins"></i> Proof of Financial Capacity (Living Costs):
+          </h3>
+          <p class="text-xs italic mt-1 font-bold">
+            Minimum NZD 20,000 for one year of study (or NZD 1,667 per month)
+          </p>
+        </div>
+        <div class="key-fact-single shadow-sm shadow-violet-300 p-4 rounded-sm" >
+          <h3 class="text-violet-700 text-sm font-bold">
+            <i class="fa-regular fa-credit-card"></i> Estimated Monthly Living Expenses:
+          </h3>
+          <p class="text-xs italic mt-1 font-bold">
+            NZD 1,250 – NZD 2,000 (depending on city and lifestyle)
+          </p>
+        </div>
+        <div class="key-fact-single shadow-sm shadow-violet-300 p-4 rounded-sm" >
+          <h3 class="text-violet-700 text-sm font-bold">
+            <i class="fa-solid fa-city"></i> Popular Student Cities:
+          </h3>
+          <p class="text-xs italic mt-1 font-bold">
+            Auckland, Wellington, Christchurch, Dunedin, Hamilton
+          </p>
+        </div>
+        <div class="key-fact-single shadow-sm shadow-violet-300 p-4 rounded-sm" >
+          <h3 class="text-violet-700 text-sm font-bold">
+            <i class="fa-solid fa-user-check"></i> Post-Study Work Opportunities:
+          </h3>
+          <p class="text-xs italic mt-1 font-bold">
+            Eligible graduates may apply for a Post-Study Work Visa, allowing work experience in New Zealand for 1-3 years
+          </p>
+        </div>
+      </div>  
+      <p class="mt-5 text-sm font-semibold p-2 text-shadow-xs text-shadow-violet-300 text-justify">
+        These updated details reflect recent requirements and costs for international students planning to study in New Zealand. This information helps Bangladeshi students plan budgets, understand visa requirements, and make informed decisions about pursuing higher education in New Zealand. </p>
+    </section>
+
+    <section id="why-choose-new-zealand" class="w-11/12 mx-auto sm:my-20 my-10"> <h1 class="sm:text-3xl text-xl font-bold text-center uppercase text-violet-700">
+        Why Choose <span class="text-[#FACC15]">New Zealand</span> as Your Dream Destination </h1>
+      <p class="text-center sm:text-base text-[12px]">
+        All students are choosy when it comes to selecting their study destination. Many students have preferred New Zealand. </p>
+      <div id="features-container" class="grid sm:grid-cols-4 grid-cols-2 gap-4 mt-10">
+        <div class="feature-single p-3 rounded-sm shadow-sm shadow-violet-300 flex flex-col justify-center items-center">
+          <img class="w-20" src="./assets/p1.png" alt="">
+          <h3 class="text-md font-medium text-center text-violet-700">
+            Abundant Career Opportunities
+          </h3>
+          <p class="text-xs text-justify text-gray-500 italic hover:text-black mt-1">
+            New Zealand offers several short-term courses to help you land a good job. The country gives great importance to career-oriented programs. </p>
+        </div>
+        <div class="feature-single p-3 rounded-sm shadow-sm shadow-violet-300 flex flex-col justify-center items-center">
+          <img class="w-20" src="./assets/p2.png" alt="">
+          <h3 class="text-md font-medium text-center text-violet-700">
+            Career Oriented Education
+          </h3>
+          <p class="text-xs text-justify text-gray-500 italic hover:text-black mt-1">
+            The programs offered by universities in New Zealand give great importance to research. The country is also known for some great inventions as well. </p>
+        </div>
+        <div class="feature-single p-3 rounded-sm shadow-sm shadow-violet-300 flex flex-col justify-center items-center">
+          <img class="w-20" src="./assets/p3.png" alt="">
+          <h3 class="text-md font-medium text-center text-violet-700">
+            Research Specific Program
+          </h3>
+          <p class="text-xs text-justify text-gray-500 italic hover:text-black mt-1">
+            Having certified from a New Zealand University, you will find that it is highly respected and valued by others worldwide. It will make it easier for both your job and higher education. </p>
+        </div>
+        <div class="feature-single p-3 rounded-sm shadow-sm shadow-violet-300 flex flex-col justify-center items-center">
+          <img class="w-20" src="./assets/p1.png" alt="">
+          <h3 class="text-md font-medium text-center text-violet-700">
+            Highly Dignified Qualification
+          </h3>
+          <p class="text-xs text-justify text-gray-500 italic hover:text-black mt-1">
+            Having certified from a New Zealand University, you will find that it is highly respected and valued by others worldwide. It will make it easier for both your job and higher education. </p>
+        </div>
+        <div class="feature-single p-3 rounded-sm shadow-sm shadow-violet-300 flex flex-col justify-center items-center">
+          <img class="w-20" src="./assets/p5.png" alt="">
+          <h3 class="text-md font-medium text-center text-violet-700">
+            Internation Student Rights
+          </h3>
+          <p class="text-xs text-justify text-gray-500 italic hover:text-black mt-1">
+            New Zealand follows simpler processes for getting a work visa. You can also work 20 hours a week during your course and earn some money thus. </p>
+        </div>
+        <div class="feature-single p-3 rounded-sm shadow-sm shadow-violet-300 flex flex-col justify-center items-center">
+          <img class="w-20" src="./assets/p6.png" alt="">
+          <h3 class="text-md font-medium text-center text-violet-700">
+            Cultural Diversity
+          </h3>
+          <p class="text-xs text-justify text-gray-500 italic hover:text-black mt-1">
+            New Zealand is a diverse country to live in. You will find students from all over the world. You can interact with them, which in turn helps you understand different cultures. </p>
+        </div>
+        <div class="feature-single p-3 rounded-sm shadow-sm shadow-violet-300 flex flex-col justify-center items-center">
+          <img class="w-20" src="./assets/p7.png" alt="">
+          <h3 class="text-md font-medium text-center text-violet-700">
+            Reasonable Study Expense
+          </h3>
+          <p class="text-xs text-justify text-gray-500 italic hover:text-black mt-1">
+            The scenic beauty of New Zealand is reason enough to move to the country. If you are a fan of nature trips and adventures, you can visit Milford Sound, Lake Tekapo etc. </p>
+        </div>
+        <div class="feature-single p-3 rounded-sm shadow-sm shadow-violet-300 flex flex-col justify-center items-center">
+          <img class="w-20" src="./assets/p8.png" alt="">
+          <h3 class="text-md font-medium text-center text-violet-700">
+            Incredible Landscape & Nature
+          </h3>
+          <p class="text-xs text-justify text-gray-500 italic hover:text-black mt-1">
+            New Zealand is unbeaten when offering people rights. The Education (Pastoral Care of International Learners) Code of Practice ensures that international students' study </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="top-universities" class="w-11/12 mx-auto sm:my-20 my-10">
+      <h1 class="sm:text-3xl text-xl font-bold text-center uppercase text-violet-700">
+        Top Universities in <span class="text-[#FACC15]">New Zealand</span> </h1>
+      <p class="text-center sm:text-base text-[12px]">
+        Explore and find your dream university
+      </p>
+      <div id="university-card-container" class="mt-10 grid sm:grid-cols-4 grid-cols-2 gap-5">
+        
+        <div id="university-card-single" class="rounded-sm shadow-sm shadow-violet-300 hover:shadow-violet-400 transition-all duration-300">
+          <img class="w-full sm:h-60 h-50 object-cover rounded-t-sm" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyYumPlSznV7zsfEsPCbq2fXDaSfmS_eBdgKBuqI4wgyHRi7r6nekHBXBAmLlTBgcGrNNGXTeay4QQevYYp1-K8NTkoliQRQWWzIjHvap92OeUCY0BxYvNTUwvAx0aMkDnEgjhjRQ=s1360-w1360-h1020-rw">
+          <div id="university-card-content" class="flex items-start gap-3 px-3 py-2">
+            <div id="card-img" class="">
+              <img class="w-9 mt-0.5" src="https://upload.wikimedia.org/wikipedia/en/a/ac/University_of_Auckland_Coat_of_Arms.png">
+            </div>
+            <div id="card-texts">
+              <h3 class="sm:text-md text-sm font-medium text-violet-700">
+                University of Auckland
+              </h3>
+              <p class="sm:text-[12px] text-[8px] -ml-1 text-gray-500 hover:text-black">
+                <i class="fa-solid fa-location-dot text-violet-700"></i> Auckland, New Zealand
+              </p>
+              <a class="sm:text-[10px] text-[7px] text-gray-400 hover:text-violet-700" href="https://www.auckland.ac.nz/" target="_blank">Visit Official Website <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div id="university-card-single" class="rounded-sm shadow-sm shadow-violet-300">
+          <img class="w-full sm:h-60 h-50 object-cover rounded-t-sm" src="https://www.ncuk.ac.uk/wp-content/uploads/2020/12/University-of-Otago-Image-Gallery-3.jpg">
+          <div id="university-card-content" class="flex items-start gap-3 px-3 py-2">
+            <div id="card-img" class="">
+              <img class="w-9 mt-0.5" src="https://www.otago.ac.nz/__data/assets/image/0028/568108/1869-emblem.png">
+            </div>
+            <div id="card-texts">
+              <h3 class="sm:text-md text-sm font-medium text-violet-700">
+                University of Otago
+              </h3>
+              <p class="sm:text-[12px] text-[8px] -ml-1 text-gray-500 hover:text-black">
+                <i class="fa-solid fa-location-dot text-violet-700"></i> Dunedin, New Zealand
+              </p>
+              <a class="sm:text-[10px] text-[7px] text-gray-400 hover:text-violet-700" href="https://www.otago.ac.nz/" target="_blank">Visit Official Website <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div id="university-card-single" class="rounded-sm shadow-sm shadow-violet-300">
+          <img class="w-full sm:h-60 h-50 object-cover rounded-t-sm" src="https://architectus.co.nz/wp-content/uploads/2019/09/Hub328-1-2400x1655.jpg">
+          <div id="university-card-content" class="flex items-start gap-3 px-3 py-2">
+            <div id="card-img" class="">
+              <img class="w-9 mt-0.5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNlUYvX7yWxfgzSWlZUlO_ar5LTLZE1G8juQ&s">
+            </div>
+            <div id="card-texts">
+              <h3 class="sm:text-md text-sm font-medium text-violet-700">
+                Victoria University of Wellington
+              </h3>
+              <p class="sm:text-[12px] text-[8px] -ml-1 text-gray-500 hover:text-black">
+                <i class="fa-solid fa-location-dot text-violet-700"></i> Wellington, New Zealand
+              </p>
+              <a class="sm:text-[10px] text-[7px] text-gray-400 hover:text-violet-700" href="https://www.wgtn.ac.nz/" target="_blank">Visit Official Website <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div id="university-card-single" class="rounded-sm shadow-sm shadow-violet-300">
+          <img class="w-full sm:h-60 h-50 object-cover rounded-t-sm" src="https://www.canterbury.ac.nz/content/dam/uoc-main-site/images/1-exterior-images/b-buildings/UC-buildings.jpeg"> <div id="university-card-content" class="flex items-start gap-3 px-3 py-2">
+            <div id="card-img" class="">
+              <img class="w-9 mt-0.5" src="https://seekvectors.com/files/download/Canterbury%20University-01.png">
+            </div>
+            <div id="card-texts">
+              <h3 class="sm:text-md text-sm font-medium text-violet-700">
+                University of Canterbury
+              </h3>
+              <p class="sm:text-[12px] text-[8px] -ml-1 text-gray-500 hover:text-black">
+                <i class="fa-solid fa-location-dot text-violet-700"></i> Christchurch, New Zealand
+              </p>
+              <a class="sm:text-[10px] text-[7px] text-gray-400 hover:text-violet-700" href="https://www.canterbury.ac.nz/" target="_blank">Visit Official Website <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div id="university-card-single" class="rounded-sm shadow-sm shadow-violet-300">
+          <img class="w-full sm:h-60 h-50 object-cover rounded-t-sm" src="https://d2ub1k1pknil0e.cloudfront.net/media/images/Innovation-Complex-Building-2022-060.width-1200.jpg"> <div id="university-card-content" class="flex items-start gap-3 px-3 py-2">
+            <div id="card-img" class="">
+              <img class="w-9 mt-0.5" src="https://images.seeklogo.com/logo-png/40/1/massey-university-logo-png_seeklogo-403968.png">
+            </div>
+            <div id="card-texts">
+              <h3 class="sm:text-md text-sm font-medium text-violet-700">
+                Massey University
+              </h3>
+              <p class="sm:text-[12px] text-[8px] -ml-1 text-gray-500 hover:text-black">
+                <i class="fa-solid fa-location-dot text-violet-700"></i> Palmerston North, New Zealand
+              </p>
+              <a class="sm:text-[10px] text-[7px] text-gray-400 hover:text-violet-700" href="https://www.massey.ac.nz/" target="_blank">Visit Official Website <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div id="university-card-single" class="rounded-sm shadow-sm shadow-violet-300">
+          <img class="w-full sm:h-60 h-50 object-cover rounded-t-sm" src="https://www.waikato.ac.nz/assets/Uploads/About-us/Our-campuses/our-campuses-tauranga-campus-exterior-v2.webp"> <div id="university-card-content" class="flex items-start gap-3 px-3 py-2">
+            <div id="card-img" class="">
+              <img class="w-9 mt-0.5" src="https://www.waikato.ac.nz/assets/Uploads/About-us/Our-story/About-History-Vertical-full-colour-logo-on-white-background-1__ResizedImageWzIyMSwyODZd.jpg">
+            </div>
+            <div id="card-texts">
+              <h3 class="sm:text-md text-sm font-medium text-violet-700">
+                University of Waikato
+              </h3>
+              <p class="sm:text-[12px] text-[8px] -ml-1 text-gray-500 hover:text-black">
+                <i class="fa-solid fa-location-dot text-violet-700"></i> Hamilton, New Zealand
+              </p>
+              <a class="sm:text-[10px] text-[7px] text-gray-400 hover:text-violet-700" href="https://www.waikato.ac.nz/" target="_blank">Visit Official Website <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div id="university-card-single" class="rounded-sm shadow-sm shadow-violet-300">
+          <img class="w-full sm:h-60 h-50 object-cover rounded-t-sm" src="https://www.lincoln.ac.nz/assets/Uploads/LU-campus_-100-v2__FocusFillMaxWyIwLjAwIiwiMC4wMCIsNzY4LDQ3NF0.JPG"> <div id="university-card-content" class="flex items-start gap-3 px-3 py-2">
+            <div id="card-img" class="">
+              <img class="w-9 mt-0.5" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Lincoln_University_logo.svg/250px-Lincoln_University_logo.svg.png">
+            </div>
+            <div id="card-texts">
+              <h3 class="sm:text-md text-sm font-medium text-violet-700">
+                Lincoln University
+              </h3>
+              <p class="sm:text-[12px] text-[8px] -ml-1 text-gray-500 hover:text-black">
+                <i class="fa-solid fa-location-dot text-violet-700"></i> Lincoln, New Zealand
+              </p>
+              <a class="sm:text-[10px] text-[7px] text-gray-400 hover:text-violet-700" href="https://www.lincoln.ac.nz/" target="_blank">Visit Official Website <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div id="university-card-single" class="rounded-sm shadow-sm shadow-violet-300">
+          <img class="w-full sm:h-60 h-50 object-cover rounded-t-sm" src="https://www.ncuk.ac.uk/wp-content/uploads/2020/12/Auckland-University-of-Technology-Image-Gallery-2.jpg"> <div id="university-card-content" class="flex items-start gap-3 px-3 py-2">
+            <div id="card-img" class="">
+              <img class="w-9 mt-0.5" src="https://storage-prtl-co.imgix.net/endor/organisations/14486/logos/1547510484_Auckland%20logo%20black.png">
+            </div>
+            <div id="card-texts">
+              <h3 class="sm:text-md text-sm font-medium text-violet-700">
+                Auckland University of Technology (AUT)
+              </h3>
+              <p class="sm:text-[12px] text-[8px] -ml-1 text-gray-500 hover:text-black">
+                <i class="fa-solid fa-location-dot text-violet-700"></i> Auckland, New Zealand
+              </p>
+              <a class="sm:text-[10px] text-[7px] text-gray-400 hover:text-violet-700" href="https://www.aut.ac.nz/" target="_blank">Visit Official Website <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+          </div>
+        </div>
+        </div>
+
+      <div id="top-uni-cta" class="flex sm:flex-row flex-col justify-between items-center gap-4 p-4 shadow-sm shadow-violet-300 mt-10">
+        <p class="sm:w-190 sm:text-start text-center sm:text-lg text-sm">
+          Why spend your time when you can seek an expert's help all for free? Reach out to us and get free assistance to study in New Zealand today! </p>
+        <a href="./contact-us.html" target="_blank">
+          <button class="btn sm:btn-md btn-sm border-none shadow-none bg-violet-700 text-white hover:bg-[#FACC15] hover:text-black transition-all duration-300">
+            Contact Us Today! <i class="fa-solid fa-handshake-angle"></i>
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <section id="additional-universities" class="w-11/12 mx-auto sm:my-20 my-10">
+      <h1 class="sm:text-3xl text-xl font-bold text-center uppercase text-violet-700">
+        We Also Work With
+      </h1>
+      <p class="text-center sm:text-base text-[12px]">
+        Other universities you may consider
+      </p>
+
+      <div id="additional-uni-container" class="mt-10 grid sm:grid-cols-4 grid-cols-3 gap-x-3 gap-y-10 items-center">
+
+        <a href="https://www.unitec.ac.nz/" target="_blank">
+          <img class="sm:w-30 w-20 mx-auto hover:scale-105 transition-all duration-300" src="https://media.youapply.com/University/logo/unitec_institute_of_technology_1712142999.svg">
+        </a>
+        
+        <a href="https://auckland.op.ac.nz/" target="_blank">
+          <img class="sm:w-30 w-20 mx-auto hover:scale-105 transition-all duration-300" src="https://static.wixstatic.com/media/2de6c5_e8bde8617e5c40b1a4ac0c9a96b2b207~mv2.png/v1/fill/w_490,h_157,al_c,lg_1,q_85,enc_auto/RMIT_University_Logo.png">
+        </a>
+        
+        <a href="https://www.manukau.ac.nz/" target="_blank">
+          <img class="sm:w-30 w-20 mx-auto hover:scale-105 transition-all duration-300" src="https://lh6.googleusercontent.com/proxy/BSdgLhJ3--57sqF7fIW9wriyg_vkUteHX-7GltdzlemkdToKEJhvMUc-99jIH_puFqt2Mcd3y7xZAtW4e2HGTWFqWfEF3jqqZlc1g02h-mh_dQ">
+        </a>
+        
+        <a href="https://www.ara.ac.nz/" target="_blank">
+          <img class="sm:w-30 w-20 mx-auto hover:scale-105 transition-all duration-300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4972B1E6fHnpvQSqTK-DiyPUr37KEIMVZgQ&s">
+        </a>
+        
+        <a href="https://www.eit.ac.nz/campus/auckland/" target="_blank">
+          <img class="sm:w-30 w-20 mx-auto hover:scale-105 transition-all duration-300" src="https://www.standyou.com/uploads/20230623144852_file_EIT.png">
+        </a>
+        
+        <a href="https://www.wintec.ac.nz/" target="_blank">
+          <img class="sm:w-30 w-20 mx-auto hover:scale-105 transition-all duration-300" src="https://keystoneacademic-res.cloudinary.com/image/upload/c_pad,w_256,h_142/dpr_auto/f_auto/q_auto/v1/element/15/154009_wintec.jpeg">
+        </a>
+        
+        <a href="https://www.nmit.ac.nz/" target="_blank">
+          <img class="sm:w-30 w-20 mx-auto hover:scale-105 transition-all duration-300" src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Nelson_Marlborough_Institute_of_Technology_logo.gif">
+        </a>
+        
+        <a href="https://www.whitireiaweltec.ac.nz/" target="_blank">
+          <img class="sm:w-30 w-20 mx-auto hover:scale-105 transition-all duration-300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYh0Xm7dwqbum0vo79TOBhPb2_yXaz-9agyA&s">
+        </a>
+        
+        <a href="https://www.witt.ac.nz/" target="_blank">
+          <img class="sm:w-30 w-20 mx-auto hover:scale-105 transition-all duration-300" src="https://www.smart-nz.com/images/content/original-1620639280416.png">
+        </a>
+        
+        <a href="https://www.northtec.ac.nz/" target="_blank">
+          <img class="sm:w-30 w-20 mx-auto hover:scale-105 transition-all duration-300" src="https://upload.wikimedia.org/wikipedia/en/thumb/7/73/NorthTec_logo.svg/1200px-NorthTec_logo.svg.png">
+        </a>
+        
+        <a href="https://www.ucol.ac.nz/" target="_blank">
+          <img class="sm:w-30 w-20 mx-auto hover:scale-105 transition-all duration-300" src="https://moodle.ucol.ac.nz/pluginfile.php/2/course/section/1/Asset%202.jpg">
+        </a>
+        
+        <a href="https://www.sit.ac.nz/" target="_blank">
+          <img class="sm:w-30 w-20 mx-auto hover:scale-105 transition-all duration-300" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Southern_Insitute_of_Technology_NZ_logo.jpg/640px-Southern_Insitute_of_Technology_NZ_logo.jpg">
+        </a>
+      
+      </div>
+    </section>
+
+    <section id="top-courses" class="w-11/12 mx-auto sm:my-20 my-10">
+      <h1 class="sm:text-3xl text-xl font-bold text-center uppercase text-violet-700">
+        Top Courses in <span class="text-[#FACC15]">New Zealand</span> </h1>
+      <p class="text-center sm:text-base text-[12px] sm:mt-4 mt-2">
+        New Zealand is known for its high-quality education and wide range of courses available for international students. Some of the popular courses that attract international students to New Zealand include: </p>
+      <div id="top-courses-contents" class="flex sm:flex-row flex-col-reverse justify-between items-center sm:gap-5 gap-2 sm:mt-10 mt-5">
+        <div class="programs-wrapper">
+          <div class="programs grid grid-cols-3 sm:gap-15 gap-5 text-violet-700 sm:text-sm text-[10px]">
+            <p class="py-2 px-4 rounded-sm shadow-inner shadow-violet-200 hover:bg-violet-700 hover:text-white hover:shadow-none cursor-pointer">
+              <i class="fa-solid fa-user-nurse"></i> Health & Science
+            </p>
+            <p class="py-2 px-4 rounded-sm shadow-inner shadow-violet-200 hover:bg-violet-700 hover:text-white hover:shadow-none cursor-pointer">
+              <i class="fa-solid fa-microchip"></i> Information Technology
+            </p>
+            <p class="py-2 px-4 rounded-sm shadow-inner shadow-violet-200 hover:bg-violet-700 hover:text-white hover:shadow-none cursor-pointer">
+              <i class="fa-solid fa-calculator"></i> Accounting
+            </p>
+            <p class="py-2 px-4 rounded-sm shadow-inner shadow-violet-200 hover:bg-violet-700 hover:text-white hover:shadow-none cursor-pointer">
+              <i class="fa-solid fa-pen-nib"></i> Art & Design
+            </p>
+            <p class="py-2 px-4 rounded-sm shadow-inner shadow-violet-200 hover:bg-violet-700 hover:text-white hover:shadow-none cursor-pointer">
+              <i class="fa-solid fa-robot"></i> Computer Science
+            </p>
+            <p class="py-2 px-4 rounded-sm shadow-inner shadow-violet-200 hover:bg-violet-700 hover:text-white hover:shadow-none cursor-pointer">
+              <i class="fa-solid fa-hospital"></i> Medicine
+            </p>
+            <p class="py-2 px-4 rounded-sm shadow-inner shadow-violet-200 hover:bg-violet-700 hover:text-white hover:shadow-none cursor-pointer">
+              <i class="fa-solid fa-business-time"></i> Business Management
+            </p>
+            <p class="py-2 px-4 rounded-sm shadow-inner shadow-violet-200 hover:bg-violet-700 hover:text-white hover:shadow-none cursor-pointer">
+              <i class="fa-solid fa-lightbulb"></i> Engineering
+            </p>
+            <p class="py-2 px-4 rounded-sm shadow-inner shadow-violet-200 hover:bg-violet-700 hover:text-white hover:shadow-none cursor-pointer">
+              <i class="fa-solid fa-radio"></i> Mass & Media
+            </p>
+          </div>
+        </div>
+        <img class="w-[30%]" src="./assets/reader_man.png" alt="">
+      </div>
+    </section>
+
+    <section id="visa-processing" class="w-11/12 mx-auto sm:my-20 my-10">
+      <h1 class="sm:text-3xl text-xl font-bold text-center uppercase text-violet-700">
+        Visa Requirements & <span class="text-[#FACC15]">Application Process</span>
+      </h1>
+      <p class="text-center sm:text-base text-[12px]">
+        All students are choosy when it comes to selecting their study destination. Many students have preferred New Zealand. </p>
+      
+      <div id="visa-processing-contents" class="flex sm:flex-row-reverse flex-col-reverse justify-between items-center gap-5 mt-10">
+        <div class="processing-steps-wrapper sm:mt-10 mt-5 sm:w-[50%] w-full">      
+          <ul class="timeline timeline-vertical w-full">
+            <li class="grid-cols-[auto_auto_1fr]">
+              <div class="timeline-start font-bold">Step 1</div>
+              <div class="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="sm:h-7 sm:w-7 h-5 w-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="timeline-end timeline-box shadow-sm shadow-violet-300">
+                <h3 class="sm:text-xl text-[15px] font-bold text-violet-700">Obtain Offer of Place</h3>
+                <p>Obtain an 'Offer of Place' from an approved New Zealand education provider.</p>
+              </div>
+              <hr class="bg-[#FACC15]" />
+            </li>
+            <li class="grid-cols-[auto_auto_1fr]">
+              <hr class="bg-[#FACC15]" />
+              <div class="timeline-start font-bold">Step 2</div>
+              <div class="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="sm:h-7 sm:w-7 h-5 w-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="timeline-end timeline-box shadow-sm shadow-violet-300">
+                <h3 class="sm:text-xl text-[15px] font-bold text-violet-700">Gather Documents</h3>
+                <p>Prepare key documents: Offer of Place, proof of identity, financial evidence, and health/character certificates.</p>
+              </div>
+              <hr class="bg-[#FACC15]" />
+            </li>
+            <li class="grid-cols-[auto_auto_1fr]">
+              <hr class="bg-[#FACC15]" />
+              <div class="timeline-start font-bold">Step 3</div>
+              <div class="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="sm:h-7 sm:w-7 h-5 w-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="timeline-end timeline-box shadow-sm shadow-violet-300">
+                <h3 class="sm:text-xl text-[15px] font-bold text-violet-700">Submit Online Application</h3>
+                <p>Apply for your 'Fee Paying Student Visa' online via the Immigration New Zealand website.</p>
+              </div>
+              <hr class="bg-[#FACC15]" />
+            </li>
+            <li class="grid-cols-[auto_auto_1fr]">
+              <hr class="bg-[#FACC15]" />
+              <div class="timeline-start font-bold">Step 4</div>
+              <div class="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="sm:h-7 sm:w-7 h-5 w-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="timeline-end timeline-box shadow-sm shadow-violet-300">
+                <h3 class="sm:text-xl text-[15px] font-bold text-violet-700">Pay Fee & Await AIP</h3>
+                <p>Pay the visa application fee and upload all required documents. Await your 'Approval in Principle' (AIP).</p>
+              </div>
+              <hr class="bg-[#FACC15]" />
+            </li>
+            <li class="grid-cols-[auto_auto_1fr]">
+              <hr class="bg-[#FACC15]" />
+              <div class="timeline-start font-bold">Step 5</div>
+              <div class="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="sm:h-7 sm:w-7 h-5 w-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="timeline-end timeline-box shadow-sm shadow-violet-300">
+                <h3 class="sm:text-xl text-[15px] font-bold text-violet-700">Pay Tuition & Receive e-Visa</h3>
+                <p>
+                  Once you get the AIP, pay your tuition fees. Submit the receipt to receive your final e-Visa.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <img class="w-[50%]" src="./assets/visa-processing/visa-processing-nobg.png">
+      </div>
+    </section>
+
+    <section id="cost-of-education" class="w-11/12 mx-auto sm:my-20 my-10">
+      <h1 class="sm:text-3xl text-xl font-bold text-center uppercase text-violet-700">
+        Cost of Education and Living in <span class="text-[#FACC15]">New Zealand</span> </h1>
+      <p class="text-center sm:text-base text-[12px]">
+        Plan Your Budget
+      </p>
+      <div id="cost-of-education-contents" class="flex sm:flex-row-reverse flex-col justify-between items-center gap-5 mt-10">
+        <img class="sm:w-full w-[70%]" src="./assets/cost of education/cost-of-education-nobg.png" alt="">
+        <div id="cost-of-education-left" class="w-full">
+          <div class="tabs tabs-lift">
+            <input type="radio" name="my_tabs_3" class="tab shadow-sm shadow-violet-300 sm:text-base text-xs" aria-label="Tuition Fees" checked="checked" /> 
+            <div class="tab-content border-base-300 p-6">
+              <h3 class="sm:text-2xl text-md font-bold text-violet-700">
+                <i class="fa-solid fa-graduation-cap"></i> Undergraduate Programs
+              </h3>
+              <p class="sm:text-lg text-sm font-medium mt-4 text-gray-500">
+                <i class="fa-solid fa-money-bills"></i> NZD 26,000 - $40,000/year*
+              </p>
+              <h3 class="sm:text-2xl text-md mt-4 font-bold text-violet-700">
+                <i class="fa-solid fa-user-graduate"></i> Graduate Programs
+              </h3>
+              <p class="sm:text-lg text-sm font-medium mt-4 text-gray-500">
+                <i class="fa-solid fa-money-bills"></i> NZD 30,000 - $50,000/year*
+              </p>
+            </div>
+
+            <input type="radio" name="my_tabs_3" class="tab shadow-sm shadow-violet-300 sm:text-base text-xs" aria-label="Living Expenses" />
+            <div class="tab-content border-base-300 p-6">
+              <h3 class="sm:text-2xl text-md font-bold text-violet-700">
+                <i class="fa-solid fa-utensils"></i> Accommodation, food, transport, and utilities
+              </h3>
+              <p class="sm:text-lg text-sm font-medium mt-4 text-gray-500">
+                <i class="fa-solid fa-money-bills"></i> NZD 20,000 - $25,000/year*
+              </p>
+            </div>
+
+            <input type="radio" name="my_tabs_3" class="tab shadow-sm shadow-violet-300 sm:text-base text-xs" aria-label="Cost Saving Tips" />
+            <div class="tab-content bg-base-100 border-base-300 p-6">
+              <ul class="list-disc sm:text-base text-sm">
+                <li>Utilize student discounts on public transport and services.</li>
+                <li>Work part-time (up to 20 hours/week) to offset living costs.</li>
+              </ul>
+            </div>
+          </div>
+          <p class="sm:w-100 text-xs italic">*The amounts mentioned above are approximate. It may vary depending on various factors. Consult with us for further information.</p>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+  <footer id="footer" class="py-10 bg-[url(./assets/hero-image-cambry-2.png)] bg-fixed bg-cover bg-no-repeat bg-center">
     </footer>
 
-    <div id="appointmentModal" 
-         class="hidden fixed inset-0 bg-black/50  items-center justify-center p-4 z-500 opacity-0 transition-opacity duration-300 ease-out">
-      <div id="modalPanel" class="bg-white/10 backdrop-blur-lg rounded-sm shadow-2xl w-full max-w-lg p-6  opacity-0 scale-95 transition-all duration-300 ease-out"> <div class="flex justify-between items-center mb-6">
-        <h3 class="text-3xl font-bold text-white">Send <span class="text-[#FFD700]">Us</span> A Message</h3>
-        <button id="closeModalBtn" class="text-white hover:text-gray-300 text-2xl font-semibold bg-white/10 hover:bg-white/20 rounded-sm w-8 h-8 flex items-center justify-center">
-                    &times;
-                </button>
-            </div>
-            
-            <form action="https://formspree.io/f/xdkpelzo" method="POST">
-                
-                <div class="mb-4">
-                    <input type="text" id="name" name="name" placeholder="Name" 
-                           class="w-full bg-white px-5 py-3 border-none rounded-sm text-gray-900 placeholder-gray-500 
-                                  focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required> </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                    <div>
-                        <input type="email" id="email" name="email" placeholder="Email" 
-                               class="w-full bg-white px-5 py-3 border-none rounded-sm text-gray-900 placeholder-gray-500 
-                                      focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required> </div>
-                    <div>
-                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" 
-                               class="w-full bg-white px-5 py-3 border-none rounded-sm text-gray-900 placeholder-gray-500 
-                                      focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required> </div>
-                </div>
-
-                <div class="mb-4">
-                    <input type="text" id="subject" name="subject" placeholder="Subject" 
-                           class="w-full bg-white px-5 py-3 border-none rounded-sm text-gray-900 placeholder-gray-500 
-                                  focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required> </div>
-                
-                <div class="mb-6">
-                    <textarea id="message" name="message" rows="3" placeholder="Your Message" 
-                              class="w-full bg-white px-5 py-3 border-none rounded-sm text-gray-900 placeholder-gray-500 
-                                     focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required></textarea> </div>
-                
-                <div>
-                    <button type="submit" 
-                            class="w-full bg-[#FFD700] text-gray-900 text-lg font-semibold px-6 py-3 rounded-sm 
-                                   hover:shadow-lg hover:-translate-y-1 transition-all duration-300 shadow-md">
-                        Send Message
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <!-- started modals -->
-    <div id="contactModal" 
-         class="hidden fixed inset-0 bg-black/60  items-center justify-center p-4 z-500 
-                opacity-0 transition-opacity duration-300 ease-out">
-        
-        <div id="contactModalPanel"
-             class="bg-white/10 backdrop-blur-lg rounded-sm shadow-2xl w-full max-w-lg p-5 
-                    opacity-0 scale-95 transition-all duration-300 ease-out relative">
-            
-            <button id="closeContactModalBtn" 
-                    class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl font-semibold">&times;</button>
-            
-            <h3 class="text-3xl font-bold text-center mb-5 text-yellow-400">Send Us A Message</h3>
-
-            <form action="https://formspree.io/f/xdkpelzo" method="POST">
-                
-                <div class="mb-2">
-                    <input type="text" id="contactName" name="name" placeholder="Name" 
-                           class="w-full px-5 py-2 border border-gray-300 rounded-sm text-gray-900 placeholder-gray-500 bg-white/80 
-                                  focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required>
-                </div>
-                
-                <div class="mb-2">
-                    <input type="email" id="contactEmail" name="email" placeholder="Email" 
-                           class="w-full px-5 py-2 border bg-white/80  border-gray-300 rounded-sm text-gray-900 placeholder-gray-500 
-                                  focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required>
-                </div>
-
-                <div class="grid grid-cols-4 gap-3 mb-2">
-                    <div class="col-span-1">
-                        <input type="text" value="+880" readonly 
-                               class="w-full px-5 py-2 border bg-white/80  border-gray-300 rounded-sm bg-gray-100 text-gray-700 focus:outline-none">
-                    </div>
-                    <div class="col-span-3">
-                        <input type="tel" id="contactPhone" name="phone" placeholder="Contact Number" 
-                               class="w-full px-5 py-2 border bg-white/80  border-gray-300 rounded-sm text-gray-900 placeholder-gray-500 
-                                      focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required>
-                    </div>
-                </div>
-
-                <div class="mb-2">
-                    <select id="contactDestination" name="destination" 
-                            class="w-full px-5 py-2 border bg-white/80  border-gray-300 rounded-sm text-gray-900 
-                                   focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required>
-                        <option value="" disabled selected>Preferred Study Destination</option>
-                        <option value="usa">USA</option>
-                        <option value="canada">Canada</option>
-                        <option value="uk">UK</option>
-                        <option value="australia">Australia</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-
-                <div class="mb-2">
-                    <select id="contactLevel" name="level" 
-                            class="w-full px-5 py-2 border bg-white/80  border-gray-300 rounded-sm text-gray-900 
-                                   focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required>
-                        <option value="" disabled selected>Preferred Study Level</option>
-                        <option value="undergraduate">Undergraduate</option>
-                        <option value="postgraduate">Postgraduate</option>
-                        <option value="diploma">Diploma</option>
-                        <option value="foundation">Foundation</option>
-                    </select>
-                </div>
-
-                <div class="mb-3">
-                    <select id="contactYear" name="year" 
-                            class="w-full px-5 py-2 border bg-white/80  border-gray-300 rounded-sm text-gray-900 
-                                   focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-300" required>
-                        <option value="" disabled selected>Preferred Study Year</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
-                        <option value="2026">2026</option>
-                        <option value="later">Later</option>
-                    </select>
-                </div>
-                
-                <div class="mb-5 flex items-start">
-                    <input type="checkbox" id="contactAgreement" name="agreement" class="mt-1 mr-3 h-5 w-5 text-violet-600 rounded focus:ring-violet-500 border-gray-300" required>
-                    <label for="contactAgreement" class="text-white text-sm">
-                        By clicking you agree to our 
-                        <a href="#" class="text-orange-500 hover:underline">Privacy Policy</a> and 
-                        <a href="#" class="text-orange-500 hover:underline">Terms & Conditions</a> *
-                    </label>
-                </div>
-                
-                <div>
-                    <button type="submit" 
-                            class="w-full bg-yellow-400 text-white text-lg font-semibold px-6 py-3 rounded-sm 
-                                   hover:bg-yellow-600 transition-all duration-300 shadow-md">
-                        Get Started For Free
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <!-- scripts -->
-    <script src="scripts/started_modals.js"></script>
-    <script src="./scripts/common-scripts.js"></script>
-    <script src="scripts/nav-scroll.js"></script>
-    <script src="scripts/appointment_booking_modal.js"></script>
-    <script src="./scripts/navbar.js"></script>
-    <script src="./scripts/footer.js"></script>
-
+  <script src="./scripts/navbar.js"></script>
+   <script src="./scripts/footer.js"></script>
 </body>
 </html>
