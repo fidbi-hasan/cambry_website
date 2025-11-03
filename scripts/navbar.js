@@ -2,11 +2,9 @@
 
 const ShowNav = () => {
   const header = document.getElementById('main-header');
-
-  // header.classList.add("bg-white/10", "backdrop-blur-lg");
-
+  header.classList.add("backdrop-blur-2xl")
   header.innerHTML = `
-    <nav class="navbar text-white w-11/12 mx-auto flex items-center justify-between p-0" id="navbar">
+    <nav class="navbar text-white w-11/12 mx-auto flex items-center     justify-between p-0 " id="navbar">
       <!-- LEFT SIDE -->
       <div class="hover:shadow-sm px-2 py-1 rounded-sm">
         <a href="index.html" class="flex items-center space-x-2">
